@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://https://jsh.github.io</id>
+    <id>https://https://jsh-jsh.github.io</id>
     <title>jsh的网站</title>
-    <updated>2020-07-31T08:39:32.741Z</updated>
+    <updated>2020-07-31T08:46:29.866Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://https://jsh.github.io"/>
-    <link rel="self" href="https://https://jsh.github.io/atom.xml"/>
+    <link rel="alternate" href="https://https://jsh-jsh.github.io"/>
+    <link rel="self" href="https://https://jsh-jsh.github.io/atom.xml"/>
     <subtitle>&lt;h1&gt;个人博客&lt;/h1&gt;</subtitle>
-    <logo>https://https://jsh.github.io/images/avatar.png</logo>
-    <icon>https://https://jsh.github.io/favicon.ico</icon>
+    <logo>https://https://jsh-jsh.github.io/images/avatar.png</logo>
+    <icon>https://https://jsh-jsh.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, jsh的网站</rights>
     <entry>
         <title type="html"><![CDATA[奇怪的知识增加了]]></title>
-        <id>https://https://jsh.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/</id>
-        <link href="https://https://jsh.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/">
+        <id>https://https://jsh-jsh.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/</id>
+        <link href="https://https://jsh-jsh.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/">
         </link>
         <updated>2020-07-31T08:28:47.000Z</updated>
         <content type="html"><![CDATA[<!-- more -->
@@ -63,8 +63,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[小岛战争1.0.4]]></title>
-        <id>https://https://jsh.github.io/post/xiao-dao-zhan-zheng-104/</id>
-        <link href="https://https://jsh.github.io/post/xiao-dao-zhan-zheng-104/">
+        <id>https://https://jsh-jsh.github.io/post/xiao-dao-zhan-zheng-104/</id>
+        <link href="https://https://jsh-jsh.github.io/post/xiao-dao-zhan-zheng-104/">
         </link>
         <updated>2020-07-30T12:44:08.000Z</updated>
         <summary type="html"><![CDATA[<p>小岛战争1.0.4正式版<br>
