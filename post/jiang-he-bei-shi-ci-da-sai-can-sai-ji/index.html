@@ -7,7 +7,7 @@
 <title>
     江河杯诗词大赛参赛记 | jsh的个人博客
 </title>
-<link rel="shortcut icon" href="https://jsh-jsh.github.io/favicon.ico?v=1598233616461">
+<link rel="shortcut icon" href="https://jsh-jsh.github.io/favicon.ico?v=1598239679993">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -35,7 +35,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://jsh-jsh.github.io">
-                <img class="avatar" src="https://jsh-jsh.github.io/images/avatar.png?v=1598233616461" alt="">
+                <img class="avatar" src="https://jsh-jsh.github.io/images/avatar.png?v=1598239679993" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -90,10 +90,10 @@
                         </div>
                         
                                 <div class="post-content">
-                                    <p>#Day1<br>
-莫名其妙的被老师叫去参加了个比赛，只复习了一天<br>
-#Day0<br>
-扫一眼卷子，稳了，扫一眼卷子，完了，大约会一半吧。开始答题。<br>
+                                    <h1 id="day1">Day1</h1>
+<p>莫名其妙的被老师叫去参加了个比赛，只复习了一天</p>
+<h1 id="day0">Day0</h1>
+<p>扫一眼卷子，稳了，扫一眼卷子，完了，大约会一半吧。开始答题。<br>
 用了十五分钟把会的全写完了，剩下的就开始编吧。<br>
 海日生残夜——却是幻想是<br>
 女娲炼石补天处——一道彩霞万丈深<br>
@@ -122,32 +122,43 @@
                 <!-- right -->
                 <div id="sidebar" class="main-container-right">
                     
-                                <!-- id-card -->
-                                
-    <div class="id_card i-card">
-        <div class="id_card-avatar" style="background-image: url(https://jsh-jsh.github.io/images/avatar.png?v=1598233616461)">
-        </div>
-        <h1 class="id_card-title">
-            jsh的个人博客
-        </h1>
-        <h2 class="id_card-description">
-            I AK IOI
-        </h2>
-        <!--  -->
-        <div class="id_card-sns">
-            <!-- github -->
-            
-                    <!-- twitter -->
-                    
-                            <!-- weibo -->
-                            
-                                    <!-- facebook -->
-                                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#day1">Day1</a></li>
+<li><a href="#day0">Day0</a></li>
+</ul>
 
         </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
     </div>
     
-                                    
+                            
 
                 </div>
 
