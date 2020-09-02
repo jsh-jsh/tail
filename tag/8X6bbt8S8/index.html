@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    关于 | jsh的个人博客
+    随笔 | jsh的个人博客
 </title>
 <link rel="shortcut icon" href="https://jsh-jsh.github.io/favicon.ico?v=1599053384733">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -19,7 +19,6 @@
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
-        
 </head>
 
 <body>
@@ -94,78 +93,94 @@
     });
 </script>
 
-            <div id="main-content" class="post-detail main-container">
-                <!-- left -->
+            <div id="main-content" class="post-container main-container">
                 <div id="content" class="main-container-left">
-                    <article class="post i-card">
-                        <h2 class="post-title">
-                            关于
-                        </h2>
-                        <div class="post-info">
-                            <time class="post-time">2019-01-25</time>
-                            
-                        </div>
-                        
-                                <div class="post-content">
-                                    <h1 id="hi我是jsh">hi，我是jsh</h1>
-<h1 id="是一名c爱好者">是一名c++爱好者</h1>
-
-                                </div>
-                    </article>
-                    <!--  -->
                     
-                            <div id="disqus_thread"></div>
-                            <div id="gitalk-container"></div>
-                </div>
-                <!-- middle -->
-                <div class="main-container-middle"></div>
-                <!-- right -->
-                <div id="sidebar" class="main-container-right">
-                    
-                        <!-- toc -->
-                        
-    <div class="toc-card i-card ">
-        <div class="toc-title i-card-title">目录</div>
-        <div class="toc-content">
-            <ul class="markdownIt-TOC">
-<li><a href="#hi%E6%88%91%E6%98%AFjsh">hi，我是jsh</a></li>
-<li><a href="#%E6%98%AF%E4%B8%80%E5%90%8Dc%E7%88%B1%E5%A5%BD%E8%80%85">是一名c++爱好者</a></li>
-</ul>
-
-        </div>
-        <script>
-            function locateCatelogList() {
-                /*获取文章目录集合,可通过:header过滤器*/
-                var alis = $('.post-content :header');
-                /*获取侧边栏目录列表集合**/
-                var sidebar_alis = $('.markdownIt-TOC a');
-                /*获取滚动条到顶部的距离*/
-                var scroll_height = $(window).scrollTop();
-                for (var i = 0; i < alis.length; i++) {
-                    /*获取锚点集合中的元素分别到顶点的距离*/
-                    var a_height = $(alis[i]).offset().top;
-                    if (a_height < scroll_height) {
-                        /*高亮显示*/
-                        sidebar_alis.removeClass('on');
-                        $(sidebar_alis[i]).addClass('on');
-                    }
-                }
-            }
-            $(function() {
-                /*绑定滚动事件 */
-                $(window).bind('scroll', locateCatelogList);
-            });
-        </script>
+    <div class="i-card">
+        <b>标签：#
+        随笔</b>
     </div>
     
+        
+            <article class="post i-card">
+                <h2 class="post-title">
+                    <a href="https://jsh-jsh.github.io/post/jiang-he-bei-shi-ci-da-sai-can-sai-ji/">
+                        江河杯诗词大赛参赛记
+                    </a>
+                </h2>
+                <div class="post-info">
+                    <time class="post-time">2020-08-10</time>
+                    
+                        <a href="https://jsh-jsh.github.io/tag/8X6bbt8S8/" class="post-tag i-tag
+                            i-tag-success">
+            #随笔
+        </a>
+                        
+                </div>
+                <div class="post-article">
+                    
+                            <div class="post-content">
+                                
+                                    <div class="post-content-abstract">
+                                        <p>闲的没事</p>
+
+                                    </div>
+                                    
+                                            <a class="btn btn-text" href="https://jsh-jsh.github.io/post/jiang-he-bei-shi-ci-da-sai-can-sai-ji/">Read More ~</a>
+                            </div>
+                </div>
+            </article>
+            
+                <!-- 翻页 -->
+                
+                </div>
+                <!--  -->
+                <div class="main-container-middle"></div>
+                <!--  -->
+                <div id="sidebar" class="main-container-right">
+
+                    <!-- 个人信息 -->
+                    
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://jsh-jsh.github.io/images/avatar.png?v=1599053384733)">
+        </div>
+        <h1 class="id_card-title">
+            jsh的个人博客
+        </h1>
+        <h2 class="id_card-description">
+            I AK IOI
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/jsh-jsh" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
                             
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+
+                        <!-- 公告栏 -->
+                        
+    <div class="notice-card i-card ">
+        <div class="notice-title i-card-title">公告</div>
+        <div class="notice-content">
+            友链：https://www.cnblogs.com/jsh-oier/
+        </div>
+    </div>
+    
 
                 </div>
-
-
-
-
             </div>
+
 
 
             <div class="site-footer">
@@ -177,7 +192,6 @@
   hljs.initHighlightingOnLoad()
 </script>
 
-
     </div>
     <script>
         $('#sidebar').stickySidebar({
@@ -185,7 +199,6 @@
             // bottomSpacing: 60
         });
     </script>
-    
 </body>
 
 </html>
