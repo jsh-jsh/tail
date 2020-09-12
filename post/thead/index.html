@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    jsh的个人博客
+    程序边输出变边输出？试试多线程 | jsh的个人博客
 </title>
 <link rel="shortcut icon" href="https://jsh-jsh.github.io/favicon.ico?v=1599893561601">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -19,6 +19,7 @@
 <script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
+        
 </head>
 
 <body>
@@ -93,26 +94,85 @@
     });
 </script>
 
-            <div class="tags-container main-container">
-                <div class="tags-group">
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            程序边输出变边输出？试试多线程
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-09-09</time>
+                            
+                                <a href="https://jsh-jsh.github.io/tag/Nex6oAlya/" class="post-tag i-tag
+                            i-tag-banana">
+                            #知识
+                        </a>
+                                
+                        </div>
+                        
+                                <div class="post-content">
+                                    <p>讲解了多线程的基础使用方法</p>
+<!-- more -->
+
+                                </div>
+                    </article>
+                    <!--  -->
                     
-                        <a class="tags-tag i-tag
-                            i-tag-other_1" href="https://jsh-jsh.github.io/tag/Nex6oAlya/">
-                            知识
-                        </a>
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://jsh-jsh.github.io/post/luo-gu-ci-dian-100/">
+                                <h3 class="post-title">
+                                    洛谷词典1.0.2
+                                </h3>
+                            </a>
+                        </div>
                         
-                        <a class="tags-tag i-tag
-                            i-tag-warning" href="https://jsh-jsh.github.io/tag/8X6bbt8S8/">
-                            随笔
-                        </a>
-                        
-                        <a class="tags-tag i-tag
-                            i-tag-info" href="https://jsh-jsh.github.io/tag/vPGsdlgcu/">
-                            游戏
-                        </a>
-                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
                 </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://jsh-jsh.github.io/images/avatar.png?v=1599893561601)">
+        </div>
+        <h1 class="id_card-title">
+            jsh的个人博客
+        </h1>
+        <h2 class="id_card-description">
+            I AK IOI
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/jsh-jsh" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+                                    
+
+                </div>
+
+
+
+
             </div>
+
 
             <div class="site-footer">
   <script>
@@ -128,7 +188,15 @@
   hljs.initHighlightingOnLoad()
 </script>
 
+
     </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
 </body>
 
 </html>
