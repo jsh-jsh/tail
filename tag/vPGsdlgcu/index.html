@@ -2,331 +2,3247 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-<title>
-    jsh的个人博客
-</title>
-<!--[if lt IE 9]><script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script><![endif]-->
-<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-<meta http-equiv="x-dns-prefetch-control" content="on">
-<link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-<meta name="author" content="JSH">
-<meta name="description" content="JSH‘BOLG">
-<meta name="keywords" content="">
-<script async src="//instant.page/3.0.0" type="module" defer integrity="sha384-OeDn4XE77tdHo8pGtE1apMPmAipjoxUQ++eeJa6EtJCfHlvijigWiJpD7VDPWXV1"></script>
-<link rel="stylesheet" href="https://jsh-jsh.github.io/styles/main.css" />
-<link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/1.7.1/jquery.min.js"></script>
+  <meta charset="UTF-8" />
 
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/css/style.min.css" />
-        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/tocbot.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/script.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic/assets/media/script/icon.min.js"></script>
-        
-            <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/Card/prism.min.js"></script>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/css/Card/prism.min.css" />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css">
-            <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js"></script>
-            
-                <!--点击特效-->
-                <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/love.min.js"></script>
-                
-                    <script src="https://cdn.jsdelivr.net/gh/itjoker233/Gridea-theme-Chic@latest/assets/media/script/APlayer.min.js"></script>
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-                    
-                        <!--CDN样式-->
-                        <script src="https://cdn.jsdelivr.net/gh/ITJoker233/ITJoker233.github.io@latest/CDN/js/hit-kounter-lc-0.3.0.js"></script>
-                        <script src="https://cdn1.lncld.net/static/js/av-min-1.5.0.js"></script>
-                        
-                            <script>
-                                (function() {
-                                    var bp = document.createElement('script');
-                                    var curProtocol = window.location.protocol.split(':')[0];
-                                    if (curProtocol === 'https') {
-                                        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-                                    } else {
-                                        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-                                    }
-                                    var s = document.getElementsByTagName("script")[0];
-                                    s.parentNode.insertBefore(bp, s);
-                                })();
-                            </script>
-                            
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="Gridea静态个人博客">
+<meta name="description" content="I AK IOI">
+<meta name="theme-color" content="#eebefa">
+<title>jsh的个人博客</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1600950169015">
+<link rel="stylesheet" href="/media/css/mist.css">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/default.css"
+  rel="stylesheet">
+
+<link rel="stylesheet" href="/styles/main.css">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
+  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
+  onload="renderMathInElement(document.body);"></script>
+
+
+
+
+
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo">
-                <a href="https://jsh-jsh.github.io">
-                    jsh的个人博客
-                </a>
-            </div>
-            <div id="tp-weather-widget"></div>
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="https://jsh-jsh.github.io/post/about">
-                        关于我
-                    </a>
-                    
-                    <a class="menu-item" href="https://jsh-jsh.github.io">
-                        主页
-                    </a>
-                    
-                    <a class="menu-item" href="https://jsh-jsh.github.io/tags">
-                        分类
-                    </a>
-                    
-                    <a class="menu-item" href="https://jsh-jsh.github.io/archives">
-                        文章
-                    </a>
-                    
-                        <input id="switch_default" type="checkbox" class="switch_default">
-                        <label for="switch_default" class="toggleBtn"></label>
-            </div>
-            <form id="gridea-search-form" data-update="1600948713324" action="/search/index.html">
-                <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-            </form>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="mist">
+  <header class="header bg-color ">
+    <div class="blog-header box-shadow-wrapper  " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
         </div>
-    </nav>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="">
+              <span class="logo-line-before">
+                <i class=""></i>
+              </span>
+              <span class="main-title">jsh的个人博客</span>
+              <span class="logo-line-after">
+                <i class=""></i>
+              </span>
+            </a>  
+          
+        </div>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://jsh-jsh.github.io/post/about/" target="_self">
+                  <i class="fa fa-globe"></i> 关于我
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://jsh-jsh.github.io/" target="_self">
+                  <i class="fa fa-globe"></i> 主页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://jsh-jsh.github.io/tags/" target="_self">
+                  <i class="fa fa-globe"></i> 分类
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://jsh-jsh.github.io/archives/" target="_self">
+                  <i class="fa fa-globe"></i> 文章
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+          
+            <li id="fa_search" class="nav-item">
+              <a href="javascript:void(0);">
+                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
 
-    
-        <nav class="navbar-mobile" id="nav-mobile">
-            <div class="container">
-                <div class="navbar-header">
-                    <div>
-                        <a href="https://jsh-jsh.github.io">
-                            jsh的个人博客
-                        </a>
-                        <!--en-->
-                        <a id="mobile-toggle-theme-en" class="a en">&nbsp;Dark</a>
-                        <!--zh-->
-                        <a id="mobile-toggle-theme-zh" class="a zh">&nbsp;&#x6697;&#x9ED1;</a>
-                    </div>
-                    <form id="gridea-search-form" data-update="1600948713324" action="/search/index.html">
-                        <input class="search-input" autocomplete="off" spellcheck="false" name="q" autofocus="true" placeholder="Search...">
-                    </form>
-                    <!--en-->
-                    <div class="menu-toggle" id="menu-toggle-en" onclick="mobileBtn()">&#9776; Menu</div>
-                    <!--zh-->
-                    <div class="menu-toggle" id="menu-toggle-zh" onclick="mobileBtn()">&#9776; &#x83DC;&#x5355;</div>
+<script type="text/javascript"> 
+ 
+  let showNav = true;
 
-                </div>
-                <div class="menu" id="mobile-menu">
-                    
-                        <a class="menu-item" href="https://jsh-jsh.github.io/post/about">
-                            关于我
-                        </a>
-                        
-                        <a class="menu-item" href="https://jsh-jsh.github.io">
-                            主页
-                        </a>
-                        
-                        <a class="menu-item" href="https://jsh-jsh.github.io/tags">
-                            分类
-                        </a>
-                        
-                        <a class="menu-item" href="https://jsh-jsh.github.io/archives">
-                            文章
-                        </a>
-                        
-                </div>
-            </div>
-        </nav>
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementById("menu-toggle-en");
-        var toggleMenu_zh = document.getElementById("menu-toggle-zh");
-
-        var mobileMenu = document.getElementById("mobile-menu");
-        if (toggleMenu.display != "none") {
-            if (toggleMenu.classList.contains("active")) {
-                toggleMenu.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        } else if (toggleMenu_zh.display != "none") {
-            if (toggleMenu_zh.classList.contains("active")) {
-                toggleMenu_zh.classList.remove("active")
-                mobileMenu.classList.remove("active")
-            } else {
-                toggleMenu_zh.classList.add("active")
-                mobileMenu.classList.add("active")
-            }
-        }
-
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
     }
+  }
+
+  navToggle.addEventListener('click',navClick);  
 </script>
-
-
-
-    <script>
-        (function(a, h, g, f, e, d, c, b) {
-            b = function() {
-                d = h.createElement(g);
-                c = h.getElementsByTagName(g)[0];
-                d.src = e;
-                d.charset = "utf-8";
-                d.async = 1;
-                c.parentNode.insertBefore(d, c)
-            };
-            a["SeniverseWeatherWidgetObject"] = f;
-            a[f] || (a[f] = function() {
-                (a[f].q = a[f].q || []).push(arguments)
-            });
-            a[f].l = +new Date();
-            if (a.attachEvent) {
-                a.attachEvent("onload", b)
-            } else {
-                a.addEventListener("load", b, false)
-            }
-        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" + parseInt((new Date().getTime() / 100000000).toString(), 10)));
-        window.SeniverseWeatherWidget('show', {
-            flavor: "slim",
-            location: "WWEFQFPJZ7T8",
-            geolocation: true,
-            language: "auto",
-            unit: "c",
-            theme: "auto",
-            token: "61bcc333-3305-4728-9465-6785274bb0a3",
-            hover: "enabled",
-            container: "tp-weather-widget"
-        })
-    </script>
+  </div>
+  <div class="main-continer">
     
-            <div class="main">
-                <div class="container">
-                    <div class="post-wrap archive">
-                        
-                            
-                                <h3>
-                                    2020
-                                </h3>
-                                
-                                    
-
-                                        <article class="archive-item">
-                                            <a class="archive-item-link" href="https://jsh-jsh.github.io/post/xiao-dao-zhan-zheng-104/">
-                                                小岛战争1.0.4
-                                            </a>
-                                            <span class="archive-item-date">2020-07-30 </span>
-                                        </article>
-                                        
-                                            
-                                                
-                    </div>
-                    <div class="pagination-container">
-                        
-                            
-                                    
-                                            
-                    </div>
-                </div>
-            </div>
+    <div
+      class="section-layout bg-color mist">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper ">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">JSH</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">c++oier</p>
+      
     </div>
     
-    <div id="player"></div>
-    
-        <footer id="footer" class="footer">
-            <div class="copyright">
-                
-                    <div class="Like">
-                        <div class="tip" data-tooltip="Do you like it?">
-                            <a href="https://github.com/ITJoker233/Gridea-theme-Chic" target="_blank" title=""><svg class="icon"
-                        aria-hidden="true">
-                        <use xlink:href="#like"></use>
-                    </svg><b class="like_text" id="star"></b></a>
-                        </div>
-                    </div>
-                    
-                        <script>
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">5</span>
+        <span class="site-item-stat-name language" data-lan="article">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="category">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-name language" data-lan="tag">标签</span>
+      </a>
+    </div>
+  </div>
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="">
+              <i class="fa fa-globe" title=""></i>
+            </a>
+          
+        
+        
+          
+            <a class="social-img" href="#">
+              <img src="" />
+              <i class="fa fa-globe" title="" ></i>
+            </a>
+          
+        
+      </div>
+    </div>
+  
+
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'mist';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          游戏
+          <small class="language" data-lan="tag">标签</small>
+        </h2>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://jsh-jsh.github.io/post/xiao-dao-zhan-zheng-104/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              07-30
+              <small>小岛战争1.0.4</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
+        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      <script>
   ((window.gitter = {}).chat = {}).options = {
     room: 'oier-liaotian/community'
   };
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
-                            
-                                <b id="hitokoto"></b><br>
-                                
-                                        <svg viewBox="0 0 1024 1024" style="margin-left: 5px;margin-right: 5px;" version="1.0" width="8" height="8" class="my-face">
-            <path
-                d="M863.597631 513.574282l-271.33965-140.213484L729.783667 81.926656c3.583731-7.87141 7.167462-15.742819 7.167462-25.214109C736.887134 25.226908 708.345275 0.012799 672.635953 0.012799a63.611229 63.611229 0 0 0-39.293053 12.607055c-1.791866 1.59988-3.519736 3.19976-5.311602 3.19976L147.87531 418.925381a55.547834 55.547834 0 0 0-19.646527 47.356448c1.791866 17.278704 14.27093 33.021523 32.125591 42.492813l271.33965 141.749369L292.504463 945.221908c-12.479064 25.214109-1.791866 53.563983 23.166262 69.306802 10.751194 6.335525 23.230258 9.47129 35.709322 9.47129 16.062795 0 32.125591-4.735645 44.604655-15.742819l480.091993-403.297753a55.547834 55.547834 0 0 0 19.646526-47.228458 61.243407 61.243407 0 0 0-32.12559-44.156688z"
-                fill="#93b5cf"></path>
-        </svg>
-                                        jsh的个人博客 &copy;Copyright
-                                            <script>
-                                                var date = new Date();
-                                                document.write("" + date.getFullYear());
-                                            </script>
-                                            | Powered by
-                                            <a href="https://jsh-jsh.github.io" target="_blank">
-                                                jsh的个人博客
-                                            </a>
-            </div>
-            <div id="update" style="display:none;">
-                on
-            </div>
-            
-                <div id="version" style="display:none;">
-                    1.7.6
-                </div>
-                
-                    <script>
-                        var port = '';
-                        
-                        document.write('<div id="home_path" style="display:none;">' + document.location.protocol + '//' + window.document.location.hostname + port + '</div>')
-                    </script>
-        </footer>
-        
-            <script src='https://cdn.jsdelivr.net/npm/live2d-widget@3.x/lib/L2Dwidget.min.js'></script>
-            
-                <script>
-                    
+    </div>
+  </footer>
+  
+  
+  <div class="drawer-box left" id="drawer_box">
+    <span class="muse-line muse-line-first"></span>
+    <span class="muse-line muse-line-middle"></span>
+    <span class="muse-line muse-line-last"></span>
+  </div>
+  
+  <div class="mist back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+  </div>
+  
+  
+  
+  <div class="bg-img">
+    <img src="https://cdn.luogu.com.cn/images/bg/fe/Lishui_StarTrails.jpg" />
+  </div>
+  
+  
+  
+  
+</div>
+<script>
 
-                    function LoadPlayer() {
-                        var musicList = [];
-                        
-                        musicList.push({
-                            name: '',
-                            url: '',
-                            artist: '',
-                            cover: '',
-                        });
-                        
-                        console.log(" MusicList: " + musicList);
-                        
-                        const ap = new APlayer({
-                            container: document.getElementById('player'),
-                            fixed: true,
-                            audio: musicList
-                        });
-                        
-                    }
-                    LoadPlayer();
-                    
-                    
-                    loadlive2d();
-                    
-                    
-                    hitokoto();
-                    
-                    getStar();
-                    hljs.initHighlighting();
-                    console.clear();
-                    
-                    CheckVersion();
-                    
-                    var newDate = new Date();
-                    newDate.setTime(1600948713324);
-                    console.log(" Blog Update Time: " + newDate.toLocaleDateString());
-                    console.log("\n %c \u26a1Theme:Chic Author's Blog:https://blog.itjoker.cn  Write By ITJoker  \n\n", "color: #ffffff; background: rgba(49, 49, 49, 0.85); padding:5px 0;border-radius:5px;");
-                </script>
-        </div>
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+    back2TopText = document.querySelector('#back_to_top_text'),
+    drawerBox = document.querySelector('#drawer_box'),
+    rightSideBar = document.querySelector('.sidebar'),
+    viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function (e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+
+  window.addEventListener('scroll', function (e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+
+  let hasCacu = false;
+  window.onresize = function () {
+    calcuHeight();
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function () {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, transitionDir, {});
+          }
+        })
+        window.Velocity(viewport, openProp, {
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function () {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp, {
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'true'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target", "_blank");
+      }
+    })
+  }
+
+  let faSearch = document.querySelector('#fa_search');
+  faSearch.addEventListener('click', function () {
+    document.querySelector('#search_mask').style = ''
+  })
+
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+  
+  // 离开当前页title变化
+  var leaveTitle = "hi，我在这里";
+  if (leaveTitle) {
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState == 'hidden') {
+        normal_title = document.title;
+        document.title = leaveTitle;
+      } else {
+        document.title = normal_title;
+      }
+    });
+  }
+
+</script>
+  </div>
 </body>
+
+<div class="search-mask" id="search_mask" style="display: none;">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
+      </div>
+      <i id="close" class="fa fa-times-circle"></i>
+    </div>
+    <div class="stat-box">
+      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
+      <hr>
+    </div>
+    <div class="result" id="result">
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/guan-yu-you-xia-jiao-de-an-niu/"" data-c="
+          &lt;p&gt;聊天室&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;那是一个自己建立的聊天室，支持Markdown和LaTeX。&lt;br&gt;
+用github账号登录&lt;br&gt;
+点开之后想关掉刷新一下页面&lt;/p&gt;
+">关于右下角的按钮</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/thead/"" data-c="
+          &lt;p&gt;讲解了多线程的基础使用方法&lt;/p&gt;
+&lt;!-- more --&gt;
+">程序边输出变边输出？试试多线程</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/luo-gu-ci-dian-100/"" data-c="
+          &lt;p&gt;不太全，不过还会更新的.&lt;br&gt;
+1.0.2：&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;wyy：无意义&lt;br&gt;
+jbl：举报了（通常与wyy连用）&lt;br&gt;
+sqlm：删前留名&lt;br&gt;
+hqlm：火前留名&lt;br&gt;
+hssqlm：火神删前留名（指sqlm+hqlm）😢&lt;br&gt;
+%%%或Orz：膜拜大佬，%谐音膜，Orz像一个人跪下去的样子😊&lt;br&gt;
+咕了，咕咕：指一件事情长时间未动，因为洛谷的咕值会长时间不更新，故得此名😱&lt;br&gt;
+pj：普及组&lt;br&gt;
+tg：提高组&lt;br&gt;
+OIer：指现役信息学奥赛选手，OI+er&lt;br&gt;
+jc或jfca：指机惨或者机房惨案。&lt;br&gt;
+卖小面包或卖mian包：后排是考古，前排是看戏&lt;br&gt;
+bfs：baidu first search&lt;br&gt;
+ssd：伸手党，不劳而获&lt;br&gt;
+btd：标题党，用题目来吸引人们点进去&lt;br&gt;
+k总或3k或kkk：洛谷注明管理员kkksc03&lt;br&gt;
+zyx：致远星，说明你已经落后了。战况如何？&lt;br&gt;
+jwbys：站务版勇士&lt;br&gt;
+xxs：小学生&lt;br&gt;
+sb：傻逼&lt;br&gt;
+whk：文化课&lt;br&gt;
+qp：前排&lt;br&gt;
+tql：太强了&lt;br&gt;
+zici或资瓷：支持&lt;br&gt;
+hp：后排&lt;br&gt;
+rp++或rp：人品++&lt;br&gt;
+ak：在一场比赛中全对&lt;br&gt;
+aker：同oier&lt;br&gt;
+smg：什么鬼😓&lt;br&gt;
+cz：洛谷著名管理员chen_zhe&lt;br&gt;
+I AK IOI：因为没有什么人可以AKIOI，所以是机惨的代名词。IOI是国际信息学竞赛&lt;br&gt;
+/+字母：指qq表情中的代号&lt;br&gt;
+ltt：指洛谷著名管理员lin_toto&lt;br&gt;
+lxl：指洛谷著名管理员noip&lt;br&gt;
+毒瘤：同上或指特别难的数据&lt;br&gt;
+谷甚论xxx：在洛 &lt;em&gt;谷&lt;/em&gt; ，你 &lt;em&gt;甚&lt;/em&gt; 至可以讨 &lt;em&gt;论&lt;/em&gt; xxx&lt;br&gt;
+希丰展？使Md：&lt;em&gt;希&lt;/em&gt; 望更 &lt;em&gt;丰&lt;/em&gt; 富的 &lt;em&gt;展&lt;/em&gt; 现？ &lt;em&gt;使&lt;/em&gt; 用 &lt;em&gt;M&lt;/em&gt; ark &lt;em&gt;d&lt;/em&gt; own&lt;br&gt;
+蒟蒻：魔芋的一种，谐音巨弱，通常用来自嘲或装弱&lt;br&gt;
+珂学：指&lt;a href=&#34;https://www.chtholly.ac.cn&#34;&gt;珂朵莉&lt;/a&gt;&lt;br&gt;
+绿鸟：指洛谷著名管理员chen_zhe曾经的头像👽&lt;br&gt;
+我谔谔或IEE：指非常惊讶😦&lt;br&gt;
+女少口阿：妙啊😮&lt;br&gt;
+厌氧：程序开了o2优化后速度变慢了，o2=氧，好氧则反之&lt;br&gt;
+桃片或陶片：指陶片放逐&lt;br&gt;
+用户对线专区：&lt;a href=&#34;https://www.luogu.com.cn/discuss/show/41033&#34;&gt;用户举报专区&lt;/a&gt;，因为经常有对线发生&lt;br&gt;
+你谷：洛谷&lt;br&gt;
+捞|海底捞：就是把以前的帖子的链接拿出来&lt;br&gt;
+以下纯属个人看法&lt;br&gt;
+洛古文化：习惯用缩写拼音，如太强了&amp;amp;tql，前面提到了&lt;/p&gt;
+">洛谷词典1.0.2</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/jiang-he-bei-shi-ci-da-sai-can-sai-ji/"" data-c="
+          &lt;p&gt;闲的没事&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;day1&#34;&gt;Day1&lt;/h1&gt;
+&lt;p&gt;莫名其妙的被老师叫去参加了个比赛，只复习了一天&lt;/p&gt;
+&lt;h1 id=&#34;day0&#34;&gt;Day0&lt;/h1&gt;
+&lt;p&gt;扫一眼卷子，稳了，扫一眼卷子，完了，大约会一半吧。开始答题。&lt;br&gt;
+用了十五分钟把会的全写完了，剩下的就开始编吧。&lt;br&gt;
+海日生残夜——却是幻想是&lt;br&gt;
+女娲炼石补天处——一道彩霞万丈深&lt;br&gt;
+······&lt;br&gt;
+全编上了，还剩二十分钟。&lt;br&gt;
+什么？可以提前交卷，那还不早说，交完卷子就跑路。&lt;/p&gt;
+">江河杯诗词大赛参赛记</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/"" data-c="
+          &lt;p&gt;奇怪的知识&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;a青春半夏-5个作品&#34;&gt;A.青春⭐半夏 5个作品&lt;/h2&gt;
+&lt;p&gt;1.一个24岁的女杀人犯，你永远想不到在12年前，她是一个十二岁的少女。&lt;br&gt;
+2.三人行，必有小三焉；四人行，那就两对啦！&lt;br&gt;
+3.枣子+花生+桂圆+瓜子=早生贵子&lt;br&gt;
+4.当你在用嘴吹电风扇两小时后，你基本感受不到凉气，并且感觉很累&lt;br&gt;
+5.大多数热帖当楼主弃坑后，还会有人跟&lt;br&gt;
+6.当你在打字时，手在动&lt;/p&gt;
+&lt;h2 id=&#34;bۣۣۖۖyszۣۣۖۖ-4个作品&#34;&gt;B.༺ۣۖ༒ۣۖ༻YSZ༺ۣۖ༒ۣۖ༻ 4个作品&lt;/h2&gt;
+&lt;p&gt;1.在非洲，每60秒就会有一分钟过去&lt;br&gt;
+2.当你打开电脑时，它就在耗电&lt;br&gt;
+3.任何一个可以编译的程序都至少两行&lt;br&gt;
+4.当你吃饭时，你会发现你手里拿着餐具&lt;/p&gt;
+&lt;h2 id=&#34;clet-it-be-5个作品&#34;&gt;C.let it be. 5个作品&lt;/h2&gt;
+&lt;p&gt;1.除死人外，你会每天都至少动一次&lt;br&gt;
+2.当你吃饭时，你的嘴巴会动&lt;br&gt;
+3.活人的脑袋每天至少思考1个问题&lt;br&gt;
+4.下一秒永远是你余生中最年轻一秒（除非你死了）&lt;br&gt;
+5.你永远也不知道宇称守恒还是不守恒&lt;/p&gt;
+&lt;h2 id=&#34;dzcyzcy-5个作品&#34;&gt;D.(zcyzcy) 5个作品&lt;/h2&gt;
+&lt;p&gt;1.当你上网课时，世界上每秒会多出1MB的辐射（约为1000000B）&lt;br&gt;
+2.当你玩着充电的手机时，220v的电流在你手1毫米旁舞动&lt;br&gt;
+3.当你放假时，你会发现还有作业&lt;br&gt;
+4.当你交程序时，你会突然发现你把写过的都忘了&lt;br&gt;
+5.你永远也不知道，除氧的水的TNT当量&amp;gt;10&lt;br&gt;
+6.当你的效率为100%时，你需要跑40km摩擦力才能把1kg水升温10度&lt;/p&gt;
+&lt;h2 id=&#34;e真陆俊良-5个作品&#34;&gt;E.真(陆俊良) 5个作品&lt;/h2&gt;
+&lt;p&gt;1.当你洗澡时，你会发现自己没穿衣服&lt;br&gt;
+2.你今天打开了电脑&lt;br&gt;
+3.CXK的成名作（jntm)每天都在被人看&lt;br&gt;
+4.你永远不会知道，薛定谔的猫是死是活&lt;br&gt;
+5.新星计划其实是猩猩计划&lt;/p&gt;
+&lt;h2 id=&#34;f水之呼吸-柒之型-雫波纹突-2个作品&#34;&gt;F.水之呼吸 柒之型 雫波纹突 2个作品&lt;/h2&gt;
+&lt;p&gt;1.玩手机时，你会发现手机有1%及以上的电&lt;br&gt;
+2.你基本上没听过凤凰传奇的歌，可是你会发现你每首都会唱&lt;/p&gt;
+&lt;h2 id=&#34;gsmall_birdf6yoifc-2个作品&#34;&gt;G.small_bird(f6yo;ifc) 2个作品&lt;/h2&gt;
+&lt;p&gt;1.你永远也不知道，我叫small_bird(f6yo;ifc)&lt;br&gt;
+2.你永远也不知道，我会编程&lt;br&gt;
+3.你永远也不知道，我会说话&lt;/p&gt;
+&lt;h2 id=&#34;一只小菜鸡-1个作品&#34;&gt;一只小菜鸡 1个作品&lt;/h2&gt;
+&lt;p&gt;1.你不知道，NOI其实是一个社交网站&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h1 id=&#34;投稿请发到819433558qqcom&#34;&gt;投稿请发到819433558@qq.com&lt;/h1&gt;
+">奇怪的知识增加了</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/xiao-dao-zhan-zheng-104/"" data-c="
+          &lt;p&gt;小岛战争1.0.4正式版&lt;br&gt;
+//小岛战争1.0.4 正式版&lt;br&gt;
+/*更新：&lt;br&gt;
+增加了扩建小岛&lt;br&gt;
+增加了黑市&lt;br&gt;
+改变了通关攻略&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;*/ 
+//不用删除原存档
+#include&amp;lt;bits/stdc++.h&amp;gt;
+#include&amp;lt;string&amp;gt;
+#include&amp;lt;windows.h&amp;gt;
+#include&amp;lt;conio.h&amp;gt;
+#include&amp;lt;fstream&amp;gt;
+#include&amp;lt;ctime&amp;gt;
+#include&amp;lt;time.h&amp;gt;
+#include&amp;lt;stdio.h&amp;gt;
+using namespace std;
+ifstream fin(&amp;quot;小岛战争data.txt&amp;quot;);
+struct black_daye{
+	string name;
+	int gongji;
+	int fangyu;
+	int xiel;
+};
+black_daye peopledata_dy[4]={&amp;quot;看门大爷&amp;quot;,150,100,800};
+int sbbspeople=10; 
+int a,ag;
+int name,password;
+int sinput;
+int newhand=0;
+string root;
+int rootdh;
+string kuangwu[1000]={&amp;quot;金刚石&amp;quot;,&amp;quot;铁&amp;quot;,&amp;quot;铜&amp;quot;,&amp;quot;金&amp;quot;,&amp;quot;银&amp;quot;,&amp;quot;煤炭&amp;quot;
+,&amp;quot;铀&amp;quot;,&amp;quot;铁&amp;quot;,&amp;quot;按钮&amp;quot;,&amp;quot;钢&amp;quot;,&amp;quot;钛&amp;quot;};
+string ezj[3]={&amp;quot;地下水&amp;quot;,&amp;quot;地雷&amp;quot;,&amp;quot;臭袜子&amp;quot;}; 
+int data[1000];
+/*0武器等级 1合成劵 2金刚石 3铁 4铜 5金 6银 7煤炭 
+8木屋 9军事基地 10港口 11防空洞 12士兵宿舍
+13独木舟 14小艇 15战舰 16潜艇 17航空母舰 18核潜艇
+19血量 20攻击 21领地 22防御 23矿工铲 24士兵人数 
+25电锯 26密码 27账号 28木头 29独木舟 30小艇 31战舰
+32潜艇 33航空母舰 34核潜艇 35铀块 36铁块 37按钮
+38弓箭 39火炮 40护甲 41粽子 42钛合金 43钢合金 44核弹
+45钢 46钛 47油漆 48核弹发射器 49不锈钢 50导弹 51钱
+52石油
+*/
+string make[1000]={&amp;quot;矿工铲&amp;quot;,&amp;quot;电锯&amp;quot;,&amp;quot;弓箭&amp;quot;,&amp;quot;火炮&amp;quot;,&amp;quot;护甲&amp;quot;,&amp;quot;粽子&amp;quot;,
+&amp;quot;钛合金&amp;quot;,&amp;quot;钢合金&amp;quot;,&amp;quot;核弹&amp;quot;,&amp;quot;核弹发射器&amp;quot;,&amp;quot;不锈钢&amp;quot;,&amp;quot;导弹&amp;quot;,&amp;quot; &amp;quot;
+};
+int suiji=0;
+int jsq=0;
+bool yj=false;
+void mout(char *p){//每隔100毫秒输出一个字符 
+  while(1){
+  if(*p!=0)
+  printf(&amp;quot;%c&amp;quot;,*p++);
+  else
+  break; 
+  Sleep(100);
+  }
+} 
+void outmake(){
+	cout&amp;lt;&amp;lt;&amp;quot;木头：&amp;quot;&amp;lt;&amp;lt;data[28]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;金刚石：&amp;quot;&amp;lt;&amp;lt;data[2]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;铁：&amp;quot;&amp;lt;&amp;lt;data[3]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;铜：&amp;quot;&amp;lt;&amp;lt;data[4]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;金：&amp;quot;&amp;lt;&amp;lt;data[5]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;银：&amp;quot;&amp;lt;&amp;lt;data[6]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;煤炭：&amp;quot;&amp;lt;&amp;lt;data[7]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;铀块：&amp;quot;&amp;lt;&amp;lt;data[35]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;钢：&amp;quot;&amp;lt;&amp;lt;data[45]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;钛：&amp;quot;&amp;lt;&amp;lt;data[46]&amp;lt;&amp;lt;endl; 
+	cout&amp;lt;&amp;lt;&amp;quot;按钮：&amp;quot;&amp;lt;&amp;lt;data[37]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;油漆：&amp;quot;&amp;lt;&amp;lt;data[47]&amp;lt;&amp;lt;endl; 
+	cout&amp;lt;&amp;lt;&amp;quot;合成物品：&amp;quot;&amp;lt;&amp;lt;endl;
+	return ;
+}
+void outzb(){
+	cout&amp;lt;&amp;lt;&amp;quot;电锯：&amp;quot;&amp;lt;&amp;lt;data[25]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;弓箭：&amp;quot;&amp;lt;&amp;lt;data[38]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;火炮：&amp;quot;&amp;lt;&amp;lt;data[39]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;护甲：&amp;quot;&amp;lt;&amp;lt;data[40]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;粽子：&amp;quot;&amp;lt;&amp;lt;data[41]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;钛合金：&amp;quot;&amp;lt;&amp;lt;data[42]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;钢合金：&amp;quot;&amp;lt;&amp;lt;data[43]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;核弹：&amp;quot;&amp;lt;&amp;lt;data[44]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;核弹发射器：&amp;quot;&amp;lt;&amp;lt;data[48]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;不锈钢：&amp;quot;&amp;lt;&amp;lt;data[49]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;导弹：&amp;quot;&amp;lt;&amp;lt;data[50]&amp;lt;&amp;lt;endl;
+	return ;
+}
+void outjz(){
+	cout&amp;lt;&amp;lt;&amp;quot;木屋：&amp;quot;&amp;lt;&amp;lt;data[8]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;军事基地：&amp;quot;&amp;lt;&amp;lt;data[9]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;港口：&amp;quot;&amp;lt;&amp;lt;data[10]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;防空洞：&amp;quot;&amp;lt;&amp;lt;data[11]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;士兵宿舍：&amp;quot;&amp;lt;&amp;lt;data[12]&amp;lt;&amp;lt;endl;
+	return ;
+	
+}
+void outcz(){
+	cout&amp;lt;&amp;lt;&amp;quot;1独木舟：&amp;quot;&amp;lt;&amp;lt;data[13]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;2小艇：&amp;quot;&amp;lt;&amp;lt;data[14]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;3战舰：&amp;quot;&amp;lt;&amp;lt;data[15]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;4潜艇：&amp;quot;&amp;lt;&amp;lt;data[16]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;5航空母舰：&amp;quot;&amp;lt;&amp;lt;data[17]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;6核潜艇：&amp;quot;&amp;lt;&amp;lt;data[18]&amp;lt;&amp;lt;endl;
+	return ;
+}
+void zd(){
+	int nm=0;
+	int oxl;
+	int dxl=rand()%5000+1000;
+	string zdzb[3];
+	int zbzbi[3]; 
+	int mesh=0,mefy=0;
+	int pbsgj=rand()%500+100;
+	int pbssbrs=rand()%50+10;
+	int pbsfy=rand()%250+50;
+	part7:
+	system(&amp;quot;cls&amp;quot;);
+	cout&amp;lt;&amp;lt;&amp;quot;请选择你的出战装备(每种各选一个,可不选)：&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;防御：&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;0不选 1护甲&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;出战工具：&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;0不选 1航母 2独木舟 3小艇 4战舰 5潜艇 6核潜艇&amp;quot;&amp;lt;&amp;lt;endl; 
+	cin&amp;gt;&amp;gt;zbzbi[1]&amp;gt;&amp;gt;zbzbi[2];
+	if(zbzbi[1]==0){
+		zdzb[1]=&amp;quot;无&amp;quot;;
+	}
+	else{
+		if(data[40]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有护甲&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[1]=&amp;quot;护甲&amp;quot;;
+			mefy+=150;
+	}
+	switch(zbzbi[2]){
+		case 0:{
+			zdzb[2]=&amp;quot;无&amp;quot;; 
+			break;
+		} 
+		case 1:{
+			if(data[17]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有航母&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[2]=&amp;quot;航母&amp;quot;;
+			mesh+=200;
+			break;
+		}
+		case 2:{
+			if(data[13]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有独木舟&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[2]=&amp;quot;独木舟&amp;quot;;
+			mesh+=10;
+			break;
+		}
+		case 3:{
+			if(data[14]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有小艇&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[2]=&amp;quot;小艇&amp;quot;;
+			mesh+=25;
+			break;
+		}
+		case 4:{
+			if(data[15]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有战舰&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[2]=&amp;quot;战舰&amp;quot;;
+			mesh+=150;
+			break;
+		}
+		case 5:{
+			if(data[16]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[2]=&amp;quot;潜艇&amp;quot;;
+			mesh+=140;
+			break;
+		}
+		case 6:{
+			if(data[17]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有核潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[2]=&amp;quot;核潜艇&amp;quot;;
+			mesh+=200;
+			break;
+		}
+	}
+	string djnname[5]={&amp;quot;大砍刀&amp;quot;,&amp;quot;吸血&amp;quot;,&amp;quot;打王者荣耀&amp;quot;,&amp;quot;射箭&amp;quot;,&amp;quot;高射炮&amp;quot;};
+	int djnjx[5]={80,100,0,70,150};
+	system(&amp;quot;cls&amp;quot;);
+	while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+		suiji=rand()%4+0;
+		cout&amp;lt;&amp;lt;&amp;quot;我方装备：&amp;quot;&amp;lt;&amp;lt;zdzb[0]&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;我方防御：&amp;quot;&amp;lt;&amp;lt;zdzb[1]&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;我方血量：&amp;quot;&amp;lt;&amp;lt;data[19]&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;endl; 
+		cout&amp;lt;&amp;lt;&amp;quot;敌方血量：&amp;quot;&amp;lt;&amp;lt;dxl&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;敌方技能：&amp;quot;&amp;lt;&amp;lt;djnname[suiji]&amp;lt;&amp;lt;endl;
+		oxl=data[19];
+		data[19]=data[19]-pbsgj+data[22]+data[24]/10*2-pbssbrs/10-djnjx[suiji]+mefy;
+		oxl=oxl-data[19];
+		cout&amp;lt;&amp;lt;&amp;quot;你掉了&amp;quot;&amp;lt;&amp;lt;oxl&amp;lt;&amp;lt;&amp;quot;滴血&amp;quot;&amp;lt;&amp;lt;endl;
+		partyu1:
+		cout&amp;lt;&amp;lt;&amp;quot;你是否要用粽子来回血,1yes,2no&amp;quot;&amp;lt;&amp;lt;endl;
+		cin&amp;gt;&amp;gt;sinput;
+		if(sinput==1){
+			if(data[41]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有粽子&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto partyu1;
+			}
+			part12:
+			cout&amp;lt;&amp;lt;&amp;quot;请输入数量：&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(data[41]&amp;lt;sinput){
+				cout&amp;lt;&amp;lt;&amp;quot;不够&amp;quot;&amp;lt;&amp;lt;endl;
+				goto part12;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;补血成功&amp;quot;&amp;lt;&amp;lt;endl;
+			data[19]+=data[41]*sinput*75;
+			Sleep(1000);
+		}
+		partyui1:
+		Sleep(500); 
+		cout&amp;lt;&amp;lt;&amp;quot;你用什么武器？&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;0不选 1弓箭 2火炮 3核弹 4导弹&amp;quot;&amp;lt;&amp;lt;endl;
+		cin&amp;gt;&amp;gt;zbzbi[0];
+		switch(zbzbi[0]){
+		case 0:{
+			zdzb[0]=&amp;quot; &amp;quot;; 
+			break;
+		} 
+		case 1:{
+			if(data[38]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有弓箭&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[0]=&amp;quot;弓箭&amp;quot;;
+			mesh=70;
+			break;
+		}
+		case 2:{
+			if(data[39]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有火炮&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[0]=&amp;quot;火炮&amp;quot;;
+			mesh=100;
+			break;
+		}
+		case 3:{
+			if(data[44]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有核弹&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[0]=&amp;quot;核弹&amp;quot;;
+			mesh=500;
+			break;
+		}
+		case 4:{
+			if(data[50]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有导弹&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part7;
+			}
+			zdzb[0]=&amp;quot;导弹&amp;quot;;
+			mesh=250;
+			break;
+		}
+	}
+		dxl=dxl-data[20]-data[24]/10+pbsfy+pbssbrs/10*2-mesh;
+		cout&amp;lt;&amp;lt;&amp;quot;对方掉了&amp;quot;&amp;lt;&amp;lt;dxl&amp;lt;&amp;lt;&amp;quot;滴血&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(500);
+		pbssbrs-=data[20]*0.2;
+		data[24]-=pbsgj*0.2;
+	}
+			if(dxl&amp;lt;0){
+				cout&amp;lt;&amp;lt;&amp;quot;你把对方干掉了&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;战利品：&amp;quot;&amp;lt;&amp;lt;endl;
+				suiji=rand()%100+1;
+				switch(suiji){
+					case 1:{
+						cout&amp;lt;&amp;lt;&amp;quot;获得豪华大礼包一个！！&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;油漆*10&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;金刚石*5&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;钛*6&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;铁*10&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;领地*1&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;士兵*100&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;粽子*1&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;弓箭*8&amp;quot;&amp;lt;&amp;lt;endl;
+						data[47]+=10;
+						data[2]+=5;
+						data[3]+=10;
+						data[46]+=6;
+						data[21]+=1;
+						data[24]+=100;
+						data[41]+=1;
+						data[38]+=8;
+						Sleep(5000);
+						return ;
+						break;
+					}
+					case 25:{
+						cout&amp;lt;&amp;lt;&amp;quot;获得领地1块&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;获得士兵&amp;quot;&amp;lt;&amp;lt;pbssbrs/100*2&amp;lt;&amp;lt;endl;
+						data[21]+=1;
+						data[24]+=pbssbrs/100*2;
+						Sleep(5000);
+						return ;
+						break;
+					}
+				}
+				if(suiji==2){
+					cout&amp;lt;&amp;lt;&amp;quot;敌人太穷了，什么也没有&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				else if(suiji&amp;gt;2&amp;amp;&amp;amp;suiji&amp;lt;25){
+					cout&amp;lt;&amp;lt;&amp;quot;获得航空母舰1艘，军事基地一个&amp;quot;&amp;lt;&amp;lt;endl;
+					data[17]+=1;
+					data[9]+=1;
+					Sleep(1000);
+					return ;
+				}
+				else if(suiji&amp;gt;25&amp;amp;&amp;amp;suiji&amp;lt;=98){
+					cout&amp;lt;&amp;lt;&amp;quot;你获得士兵100&amp;quot;&amp;lt;&amp;lt;endl;
+					data[24]+=100;
+					Sleep(1000);
+					return ;
+				}
+			} 
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你被打死了&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;士兵-100&amp;quot;&amp;lt;&amp;lt;endl; 
+				data[24]-=100;
+				Sleep(5000);
+				return ;
+			}   
+}		 
+void outdata(){
+	ofstream fout(&amp;quot;小岛战争data.txt&amp;quot;);
+	for(int i=0;i&amp;lt;52;i++)
+	fout&amp;lt;&amp;lt;data[i]&amp;lt;&amp;lt;&amp;quot; &amp;quot;;
+	cout&amp;lt;&amp;lt;&amp;quot;OK&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	return ;
+} 
+void start(){
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;欢迎来到小岛战争1.0.0正式版\n&amp;quot;);
+	MessageBox(NULL,TEXT(&amp;quot;请不要输入除了选项之外的数字，后果自负&amp;quot;),TEXT(&amp;quot;游戏提示&amp;quot;),MB_OK);
+	mout(&amp;quot;作者：jsh\n&amp;quot;);
+	mout(&amp;quot;—_ —\n&amp;quot;);
+	mout(&amp;quot;输入一个数开始游戏\n&amp;quot;);
+	cin&amp;gt;&amp;gt;sinput;
+	return ;
+}
+void dl(){
+	int bnm;
+	pt1:
+	system(&amp;quot;cls&amp;quot;);
+	cout&amp;lt;&amp;lt;&amp;quot;1登录,2注册&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;bnm;
+	if(bnm==1){
+		newhand=1; 
+		cout&amp;lt;&amp;lt;&amp;quot;账号：&amp;quot;;
+		cin&amp;gt;&amp;gt;name; 
+		cout&amp;lt;&amp;lt;&amp;quot;密码：&amp;quot;;
+		cin&amp;gt;&amp;gt;password;
+		if(data[26]!=password||data[27]!=name){
+			cout&amp;lt;&amp;lt;&amp;quot;错误！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(2000);
+			goto pt1;
+		}
+		else
+		return ;
+	}
+	else{
+		cout&amp;lt;&amp;lt;&amp;quot;账号：&amp;quot;;
+		cin&amp;gt;&amp;gt;name; 
+		cout&amp;lt;&amp;lt;&amp;quot;密码：&amp;quot;;
+		cin&amp;gt;&amp;gt;password;
+		data[26]=password;
+		data[27]=name;
+		return ;
+	}
+	return ;
+} 
+void cave_tie(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到铁矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part1:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part1;
+	else
+	return ;
+	}
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[1]&amp;lt;&amp;lt;endl; 
+	ag=rand()%15+1;
+	data[3]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part1;
+	}
+void cave_mei(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到煤矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part2:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part2;
+	else
+	return ;
+	}
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[5]&amp;lt;&amp;lt;endl; 
+	ag=rand()%20+1;
+	data[7]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part2;
+	}
+void cave_jingangshi(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到金刚石矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part3:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part3;
+	else
+	return ;
+	}
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[0]&amp;lt;&amp;lt;endl; 
+	ag=rand()%5+1;
+	data[2]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part3;
+	}
+void cave_tong(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到铜矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part4:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part4;
+	else
+	return ;
+	}
+	ag=rand()%10+1;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[2]&amp;lt;&amp;lt;ag&amp;lt;&amp;lt;endl; 
+	data[4]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part4;
+	}
+void cave_jin(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到金矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part5:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part5; 
+	else
+	return ;
+	}
+	ag=rand()%7+1;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[3]&amp;lt;&amp;lt;ag&amp;lt;&amp;lt;endl; 
+	data[5]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part5;
+	}
+void cave_yin(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到银矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part6:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part6;
+	else
+	return ;
+	}
+	ag=rand()%9+1;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[4]&amp;lt;&amp;lt;ag&amp;lt;&amp;lt;endl; 
+	data[6]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part6;
+}
+void cave_zhoukuai(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到铀矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part6:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part6;
+	else
+	return ;
+	}
+	ag=rand()%5+1;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[6]&amp;lt;&amp;lt;ag&amp;lt;&amp;lt;endl; 
+	data[35]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part6;
+}
+void cave_tai(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到钛矿...&amp;quot;&amp;lt;&amp;lt;endl;
+	part10:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在挖矿...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part10;
+	else
+	return ;
+	}
+	ag=rand()%5+1;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[6]&amp;lt;&amp;lt;ag&amp;lt;&amp;lt;endl; 
+	data[46]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part10;
+}
+void cave_shiyou(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到油田...&amp;quot;&amp;lt;&amp;lt;endl;
+	part11:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;正在吸油...\n&amp;quot;);
+	Sleep(1000);
+	suiji=rand()%2+1;
+	if(suiji==2){
+	suiji=rand()%2+0;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;ezj[suiji]&amp;lt;&amp;lt;endl;
+	Sleep(2000);
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1)
+	goto part11;
+	else
+	return ;
+	}
+	ag=rand()%5+1;
+	cout&amp;lt;&amp;lt;&amp;quot;你挖到了&amp;quot;&amp;lt;&amp;lt;kuangwu[6]&amp;lt;&amp;lt;ag&amp;lt;&amp;lt;endl; 
+	data[46]+=ag;
+	cout&amp;lt;&amp;lt;&amp;quot;是否继续挖矿，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	if(a==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part11;
+}
+void cave(){
+	int a;
+	int ag=0;
+	mout(&amp;quot;山洞里有各种危险，但也可能有宝藏\n&amp;quot;); 
+	/*if(data[23]&amp;lt;1){
+		mout(&amp;quot;你没有矿工铲，无法挖矿\n&amp;quot;);
+		Sleep(2000);
+		return ; 
+	}*/
+	part0:
+	system(&amp;quot;cls&amp;quot;);
+	cout&amp;lt;&amp;lt;&amp;quot;1铁矿，2煤矿，3金刚石矿，4铜矿，5金矿，6银矿，7铀矿,8钛矿 9退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	switch(sinput){
+		case 1:{
+			cave_tie();
+			goto part0;
+			break;
+		}
+		case 2:{
+			cave_mei();
+			goto part0;
+			break;
+		}
+		case 3:{
+			cave_jingangshi();
+			goto part0;
+			break;
+		}
+		case 4:{
+			cave_tong();
+			goto part0;
+			break;
+		}
+		case 5:{
+			cave_jin();
+			goto part0;
+			break;
+		}
+		case 6:{
+			cave_yin();
+			goto part0;
+			break;
+		}
+		case 7:{
+			cave_zhoukuai();
+			goto part0; 
+			break;
+		}
+		case 8:{
+			cave_tai();
+			goto part0;
+			break;
+		}
+		case 9:{
+			return ;
+			break;
+		}
+	}
+}
+void woods(){
+	int sdfgh;
+	int asdfg=0;
+	mout(&amp;quot;你来到了森林，准备砍树做船\n&amp;quot;);
+	/*if(data[8]&amp;lt;1){
+		mout(&amp;quot;你没有电锯，无法砍树\n&amp;quot;);
+		Sleep(2000);
+		return ; 
+	}*/
+	part2: 
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;你开始砍树...\n&amp;quot;);
+	asdfg=rand()%100+1;
+	if(asdfg%2==0){
+		mout(&amp;quot;你得到&amp;quot;);
+	  asdfg=rand()%10+1;
+	  cout&amp;lt;&amp;lt;asdfg;
+	  mout(&amp;quot;根木头&amp;quot;);
+	  data[28]+=asdfg;
+	}
+  cout&amp;lt;&amp;lt;&amp;quot;是否继续砍树，1继续，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sdfgh;
+	if(sdfgh==1);
+	else
+	return ;
+	Sleep(2000);
+	goto part2;
+	}
+void xmw(){
+	int df;
+	mout(&amp;quot;你回到了小木屋\n&amp;quot;);
+	mout(&amp;quot;你经过一天的工作，觉得很累\n&amp;quot;);
+	part11:
+	cout&amp;lt;&amp;lt;&amp;quot;你是否要吃粽子，1yes 2no&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;df; 
+	if(df==1){
+		cout&amp;lt;&amp;lt;&amp;quot;你要吃几个？&amp;quot;&amp;lt;&amp;lt;endl;
+		cin&amp;gt;&amp;gt;df;
+		if(data[41]&amp;lt;df){
+			cout&amp;lt;&amp;lt;&amp;quot;你没有那么多的粽子&amp;quot;&amp;lt;&amp;lt;endl;
+			goto part11;
+		}
+		data[41]-=df;
+		data[19]+=data[41]*100;
+		data[20]+=data[41]*80;
+		data[21]+=data[41]*65;
+		goto part11;
+	}
+	return ;
+}
+void gzs(){
+	int yui;
+	party1:
+	system(&amp;quot;cls&amp;quot;);
+	outmake();
+	cout&amp;lt;&amp;lt;&amp;quot;1独木舟，2小艇，3战舰，4潜艇，5航空母舰，6核潜艇，7退出&amp;quot;&amp;lt;&amp;lt;endl; 
+  cin&amp;gt;&amp;gt;yui;
+  switch(yui){
+  	case 1:{
+  		if(data[28]&amp;lt;25){
+  			cout&amp;lt;&amp;lt;&amp;quot;木头不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party1;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[13]++;
+				data[28]-=25;
+			}
+			break;
+		}
+		case 2:{
+			if(data[28]&amp;lt;50||data[3]&amp;lt;5){
+				cout&amp;lt;&amp;lt;&amp;quot;木头或者铁不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party1;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[14]++;
+				data[28]-=50;
+				data[3]-5;
+			}
+			break;
+		}
+		case 3:{
+			if(data[28]&amp;lt;75||data[3]&amp;lt;50||data[4]&amp;lt;50||data[7]&amp;lt;25){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party1;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[15]++;
+				data[28]-=75;
+				data[3]-=50;
+				data[4]-=50;
+				data[7]-=25;
+			}
+			break;
+		}
+		case 5:{
+			if(data[28]&amp;lt;100||data[3]&amp;lt;75||data[4]&amp;lt;75||data[7]&amp;lt;50||data[2]&amp;lt;15||data[6]&amp;lt;20){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party1;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[17]++;
+				data[28]-=100;
+				data[3]-=75;
+				data[4]-=75;
+				data[7]-=50;
+				data[2]-=15;
+				data[6]-=20;
+			}
+			break;
+		}
+		case 4:{
+			if(data[28]&amp;lt;100||data[3]&amp;lt;75||data[4]&amp;lt;75||data[7]&amp;lt;100||data[2]&amp;lt;15||data[6]&amp;lt;25){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party1;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[16]++;
+				data[28]-=100;
+				data[3]-=75;
+				data[4]-=75;
+				data[7]-=100;
+				data[2]-=15;
+				data[6]-=20;
+			}
+			break;
+		}
+		case 6:{
+			if(data[28]&amp;lt;100||data[3]&amp;lt;75||data[4]&amp;lt;75||data[7]&amp;lt;50||data[2]&amp;lt;15||data[6]&amp;lt;20||data[5]&amp;lt;50){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party1;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[18]++;
+				data[28]-=100;
+				data[3]-=100;
+				data[4]-=75;
+				data[7]-25;
+				data[2]-15;
+				data[6]-20;
+				data[5]-50;
+			}
+			break;
+		}
+		case 7:return ;break;
+	}
+	goto party1;
+}
+void kfz(){
+	mout(&amp;quot;你看着小岛，觉得少了点什么\n&amp;quot;); 
+	mout(&amp;quot;你决定在小岛上建一些建筑\n&amp;quot;);
+	int yuio;
+	party2:
+	system(&amp;quot;cls&amp;quot;);
+	outmake();
+	cout&amp;lt;&amp;lt;&amp;quot;1木屋，2军事基地，3港口，4防空洞，5士兵宿舍，6退出&amp;quot;&amp;lt;&amp;lt;endl; 
+  cin&amp;gt;&amp;gt;yuio;
+  switch(yuio){
+  	case 1:{
+  		if(data[28]&amp;lt;50){
+  			cout&amp;lt;&amp;lt;&amp;quot;木头不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party2;
+			}
+			else{
+				mout(&amp;quot;建造中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;建造成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[8]++;
+				data[28]-=25;
+			}
+			break;
+		}
+		case 2:{
+			if(data[28]&amp;lt;50||data[3]&amp;lt;5){
+				cout&amp;lt;&amp;lt;&amp;quot;木头或者铁不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party2;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[9]++;
+				data[28]-=50;
+				data[3]-=5;
+			}
+			break;
+		}
+		case 3:{
+			if(data[28]&amp;lt;75||data[3]&amp;lt;50||data[4]&amp;lt;50||data[7]&amp;lt;25){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party2;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[10]++;
+				data[28]-=75;
+				data[3]-=50;
+				data[4]-=50;
+				data[7]-=25;
+			}
+			break;
+		}
+		case 5:{
+			if(data[28]&amp;lt;100||data[3]&amp;lt;75||data[4]&amp;lt;75||data[7]&amp;lt;50||data[2]&amp;lt;15||data[6]&amp;lt;20){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party2;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+				data[11]++;
+				data[28]-=100;
+				data[3]-=75;
+				data[4]-=75;
+				data[7]-=50;
+				data[2]-=15;
+				data[6]-=20;
+			}
+			break;
+		}
+		case 4:{
+			if(data[28]&amp;lt;100||data[3]&amp;lt;75||data[4]&amp;lt;75||data[7]&amp;lt;100||data[2]&amp;lt;15||data[6]&amp;lt;25){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！！&amp;quot;&amp;lt;&amp;lt;endl;
+  			Sleep(2000);
+  			goto party2;
+			}
+			else{
+				mout(&amp;quot;合成中...\n&amp;quot;);
+				Sleep(5000);
+				cout&amp;lt;&amp;lt;&amp;quot;合成成功&amp;quot;&amp;lt;&amp;lt;endl;
+			    data[12]++;
+				data[28]-100;
+				data[3]-=75;
+				data[4]-75;
+				data[7]-100;
+				data[2]-15;
+				data[6]-20;
+			}
+			break;
+		}
+		case 6:return ;break;
+	}
+	goto party2;
+}
+void sbssj(){
+	int qwe;
+	if(data[12]&amp;lt;1){
+		cout&amp;lt;&amp;lt;&amp;quot;你没有士兵宿舍&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+	part4:
+	system(&amp;quot;cls&amp;quot;);
+	cout&amp;lt;&amp;lt;&amp;quot;你有士兵：&amp;quot;&amp;lt;&amp;lt;data[24]&amp;lt;&amp;lt;&amp;quot;人&amp;quot;&amp;lt;&amp;lt;endl; 
+	cout&amp;lt;&amp;lt;&amp;quot;你有宿舍：&amp;quot;&amp;lt;&amp;lt;data[12]&amp;lt;&amp;lt;&amp;quot;座&amp;quot;&amp;lt;&amp;lt;endl; 
+	cout&amp;lt;&amp;lt;&amp;quot;你要招募士兵吗？(1次消耗10金)，1=招募，2=退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;qwe;
+	int zxc=0;
+	if(qwe==1){
+		if(data[5]&amp;lt;10){
+			cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			return ;
+		}
+		data[5]-=10;
+		mout(&amp;quot;你发布了招募任务...\n&amp;quot;);
+			zxc=rand()%50+10;
+			data[24]+=zxc;
+			Sleep(1000);
+			if(sbbspeople*data[12]&amp;lt;data[24]){
+				cout&amp;lt;&amp;lt;&amp;quot;现有士兵宿舍不够，无法招募&amp;quot;&amp;lt;&amp;lt;endl;
+				mout(&amp;quot;进行退款...&amp;quot;);
+				Sleep(2000);
+				data[5]+=10;
+				data[24]-=zxc;
+				return ;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;你招募到了&amp;quot;&amp;lt;&amp;lt;zxc&amp;lt;&amp;lt;&amp;quot;名士兵&amp;quot;&amp;lt;&amp;lt;endl;
+		goto part4; 
+	}
+}
+void shez(){
+	int cvb;
+	cout&amp;lt;&amp;lt;&amp;quot;变强攻略：&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;1=打开，2=退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;cvb;
+	if(cvb=2)	return ;
+	else{
+		system(&amp;quot;start https://paste.ubuntu.com/p/gtPVjtNx7x/&amp;quot;);
+	}
+	return ;
+}
+void zzs(){
+	int nm=0;
+	int oxl;
+	int odxl;
+  cout&amp;lt;&amp;lt;&amp;quot;1战斗，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+  cin&amp;gt;&amp;gt;sinput;
+  if(sinput==2)
+  return ;
+  zd();
+  return ;
+}
+void indata(){
+	int sj;
+	int i=0;
+	while(fin&amp;gt;&amp;gt;sj){
+		data[i]=sj;
+		i++;
+	}
+} 
+void makeroom(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到合成屋&amp;quot;&amp;lt;&amp;lt;endl;
+	part8:
+	system(&amp;quot;cls&amp;quot;);
+	outmake();
+	cout&amp;lt;&amp;lt;&amp;quot;木头：&amp;quot;&amp;lt;&amp;lt;data[28]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;金刚石：&amp;quot;&amp;lt;&amp;lt;data[2]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;铁：&amp;quot;&amp;lt;&amp;lt;data[3]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;铜：&amp;quot;&amp;lt;&amp;lt;data[4]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;金：&amp;quot;&amp;lt;&amp;lt;data[5]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;银：&amp;quot;&amp;lt;&amp;lt;data[6]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;煤炭：&amp;quot;&amp;lt;&amp;lt;data[7]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;铀块：&amp;quot;&amp;lt;&amp;lt;data[35]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;合成物品：&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;0退出 1电锯 2弓箭 3火炮 4粽子 5护甲 6钛合金 7钢合金 8核弹&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;9核弹发射器 10导弹&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	switch(sinput){
+		case 0:{
+			return ;
+			break;
+		}
+		case 1:{
+			if(data[7]&amp;lt;3||data[3]&amp;lt;5){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够！&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			data[25]++;
+			data[7]-=3;
+			data[3]-=5; 
+			Sleep(1000);
+			goto part8; 
+			break;
+		}
+		case 2:{
+			if(data[3]&amp;lt;3||data[4]&amp;lt;5){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[38]++;
+			data[3]-=3;
+			data[4]-=5;
+			goto part8;
+			break;
+		}
+		case 3:{
+			if(data[7]&amp;lt;10||data[3]&amp;lt;5||data[4]&amp;lt;2){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[39]++;
+			data[3]-=5;
+			data[7]-=10;
+			data[4]-=2;
+			goto part8;
+			break;
+		}
+		case 4:{
+			if(data[2]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[41]++;
+			data[2]-=1;
+			goto part8;
+			break;
+		}
+		case 5:{
+			if(data[2]&amp;lt;1||data[5]&amp;lt;3||data[6]&amp;lt;2){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[40]++;
+			data[2]-=1;
+			data[5]-=3;
+			data[6]-=2;
+			goto part8;
+			break;
+		}
+		case 6:{
+			if(data[2]&amp;lt;1||data[5]&amp;lt;3||data[6]&amp;lt;2){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[40]++;
+			data[2]-=1;
+			data[5]-=3;
+			data[6]-=2;
+			goto part8;
+			break;
+		}
+		case 7:{
+			if(data[3]&amp;lt;1||data[5]&amp;lt;2||data[7]&amp;lt;2){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[43]++;
+			data[3]-=1;
+			data[5]-=2;
+			data[7]-=2;
+			goto part8;
+			break;
+		}
+		case 8:{
+			if(data[35]&amp;lt;1||data[3]&amp;lt;5||data[48]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[44]++;
+			data[35]-=1;
+			data[3]-=5;
+			data[48]-=1;
+			goto part8;
+			break;
+		}
+		case 9:{
+			if(data[3]&amp;lt;5||data[45]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[48]++;
+			data[3]-=5;
+			data[45]-=1;
+			goto part8;
+			break;
+		}
+		case 10:{
+			if(data[3]&amp;lt;10||data[45]&amp;lt;10||data[7]&amp;lt;100){
+				cout&amp;lt;&amp;lt;&amp;quot;材料不够!&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part8;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;合成成功！&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[50]++;
+			data[3]-=10;
+			data[45]-=10;
+			data[7]-=100;
+			goto part8;
+			break;
+		}
+	} 
+	} 
+void makebiao(){
+	cout&amp;lt;&amp;lt;&amp;quot;合成表：&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;电锯=3煤炭+5铁&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;弓箭=3铁+5铜&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;火炮=10煤炭+5铁+3铜&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;粽子=1金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;护甲=1金刚石+3金+2银&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;钛合金=1钛+2金+2煤炭&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;钢合金=1钢+2金+2煤炭&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;核弹=铀块*1+铁块*5+发射器&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;核弹发射器=5铁块+1钢&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;导弹=10铁+10钢+100煤&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;输入任意数退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;a;
+	return ;
+}
+void bag(){
+	outmake();
+	outzb();
+	outjz();
+	outcz();
+	cout&amp;lt;&amp;lt;&amp;quot;输入一个数退出...&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	return ;
+}
+void sea_hd(){
+	int inint;
+	cout&amp;lt;&amp;lt;&amp;quot;你遇到了海盗！！&amp;quot;&amp;lt;&amp;lt;endl;
+	if(root==&amp;quot;独木舟&amp;quot;){
+		cout&amp;lt;&amp;lt;&amp;quot;独木舟上没有任何防御武器&amp;quot;&amp;lt;&amp;lt;endl;
+			cout&amp;lt;&amp;lt;&amp;quot;是否进入全速耗油模式，1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==1){
+				cout&amp;lt;&amp;lt;&amp;quot;你开启了加速模式&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;输入1加速&amp;quot;&amp;lt;&amp;lt;endl;
+				while(cin&amp;gt;&amp;gt;inint){
+					if(inint==1){
+						mout(&amp;quot;加速中...&amp;quot;);
+						data[52]-=0.2;
+					}
+					suiji=rand()%5+0;
+					if(suiji&amp;gt;=2&amp;amp;&amp;amp;suiji&amp;lt;=4){
+						cout&amp;lt;&amp;lt;&amp;quot;你成功的躲避了海盗的袭击&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你朝周围一看——&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你回到了你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+						return ;
+					}
+					if(data[52]&amp;lt;1){
+						cout&amp;lt;&amp;lt;&amp;quot;你没油了&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的独木舟&amp;quot;&amp;lt;&amp;lt;endl;
+						data[13]--;
+						return ;
+					}
+					else{
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的独木舟&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(2000);
+						data[13]--;
+						return ;
+					}
+				}
+			}
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你被海盗俘虏了&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的独木舟&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				cout&amp;lt;&amp;lt;&amp;quot;你拼尽全力游回了小岛&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[13]--;
+				return ;
+			}
+	}
+	if(root==&amp;quot;小艇&amp;quot;){
+		cout&amp;lt;&amp;lt;&amp;quot;小艇上有一根铁杆&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			cout&amp;lt;&amp;lt;&amp;quot;1和海盗战斗，2全速逃离&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你开启了加速模式&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;为了提升速度，你扔掉了铁杆&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				cout&amp;lt;&amp;lt;&amp;quot;输入1加速&amp;quot;&amp;lt;&amp;lt;endl;
+				while(cin&amp;gt;&amp;gt;inint){
+					if(inint==1){
+						mout(&amp;quot;加速中...&amp;quot;);
+						data[52]-=0.2;
+					}
+					suiji=rand()%5+0;
+					if(suiji&amp;gt;=2&amp;amp;&amp;amp;suiji&amp;lt;=4){
+						cout&amp;lt;&amp;lt;&amp;quot;你成功的躲避了海盗的袭击&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你朝周围一看——&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你回到了你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+						return ;
+					}
+					if(data[52]&amp;lt;1){
+						cout&amp;lt;&amp;lt;&amp;quot;你没油了&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的小艇&amp;quot;&amp;lt;&amp;lt;endl;
+						data[14]--;
+						return ;
+					}
+					else{
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的小艇&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(2000);
+						data[14]--;
+						return ;
+					}
+				}
+			}
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你开始和海盗战斗&amp;quot;&amp;lt;&amp;lt;endl;
+				int dxl=rand()%1000+50;
+				while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+					dxl-=64;
+					cout&amp;lt;&amp;lt;&amp;quot;你用铁杆打击海盗，海盗-64滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+					data[19]-=80;
+					cout&amp;lt;&amp;lt;&amp;quot;海盗拿着铁棍朝你冲过来，你-80滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+				}
+				if(data[19]&amp;lt;=0){
+					cout&amp;lt;&amp;lt;&amp;quot;你被海盗扔回了小岛&amp;quot;&amp;lt;&amp;lt;endl;
+					cout&amp;lt;&amp;lt;&amp;quot;你的小艇没了&amp;quot;&amp;lt;&amp;lt;endl;
+					data[14]--;
+					return ;
+				}
+				else{
+					cout&amp;lt;&amp;lt;&amp;quot;你击败了海盗&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+			}
+	}
+		if(root==&amp;quot;战舰&amp;quot;){
+		cout&amp;lt;&amp;lt;&amp;quot;战舰上有一些武器&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			cout&amp;lt;&amp;lt;&amp;quot;1和海盗战斗，2全速逃离&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你开启了加速模式&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;为了提升速度，你扔掉了武器&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				cout&amp;lt;&amp;lt;&amp;quot;输入1加速&amp;quot;&amp;lt;&amp;lt;endl;
+				while(cin&amp;gt;&amp;gt;inint){
+					if(inint==1){
+						mout(&amp;quot;加速中...&amp;quot;);
+						data[52]-=0.2;
+					}
+					suiji=rand()%5+0;
+					if(suiji&amp;gt;=2&amp;amp;&amp;amp;suiji&amp;lt;=4){
+						cout&amp;lt;&amp;lt;&amp;quot;你成功的躲避了海盗的袭击&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你朝周围一看——&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你回到了你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+						return ;
+					}
+					if(data[52]&amp;lt;1){
+						cout&amp;lt;&amp;lt;&amp;quot;你没油了&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的战舰&amp;quot;&amp;lt;&amp;lt;endl;
+						data[15]--;
+						return ;
+					}
+					else{
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的战舰&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(2000);
+						data[15]--;
+						return ;
+					}
+				}
+			}
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你开始和海盗战斗&amp;quot;&amp;lt;&amp;lt;endl;
+				int dxl=rand()%1000+50;
+				while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+					dxl-=100;
+					cout&amp;lt;&amp;lt;&amp;quot;你用武器打击海盗，海盗-100滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+					data[19]-=120;
+					cout&amp;lt;&amp;lt;&amp;quot;海盗拿着火箭筒朝你冲过来，你-120滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+				}
+				if(data[19]&amp;lt;=0){
+					cout&amp;lt;&amp;lt;&amp;quot;你被海盗扔回了小岛&amp;quot;&amp;lt;&amp;lt;endl;
+					cout&amp;lt;&amp;lt;&amp;quot;你的战舰没了&amp;quot;&amp;lt;&amp;lt;endl;
+					data[15]--;
+					return ;
+				}
+				else{
+					cout&amp;lt;&amp;lt;&amp;quot;你击败了海盗&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+			}
+	}			
+	if(root==&amp;quot;潜艇&amp;quot;){
+		cout&amp;lt;&amp;lt;&amp;quot;潜艇上有好多&amp;lt;?)))&amp;gt;&amp;lt;&amp;lt;雷&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			cout&amp;lt;&amp;lt;&amp;quot;1和海盗战斗，2全速逃离&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你开启了加速模式&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;为了提升速度，你扔掉了鱼雷&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				cout&amp;lt;&amp;lt;&amp;quot;输入1加速&amp;quot;&amp;lt;&amp;lt;endl;
+				while(cin&amp;gt;&amp;gt;inint){
+					if(inint==1){
+						mout(&amp;quot;加速中...&amp;quot;);
+						data[52]-=0.2;
+					}
+					suiji=rand()%5+0;
+					if(suiji&amp;gt;=2&amp;amp;&amp;amp;suiji&amp;lt;=4){
+						cout&amp;lt;&amp;lt;&amp;quot;你成功的躲避了海盗的袭击&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你朝周围一看——&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你回到了你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+						return ;
+					}
+					if(data[52]&amp;lt;1){
+						cout&amp;lt;&amp;lt;&amp;quot;你没油了&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+						data[15]--;
+						return ;
+					}
+					else{
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(2000);
+						data[16]--;
+						return ;
+					}
+				}
+			}
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你开始和海盗战斗&amp;quot;&amp;lt;&amp;lt;endl;
+				int dxl=rand()%1000+50;
+				while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+					dxl-=120;
+					cout&amp;lt;&amp;lt;&amp;quot;你用鱼雷打击海盗，海盗-120滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+					data[19]-=130;
+					cout&amp;lt;&amp;lt;&amp;quot;海盗朝你狂扔水雷，你-130滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+				}
+				if(data[19]&amp;lt;=0){
+					cout&amp;lt;&amp;lt;&amp;quot;你被海盗扔回了小岛&amp;quot;&amp;lt;&amp;lt;endl;
+					cout&amp;lt;&amp;lt;&amp;quot;你的潜艇没了&amp;quot;&amp;lt;&amp;lt;endl;
+					data[16]--;
+					return ;
+				}
+				else{
+					cout&amp;lt;&amp;lt;&amp;quot;你击败了海盗&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+			}
+	}
+	if(root==&amp;quot;航空母舰&amp;quot;){
+		cout&amp;lt;&amp;lt;&amp;quot;航母上有好多高科技武器&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			cout&amp;lt;&amp;lt;&amp;quot;1和海盗战斗，2全速逃离&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你开启了加速模式&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;为了提升速度，你扔掉了鱼雷&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				cout&amp;lt;&amp;lt;&amp;quot;输入1加速&amp;quot;&amp;lt;&amp;lt;endl;
+				while(cin&amp;gt;&amp;gt;inint){
+					if(inint==1){
+						mout(&amp;quot;加速中...&amp;quot;);
+						data[52]-=0.2;
+					}
+					suiji=rand()%5+0;
+					if(suiji&amp;gt;=2&amp;amp;&amp;amp;suiji&amp;lt;=4){
+						cout&amp;lt;&amp;lt;&amp;quot;你成功的躲避了海盗的袭击&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你朝周围一看——&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你回到了你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+						return ;
+					}
+					if(data[52]&amp;lt;1){
+						cout&amp;lt;&amp;lt;&amp;quot;你没油了&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的航母&amp;quot;&amp;lt;&amp;lt;endl;
+						data[17]--;
+						return ;
+					}
+					else{
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的航母&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(2000);
+						data[17]--;
+						return ;
+					}
+				}
+			}
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你开始和海盗战斗&amp;quot;&amp;lt;&amp;lt;endl;
+				int dxl=rand()%1000+50;
+				while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+					dxl-=120;
+					cout&amp;lt;&amp;lt;&amp;quot;你用机关炮打击海盗，海盗-150滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+					data[19]-=130;
+					cout&amp;lt;&amp;lt;&amp;quot;海盗朝你扔大刀，你-145滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+				}
+				if(data[19]&amp;lt;=0){
+					cout&amp;lt;&amp;lt;&amp;quot;你被海盗扔回了小岛&amp;quot;&amp;lt;&amp;lt;endl;
+					cout&amp;lt;&amp;lt;&amp;quot;你的航母没了&amp;quot;&amp;lt;&amp;lt;endl;
+					data[17]--;
+					return ;
+				}
+				else{
+					cout&amp;lt;&amp;lt;&amp;quot;你击败了海盗&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+			}
+	}	
+	if(root==&amp;quot;核潜艇&amp;quot;){
+		cout&amp;lt;&amp;lt;&amp;quot;核潜艇上有核导弹&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			cout&amp;lt;&amp;lt;&amp;quot;1和海盗战斗，2全速逃离&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你开启了加速模式&amp;quot;&amp;lt;&amp;lt;endl;
+				cout&amp;lt;&amp;lt;&amp;quot;为了提升速度，你扔掉了鱼雷&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				cout&amp;lt;&amp;lt;&amp;quot;输入1加速&amp;quot;&amp;lt;&amp;lt;endl;
+				while(cin&amp;gt;&amp;gt;inint){
+					if(inint==1){
+						mout(&amp;quot;加速中...&amp;quot;);
+						data[52]-=0.2;
+					}
+					suiji=rand()%5+0;
+					if(suiji&amp;gt;=2&amp;amp;&amp;amp;suiji&amp;lt;=4){
+						cout&amp;lt;&amp;lt;&amp;quot;你成功的躲避了海盗的袭击&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你朝周围一看——&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你回到了你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+						return ;
+					}
+					if(data[52]&amp;lt;1){
+						cout&amp;lt;&amp;lt;&amp;quot;你没油了&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的核潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+						data[18]--;
+						return ;
+					}
+					else{
+						cout&amp;lt;&amp;lt;&amp;quot;你被海盗抓住了&amp;quot;&amp;lt;&amp;lt;endl;
+						cout&amp;lt;&amp;lt;&amp;quot;海盗抢走了你的核潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(2000);
+						data[18]--;
+						return ;
+					}
+				}
+			}
+			else{
+				cout&amp;lt;&amp;lt;&amp;quot;你开始和海盗战斗&amp;quot;&amp;lt;&amp;lt;endl;
+				int dxl=rand()%1000+50;
+				while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+					dxl-=120;
+					cout&amp;lt;&amp;lt;&amp;quot;你用机关炮打击海盗，海盗-150滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+					data[19]-=130;
+					cout&amp;lt;&amp;lt;&amp;quot;海盗朝你扔大刀，你-145滴血&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(500);
+				}
+				if(data[19]&amp;lt;=0){
+					cout&amp;lt;&amp;lt;&amp;quot;你被海盗扔回了小岛&amp;quot;&amp;lt;&amp;lt;endl;
+					cout&amp;lt;&amp;lt;&amp;quot;你的航母没了&amp;quot;&amp;lt;&amp;lt;endl;
+					data[17]--;
+					return ;
+				}
+				else{
+					cout&amp;lt;&amp;lt;&amp;quot;你击败了海盗&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+			}
+	}			
+}
+void sea_nopeopleisland(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到了一个小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;你仔细的观察了小岛，发现这是一个无人岛&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;你十分失望，准备离开&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;就在这时，一只老虎扑了出来&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;1逃跑，2战斗&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	if(sinput==1){
+		cout&amp;lt;&amp;lt;&amp;quot;你立刻上了船，回到你的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+	cout&amp;lt;&amp;lt;&amp;quot;你随手拿起一根木棍，开始战斗&amp;quot;;
+	int dxl=rand()%1000+100;
+	while(data[19]&amp;gt;0&amp;amp;&amp;amp;dxl&amp;gt;0){
+		cout&amp;lt;&amp;lt;&amp;quot;你剪掉了80滴血&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		data[19]-=80;
+		cout&amp;lt;&amp;lt;&amp;quot;对方剪掉了75第血&amp;quot;&amp;lt;&amp;lt;endl;
+		dxl-=75;
+		Sleep(1000);
+	}
+	if(dxl&amp;lt;=0){
+		cout&amp;lt;&amp;lt;&amp;quot;你把老虎干掉了并回到了你自己的小岛上&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+	else{
+		cout&amp;lt;&amp;lt;&amp;quot;你被老虎咬死了&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+}
+void sea_peopleisland(){
+	int qwq;
+	cout&amp;lt;&amp;lt;&amp;quot;你来到了一个小岛上，上面有人...&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;你和他们开始了交易...&amp;quot;&amp;lt;&amp;lt;endl;
+	while(qwq!=&#39;*&#39;){
+		cout&amp;lt;&amp;lt;&amp;quot;当地人：&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;你想要什么？&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;1弓箭 15铁&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;2火炮 5金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;3粽子 8金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;4护甲 9金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;输入10退出&amp;quot;&amp;lt;&amp;lt;endl;
+		cin&amp;gt;&amp;gt;qwq;
+		if(qwq==1){
+			if(data[3]&amp;lt;15){
+				cout&amp;lt;&amp;lt;&amp;quot;你的材料不够，交易无法进行&amp;quot;&amp;lt;&amp;lt;endl;
+				continue;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+			data[3]-=15;
+			data[38]++;
+		}
+		if(qwq==2){
+			if(data[2]&amp;lt;5){
+				cout&amp;lt;&amp;lt;&amp;quot;你的材料不够，交易无法进行&amp;quot;&amp;lt;&amp;lt;endl;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+			data[2]-=5;
+			data[39]++;
+		}
+		if(qwq==3){
+			if(data[2]&amp;lt;8){
+				cout&amp;lt;&amp;lt;&amp;quot;你的材料不够，交易无法进行&amp;quot;&amp;lt;&amp;lt;endl;
+				continue;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+			data[2]-=8;
+			data[41]++;
+		}
+		if(qwq==4){
+			if(data[2]&amp;lt;9){
+				cout&amp;lt;&amp;lt;&amp;quot;你的材料不够，交易无法进行&amp;quot;&amp;lt;&amp;lt;endl;
+				continue;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+			data[2]-=9;
+			data[40]++;
+		}
+		else
+		return ;
+	}
+}
+void sea_way(){
+	cout&amp;lt;&amp;lt;&amp;quot;你在海上漂啊飘&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;你发现周围什么也没有&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	mout(&amp;quot;三天后...&amp;quot;);
+	cout&amp;lt;&amp;lt;&amp;quot;你回到了自己的小岛&amp;quot;&amp;lt;&amp;lt;endl;
+}
+void buy_sell(){
+	if(data[13]&amp;lt;1||data[14]&amp;lt;1||data[15]&amp;lt;1||data[16]&amp;lt;1||data[17]&amp;lt;1||data[18]&amp;lt;1){
+		cout&amp;lt;&amp;lt;&amp;quot;你没有船只，请使用小岛商店&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+	cout&amp;lt;&amp;lt;&amp;quot;海上充满着未知，要继续吗？1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	if(data[52]&amp;lt;1){
+		cout&amp;lt;&amp;lt;&amp;quot;你没有油！&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+	if(sinput==1)
+	return ;
+	part15:
+	cout&amp;lt;&amp;lt;&amp;quot;请选择船只：&amp;quot;&amp;lt;&amp;lt;endl;
+	outcz();
+	cin&amp;gt;&amp;gt;sinput;
+	cout&amp;lt;&amp;lt;&amp;quot;1独木舟：&amp;quot;&amp;lt;&amp;lt;data[13]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;2小艇：&amp;quot;&amp;lt;&amp;lt;data[14]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;3战舰：&amp;quot;&amp;lt;&amp;lt;data[15]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;4潜艇：&amp;quot;&amp;lt;&amp;lt;data[16]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;5航空母舰：&amp;quot;&amp;lt;&amp;lt;data[17]&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;6核潜艇：&amp;quot;&amp;lt;&amp;lt;data[18]&amp;lt;&amp;lt;endl;
+	switch(sinput){
+		case 1:{
+			if(data[13]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有独木舟&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part15;
+			}
+			root=&amp;quot;独木舟&amp;quot;;
+			rootdh=data[13];
+			break;
+		}
+		case 2:{
+			if(data[14]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有小艇&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part15;
+			}
+			root=&amp;quot;小艇&amp;quot;;
+			rootdh=data[14];
+			break;
+		}
+		case 3:{
+			if(data[15]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有战舰&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part15;
+			}
+			root=&amp;quot;战舰&amp;quot;;
+			rootdh=data[15];
+			break;
+		}
+		case 4:{
+			if(data[16]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part15;
+			}
+			root=&amp;quot;潜艇&amp;quot;;
+			rootdh=data[16];
+			break;
+		}
+		case 5:{
+			if(data[17]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有航空母舰&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part15;
+			}
+			root=&amp;quot;航空母舰&amp;quot;;
+			rootdh=data[17];
+			break;
+		}
+		case 6:{
+			if(data[18]&amp;lt;1){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有核潜艇&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				goto part15;
+			}
+			root=&amp;quot;核潜艇&amp;quot;;
+			rootdh=data[18];
+			break;
+		}
+	}
+	part13:
+	system(&amp;quot;cls&amp;quot;);
+	mout(&amp;quot;你登上了船只，开始航行...&amp;quot;);
+	for(int i=1;i&amp;lt;=10;i++){
+		cout&amp;lt;&amp;lt;&amp;quot;...&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+	}
+	suiji=rand()%4+1;
+	switch(suiji){
+		case 1:{
+			sea_hd();
+			cout&amp;lt;&amp;lt;&amp;quot;是否退出，1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==1)
+			return ;
+			else
+			goto part13;
+			break;
+		}
+		case 2:{
+			sea_way();
+			cout&amp;lt;&amp;lt;&amp;quot;是否退出，1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==1)
+			return ;
+			else
+			goto part13;
+			break;
+		}
+		case 3:{
+			sea_nopeopleisland();
+			cout&amp;lt;&amp;lt;&amp;quot;是否退出，1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==1)
+			return ;
+			else
+			goto part13;
+			break;
+		}
+		case 4:{
+			sea_peopleisland();
+			cout&amp;lt;&amp;lt;&amp;quot;是否退出，1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;sinput;
+			if(sinput==1)
+			return ;
+			else
+			goto part13;
+			break;
+		}
+	}
+}
+void island_bs(){
+	cout&amp;lt;&amp;lt;&amp;quot;你来到小岛商店&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;交易的客户已经有了好多人&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;你开始交易：&amp;quot;&amp;lt;&amp;lt;endl;
+	int people=rand()%15+5;
+	while(people&amp;gt;0){
+		int suiji1=rand()%10+0;
+		cout&amp;lt;&amp;lt;&amp;quot;客户：&amp;quot;&amp;lt;&amp;lt;endl;
+		int suiji2=rand()%15+6;
+		suiji=rand()%20+5;
+		cout&amp;lt;&amp;lt;&amp;quot;我有&amp;quot;&amp;lt;&amp;lt;kuangwu[suiji1]&amp;lt;&amp;lt;&amp;quot;,&amp;quot;&amp;lt;&amp;lt;&amp;quot;要&amp;quot;&amp;lt;&amp;lt;suiji2&amp;lt;&amp;lt;&amp;quot;金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;是否交易1yes，2no&amp;quot;&amp;lt;&amp;lt;endl;
+		cin&amp;gt;&amp;gt;sinput;
+		if(sinput==1){
+			if(data[2]&amp;lt;suiji2){
+				cout&amp;lt;&amp;lt;&amp;quot;你没有这些金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+				continue;
+			}
+			cout&amp;lt;&amp;lt;&amp;quot;开始交易...&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+			Sleep(1000);
+			data[2]-=suiji2;
+			if(suiji1==0)	data[2]+=suiji;
+			if(suiji1==1)	data[3]+=suiji;
+			if(suiji1==2)	data[4]+=suiji;
+			if(suiji1==3)	data[5]+=suiji;
+			if(suiji1==4)	data[6]+=suiji;
+			if(suiji1==5)	data[7]+=suiji;
+			if(suiji1==6)	data[35]+=suiji;
+			if(suiji1==7)	data[36]+=suiji;
+			if(suiji1==8)	data[37]+=suiji;
+			if(suiji1==9)	data[45]+=suiji;
+			if(suiji1==10)	data[46]+=suiji;
+		}
+		people--;
+		cout&amp;lt;&amp;lt;&amp;quot;下一个人&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+	}
+	cout&amp;lt;&amp;lt;&amp;quot;交易完毕&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	return ;
+}
+void island_jz(){
+	int djia=1;
+	int injg;
+	cout&amp;lt;&amp;lt;&amp;quot;1精卫填海,2退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	if(sinput==1){
+		cout&amp;lt;&amp;lt;&amp;quot;你开始填海&amp;quot;&amp;lt;&amp;lt;endl;
+		cout&amp;lt;&amp;lt;&amp;quot;请输入你要填多大的海（填海过程中不可退出）&amp;quot;&amp;lt;&amp;lt;endl;
+		cin&amp;gt;&amp;gt;sinput;
+		while(sinput&amp;gt;0){
+			system(&amp;quot;cls&amp;quot;);
+			mout(&amp;quot;填海中...&amp;quot;);
+			Sleep(1000);
+			data[21]+=0.1;
+			sinput--;
+		}
+	}
+	else
+	return ;
+}
+void island(){
+	cout&amp;lt;&amp;lt;&amp;quot;1小岛商店，2扩建小岛，3退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	if(sinput==1)	
+	island_bs();
+	if(sinput==2)
+	island_jz();
+	else
+	return ;
+}
+void black(){
+	int cinput;
+	cout&amp;lt;&amp;lt;&amp;quot;你来到黑市&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	cout&amp;lt;&amp;lt;&amp;quot;黑市看门的：&amp;quot;&amp;lt;&amp;lt;&amp;quot;：入场费15铁&amp;quot;&amp;lt;&amp;lt;endl;
+	Sleep(1000);
+	if(data[3]&amp;lt;15){
+		cout&amp;lt;&amp;lt;&amp;quot;你没有入场费，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+		Sleep(1000);
+		return ;
+	}
+	data[3]-=15;
+	cout&amp;lt;&amp;lt;&amp;quot;你进入了黑市，发现里面什么都有&amp;quot;&amp;lt;&amp;lt;endl;
+	partn:
+	system(&amp;quot;cls&amp;quot;);
+	cout&amp;lt;&amp;lt;&amp;quot;你要买什么？&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;1基础，2装备，3小岛 4退出&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;sinput;
+	switch(sinput){
+		case 1:{
+			cout&amp;lt;&amp;lt;&amp;quot;1血量 2防御 3攻击 &amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;cinput;
+			if(cinput==1){
+				cout&amp;lt;&amp;lt;&amp;quot;你要买多少？&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;cinput;
+				if(cinput&amp;gt;1000000){
+					cout&amp;lt;&amp;lt;&amp;quot;你太贪心了，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				int jiage=rand()%1000+100;
+				jiage+=cinput;
+				cout&amp;lt;&amp;lt;&amp;quot;价格：&amp;quot;&amp;lt;&amp;lt;jiage&amp;lt;&amp;lt;&amp;quot;银，1买，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==2){
+					goto partn;
+				}
+				if(data[6]&amp;lt;jiage){
+					cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					goto partn;
+				}
+				cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[19]+=cinput;
+				data[6]-=jiage;
+				goto partn;
+			}
+			else if(cinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你要买多少？&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;cinput;
+				if(cinput&amp;gt;1000000){
+					cout&amp;lt;&amp;lt;&amp;quot;你太贪心了，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				int jiage=rand()%1000+100;
+				jiage+=cinput+cinput*0.1;
+				cout&amp;lt;&amp;lt;&amp;quot;价格：&amp;quot;&amp;lt;&amp;lt;jiage&amp;lt;&amp;lt;&amp;quot;煤炭，1买，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==2){
+					goto partn;
+				}
+				if(data[7]&amp;lt;jiage){
+					cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					goto partn;
+				}
+				cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[22]+=cinput;
+				data[7]-=jiage;
+				goto partn;
+			}
+			else if(cinput==3){
+				cout&amp;lt;&amp;lt;&amp;quot;你要买多少？&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;cinput;
+				if(cinput&amp;gt;1000000){
+					cout&amp;lt;&amp;lt;&amp;quot;你太贪心了，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				int jiage=rand()%1000+100;
+				jiage+=cinput+cinput*0.2;
+				cout&amp;lt;&amp;lt;&amp;quot;价格：&amp;quot;&amp;lt;&amp;lt;jiage&amp;lt;&amp;lt;&amp;quot;铜，1买，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==2){
+					goto partn;
+				}
+				if(data[4]&amp;lt;jiage){
+					cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					goto partn;
+				}
+				cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[20]+=cinput;
+				data[4]-=jiage;
+				goto partn;
+			}
+			break;
+		}
+		case 2:{
+			cout&amp;lt;&amp;lt;&amp;quot;1油漆 2按钮 3钱 &amp;quot;&amp;lt;&amp;lt;endl;
+			cin&amp;gt;&amp;gt;cinput;
+			if(cinput==1){
+				cout&amp;lt;&amp;lt;&amp;quot;你要买多少？&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;cinput;
+				if(cinput&amp;gt;1000000){
+					cout&amp;lt;&amp;lt;&amp;quot;你太贪心了，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				int jiage=rand()%1000+100;
+				jiage+=cinput;
+				cout&amp;lt;&amp;lt;&amp;quot;价格：&amp;quot;&amp;lt;&amp;lt;jiage&amp;lt;&amp;lt;&amp;quot;铁，1买，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==2){
+					goto partn;
+				}
+				if(data[3]&amp;lt;jiage){
+					cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					goto partn;
+				}
+				cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[47]+=cinput;
+				data[3]-=jiage;
+				goto partn;
+			}
+			else if(cinput==2){
+				cout&amp;lt;&amp;lt;&amp;quot;你要买多少？&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;cinput;
+				if(cinput&amp;gt;1000000){
+					cout&amp;lt;&amp;lt;&amp;quot;你太贪心了，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				int jiage=rand()%1000+100;
+				jiage+=cinput+cinput*0.1;
+				cout&amp;lt;&amp;lt;&amp;quot;价格：&amp;quot;&amp;lt;&amp;lt;jiage&amp;lt;&amp;lt;&amp;quot;银，1买，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==2){
+					goto partn;
+				}
+				if(data[7]&amp;lt;jiage){
+					cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					goto partn;
+				}
+				cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[37]+=cinput;
+				data[6]-=jiage;
+				goto partn;
+			}
+			else if(cinput==3){
+				cout&amp;lt;&amp;lt;&amp;quot;你要买多少？&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;cinput;
+				if(cinput&amp;gt;1000000){
+					cout&amp;lt;&amp;lt;&amp;quot;你太贪心了，你被扔出了黑市&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					return ;
+				}
+				int jiage=rand()%1000+100;
+				jiage+=cinput+cinput*0.2;
+				cout&amp;lt;&amp;lt;&amp;quot;价格：&amp;quot;&amp;lt;&amp;lt;jiage&amp;lt;&amp;lt;&amp;quot;铜，1买，2退出&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==2){
+					goto partn;
+				}
+				if(data[4]&amp;lt;jiage){
+					cout&amp;lt;&amp;lt;&amp;quot;你没有钱&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					goto partn;
+				}
+				cout&amp;lt;&amp;lt;&amp;quot;交易成功&amp;quot;&amp;lt;&amp;lt;endl;
+				Sleep(1000);
+				data[51]+=cinput;
+				data[4]-=jiage;
+				goto partn;
+			}
+			case 3:{
+				cout&amp;lt;&amp;lt;&amp;quot;1一座小岛:25000金刚石&amp;quot;&amp;lt;&amp;lt;endl;
+				cin&amp;gt;&amp;gt;sinput;
+				if(sinput==1){
+					if(data[2]&amp;lt;25000){
+						cout&amp;lt;&amp;lt;&amp;quot;钱不够&amp;quot;&amp;lt;&amp;lt;endl;
+						Sleep(1000);
+						goto partn;
+					}
+					cout&amp;lt;&amp;lt;&amp;quot;购买成功&amp;quot;&amp;lt;&amp;lt;endl;
+					Sleep(1000);
+					data[21]++;
+					data[19]+=10000;
+					data[20]+=9000;
+					data[22]+=8000;
+					data[24]+=5000;
+					goto partn;
+				}
+				else
+				goto partn;
+				break;
+			}
+			case 4:{
+				return ;
+				break;
+			}
+		}
+	}
+}
+void konghanshu(){
+	
+	return ;
+}
+int main(){
+  indata();
+  int qwq;
+  srand((unsigned)time(NULL));//随机数
+  start();
+  dl();
+  zjm1:
+ 	system(&amp;quot;cls&amp;quot;);
+ 	cout&amp;lt;&amp;lt;&amp;quot;血量：&amp;quot;&amp;lt;&amp;lt;data[19]&amp;lt;&amp;lt;endl;
+ 	cout&amp;lt;&amp;lt;&amp;quot;攻击：&amp;quot;&amp;lt;&amp;lt;data[20]&amp;lt;&amp;lt;endl;
+ 	cout&amp;lt;&amp;lt;&amp;quot;防御：&amp;quot;&amp;lt;&amp;lt;data[22]&amp;lt;&amp;lt;endl;
+ 	cout&amp;lt;&amp;lt;&amp;quot;领地：&amp;quot;&amp;lt;&amp;lt;data[21]&amp;lt;&amp;lt;endl;
+ 	cout&amp;lt;&amp;lt;&amp;quot;士兵人数：&amp;quot;&amp;lt;&amp;lt;data[24]&amp;lt;&amp;lt;endl; 
+ 	cout&amp;lt;&amp;lt;&amp;quot;0保存&amp;quot;&amp;lt;&amp;lt;endl;
+ 	cout&amp;lt;&amp;lt;&amp;quot;1山洞 2森林 3小木屋 4造船厂 5工地 6士兵宿舍&amp;quot;&amp;lt;&amp;lt;endl;
+	cout&amp;lt;&amp;lt;&amp;quot;7作战室 8设置 9合成屋 10合成表 11背包 12海上贸易 13查看小岛&amp;quot;&amp;lt;&amp;lt;endl; 
+	cout&amp;lt;&amp;lt;&amp;quot;14黑市&amp;quot;&amp;lt;&amp;lt;endl;
+	cin&amp;gt;&amp;gt;qwq;
+	switch(qwq){
+		case 0:{
+			outdata();
+			goto zjm1;
+			break;
+		}
+		case 1:{
+			cave();
+			goto zjm1;
+			break;
+		}
+		case 2:{
+			woods();
+			goto zjm1;
+			break;
+		}
+		case 3:{
+			xmw();
+			goto zjm1;
+			break;
+		}
+		case 4:{
+			gzs();
+			goto zjm1;
+			break;
+		}
+		case 5:{
+			kfz();
+			goto zjm1;
+			break;
+		}
+		case 6:{
+			sbssj();
+			goto zjm1;
+			break;
+		}
+		case 7:{
+			zzs();
+			goto zjm1;
+			break;
+		}
+		case 8:{
+			shez();
+			goto zjm1;
+			break;
+		}
+		case 9:{
+			makeroom();
+			goto zjm1;
+			break;
+		} 
+		case 10:{
+			makebiao();
+			goto zjm1;
+			break;
+		} 
+		case 11:{
+			bag();
+			goto zjm1;
+			break;
+		}
+		case 12:{
+			buy_sell();
+			goto zjm1;
+			break;
+		}
+		case 13:{
+			island();
+			goto zjm1;
+			break;
+		}
+		case 14:{
+			black();
+			goto zjm1;
+			break;
+		}
+	}
+	return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+">小岛战争1.0.4</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://jsh-jsh.github.io/post/about/"" data-c="
+          &lt;h1 id=&#34;hi我是jsh&#34;&gt;hi，我是jsh&lt;/h1&gt;
+&lt;h1 id=&#34;是一名c爱好者&#34;&gt;是一名c++爱好者&lt;/h1&gt;
+">关于</a>
+      </div>
+      
+    </div>
+    <div class="page">
+      <div id="page_ul"></div>
+    </div>
+  </div>
+</div>
+<script>
+  !function () {
+    let searchMask = document.querySelector('#search_mask');
+    let result = document.querySelector('#result');
+    let items = document.querySelectorAll('.item');
+    let searchBox = document.querySelector('#search');
+    let statCount = document.querySelector('#stat_count');
+    let statTimes = document.querySelector('#stat_times');
+    let pageUl = document.querySelector('#page_ul');
+    let close = document.querySelector('#close');
+    
+    close.addEventListener('click', function() {
+      searchMask.style = 'display: none;'
+    })
+
+    let finds = [];
+    let contents = [];
+    let pageSize = 10;
+    items.forEach(item => {
+      let a = item.querySelector('a');
+      contents.push({
+        title: a.innerText,
+        details: a.dataset.c,
+        link: a.href
+      })
+      item.remove();
+    })
+
+    function insertStr(soure, start, count) {
+      let newStr = soure.substr(start, count);
+      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
+    }
+
+    pageUl.addEventListener('click', function(event) {
+      let target = event.target;
+      if (target.__proto__ === HTMLSpanElement.prototype) {
+        appendResults(parseInt(target.dataset.i));
+      }
+    })
+
+    function appendResults(index) {
+      let htmlResult = '';
+      let start = index || 0;
+      let end = Math.min(start + pageSize, finds.length);
+      for (let i = start; i < end; i++) {
+        const current = finds[i];
+        let html = current.title;
+        let sum = 0;
+        let positions = current.positions;
+        positions.forEach(position => {
+          html = insertStr(html, position.start + sum, position.count);
+          sum += 9;
+        })
+        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
+      }
+      result.innerHTML = htmlResult;
+      pageUl.innerHTML = '';
+      let count = finds.length / pageSize;
+      let lis = '';
+      if (start !== 0) {
+        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
+      }
+      for (let i = 0; i < count; i++) {
+        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
+      }
+      if (start+1 < count) {
+        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
+      }
+      pageUl.innerHTML = lis;
+    }
+
+    function search(delay) {
+      let timer = null
+      return function () {
+        clearTimeout(timer)
+        timer = setTimeout(() => {
+          let start = Date.now();
+          let segments = searchBox.value.split(' ').filter(c => c != '');
+          if (segments.length <= 0) {
+            return;
+          }
+          finds = [];
+          let htmlResult = '';
+          contents.forEach(content => {
+            let title = content.title;
+            let positions = [];
+            let find = false;
+            segments.forEach((segment) => {
+              if (content.title.includes(segment)) {
+                find = true;
+                positions.push({
+                  start: content.title.indexOf(segment),
+                  count: segment.length
+                })
+              } else if (content.details.includes(segment)) {
+                find = true;
+              }
+            });
+            if (find) {
+              finds.push({
+                title: content.title,
+                link: content.link,
+                positions
+              });
+            }
+          })
+          appendResults(0);
+          statCount.textContent = finds.length;
+          statTimes.textContent = Date.now() - start;
+        }, delay)
+      }
+    }
+    searchBox.addEventListener('input', search(200));
+  }()
+</script>
+
+<input hidden id="copy" />
+<script>
+  !function () {
+    let times = document.querySelectorAll('.publish-time');
+    for (let i = 0; i < times.length; i++) {
+      let date = times[i].dataset.t;
+      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
+      if (time < 60) {
+        str = time + '秒之前';
+      } else if (time < 3600) {
+        str = Math.floor(time / 60) + '分钟之前';
+      } else if (time >= 3600 && time < 86400) {
+        str = Math.floor(time / 3600) + '小时之前';
+      } else if (time >= 86400 && time < 259200) {
+        str = Math.floor(time / 86400) + '天之前';
+      } else {
+        str = times[i].textContent;
+      }
+      times[i].textContent = str;
+    }
+  }();
+</script>
+
+<script>
+  let language = '';
+  if (language !== '') {
+    let map = new Map();
+    if (language === 'en') {
+      map.set('search', 'Search');
+      map.set('category', 'Categories');
+      map.set('article', 'Articles');
+      map.set('tag', 'Tags');
+      map.set('top', 'Top');
+      map.set('publish', 'published');
+      map.set('minute', ' minutes');
+      map.set('read-more', 'Read More');
+      map.set('view', 'View');
+      map.set('words', ' words');
+      map.set('category-in', 'category in');
+      map.set('preview', 'Meta');
+      map.set('index', 'Toc');
+      map.set('no-archives', "You haven't created yet");
+      map.set('archives', " articles in total");
+      map.set('cloud-tags', " tags in total");
+      map.set('copyright', "Copyright: ");
+      map.set('author', "Author: ");
+      map.set('link', "Link: ");
+      map.set('leave-message', "Leave a message");
+      map.set('format', "Links Format");
+      map.set('site-name', "Name: ");
+      map.set('site-link', "Link: ");
+      map.set('site-desc', "Desc: ");
+      map.set('stat', " related results, taking ");
+      map.set('stat-time', " ms");
+      map.set('site-img', "Image: ");
+    }
+
+    if (map.size > 0) {
+      let lanElems = document.querySelectorAll('.language');
+      lanElems.forEach(elem => {
+        let lan = elem.dataset.lan, text = map.get(lan);
+        if (elem.__proto__ === HTMLInputElement.prototype) {
+          elem.placeholder = text
+        } else {
+          if (elem.dataset.count) {
+            text = elem.dataset.count + text;
+          }
+          elem.textContent = text;
+        }
+      })
+    }
+  }
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 200
+  });
+</script>
+
+
+<script src="/media/js/mouse/peace.js"></script>
+
+
+<script src="/media/js/cool.js"></script>
+
+
+
+  <div class="snow-container"></div>
+  <script src="/media/js/bg/snow.js"></script>
+
 
 </html>
