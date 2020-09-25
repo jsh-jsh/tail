@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="I AK IOI">
-<meta name="theme-color" content="#eebefa">
+<meta name="theme-color" content="#a5d8ff">
 <title>jsh的个人博客</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1600950169015">
-<link rel="stylesheet" href="/media/css/mist.css">
+<link rel="shortcut icon" href="/favicon.ico?v=1601035190552">
+<link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
@@ -44,9 +44,9 @@
   <div class="head-top-line"></div>
   <div class="header-box">
     
-<div class="mist">
-  <header class="header bg-color ">
-    <div class="blog-header box-shadow-wrapper  " id="header">
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
       <div class="nav-toggle" id="nav_toggle">
         <div class="toggle-box">
           <div class="line line-top"></div>
@@ -57,17 +57,13 @@
       <div class="site-meta">       
         <div class="site-title">
           
-            <a href="/" class="">
-              <span class="logo-line-before">
-                <i class=""></i>
-              </span>
-              <span class="main-title">jsh的个人博客</span>
-              <span class="logo-line-after">
-                <i class=""></i>
-              </span>
+            <a href="/" class="brand">
+              <span>jsh的个人博客</span>
             </a>  
           
         </div>
+        
+          <p class="subtitle">I AK IOI</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -174,11 +170,11 @@
   <div class="main-continer">
     
     <div
-      class="section-layout mist bg-color">
+      class="section-layout gemini ">
       <div class="section-layout-wrapper">
         <div id="sidebarMeta" class="sidebar">
     
-<div class="sidebar-wrapper box-shadow-wrapper ">
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
     <p class="site-author-name">JSH</p>
@@ -212,6 +208,15 @@
     </div>
   </div>
   
+    
+      <div class="sidebar-item">
+        <span class="site-item-rss">
+            <i class="fa fa-rss"></i>
+            <a href="https://jsh-jsh.github.io/atom.xml" target="_blank">RSS</a>
+        </span>
+      </div>
+    
+  
   
     <div class="sidebar-item sidebar-item-social">
       <div class="social-item">
@@ -236,11 +241,16 @@
 
 
 
+  <div style="width: 100%; position: relative;">
+    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
+    <script src="/media/js/magic/clock.js"></script>
+  </div>
+
 </div>
 </div>
 <script>
   let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'mist';
+  let scheme = 'gemini';
   let sidebarWrapper = document.querySelector('.sidebar-wrapper');
   if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
     document.addEventListener('scroll', function(e) {
@@ -252,7 +262,7 @@
     });
   }
   </script>
-        <div class="section-box mist box-shadow-wrapper">
+        <div class="section-box gemini box-shadow-wrapper">
           <section class="friends-section bg-color slide-down-in">
             <div class="firends-box">
               <h1 class="firends-title" itemprop="name headline">友链</h1>
@@ -306,23 +316,14 @@
   </footer>
   
   
-  <div class="drawer-box left" id="drawer_box">
-    <span class="muse-line muse-line-first"></span>
-    <span class="muse-line muse-line-middle"></span>
-    <span class="muse-line muse-line-last"></span>
-  </div>
-  
-  <div class="mist back-to-top" id="back_to_top">
+  <div class="gemini back-to-top" id="back_to_top">
     <i class="fa fa-arrow-up"></i>
     
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
   </div>
-  
-  
-  
-  <div class="bg-img">
-    <img src="https://cdn.luogu.com.cn/images/bg/fe/Lishui_StarTrails.jpg" />
-  </div>
-  
   
   
   
