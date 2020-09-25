@@ -2111,18 +2111,18 @@ body {
       color: #15aabf;
       border-bottom-color: #15aabf;
     }.nav-toggle .line {
-      background-color: #1c7ed6 !important;
+      background-color: #d6336c !important;
     }
       .nav-item a {
         color:  #364fc7;
       }.nav-item a:hover {
-        color: #d6336c;
+        color: #b197fc;
       }.nav-item-active {
-      background: #9775fafe;
+      background: #f06595fe;
     }
 
     .nav-item:hover {
-      background: #9775fafe;
+      background: #f06595fe;
       color: rgba(0, 0, 0, 0.98);
     }.site-author-image {
       border-radius: 50%;
@@ -2170,10 +2170,10 @@ body {
       background: #339af0fe;
     }
     .main-title, .brand {
-      color: #b197fc !important;
+      color: #ff8787 !important;
     }
     .mist .site-title i {
-      background: #b197fcfe;
+      background: #ff8787fe;
     }body {
       cursor: default;
     }a {
