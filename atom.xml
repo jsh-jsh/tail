@@ -1,102 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://open-study-website.github.io</id>
-    <title>jsh的个人博客</title>
-    <updated>2020-10-30T11:41:49.719Z</updated>
+    <title>open-study</title>
+    <updated>2020-11-30T13:01:56.619Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://open-study-website.github.io"/>
     <link rel="self" href="https://open-study-website.github.io/atom.xml"/>
-    <subtitle>I AK IOI</subtitle>
+    <subtitle>open-study</subtitle>
     <logo>https://open-study-website.github.io/images/avatar.png</logo>
     <icon>https://open-study-website.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, jsh的个人博客</rights>
-    <entry>
-        <title type="html"><![CDATA[初始数据结构 ---双向链表list学习笔记]]></title>
-        <id>https://open-study-website.github.io/post/study-list/</id>
-        <link href="https://open-study-website.github.io/post/study-list/">
-        </link>
-        <updated>2020-10-22T12:47:27.000Z</updated>
-        <summary type="html"><![CDATA[<p>list</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>list</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[奇怪的知识增加了]]></title>
-        <id>https://open-study-website.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao-2/</id>
-        <link href="https://open-study-website.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao-2/">
-        </link>
-        <updated>2020-10-05T11:05:07.000Z</updated>
-        <summary type="html"><![CDATA[<p>第二期</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>第二期</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于右下角的按钮]]></title>
-        <id>https://open-study-website.github.io/post/guan-yu-you-xia-jiao-de-an-niu/</id>
-        <link href="https://open-study-website.github.io/post/guan-yu-you-xia-jiao-de-an-niu/">
-        </link>
-        <updated>2020-09-12T07:00:44.000Z</updated>
-        <summary type="html"><![CDATA[<p>聊天室</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>聊天室</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[洛谷词典1.0.3]]></title>
-        <id>https://open-study-website.github.io/post/luo-gu-ci-dian-100/</id>
-        <link href="https://open-study-website.github.io/post/luo-gu-ci-dian-100/">
-        </link>
-        <updated>2020-08-27T01:43:57.000Z</updated>
-        <summary type="html"><![CDATA[<p>不太全，不过还会更新的.<br>
-1.0.3：</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>不太全，不过还会更新的.<br>
-1.0.3：</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[江河杯诗词大赛参赛记]]></title>
-        <id>https://open-study-website.github.io/post/jiang-he-bei-shi-ci-da-sai-can-sai-ji/</id>
-        <link href="https://open-study-website.github.io/post/jiang-he-bei-shi-ci-da-sai-can-sai-ji/">
-        </link>
-        <updated>2020-08-10T09:06:38.000Z</updated>
-        <summary type="html"><![CDATA[<p>闲的没事</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>闲的没事</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[奇怪的知识增加了]]></title>
-        <id>https://open-study-website.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/</id>
-        <link href="https://open-study-website.github.io/post/qi-guai-de-zhi-shi-zeng-jia-liao/">
-        </link>
-        <updated>2020-07-31T08:28:47.000Z</updated>
-        <summary type="html"><![CDATA[<p>奇怪的知识</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>奇怪的知识</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[小岛战争1.0.4]]></title>
-        <id>https://open-study-website.github.io/post/xiao-dao-zhan-zheng-104/</id>
-        <link href="https://open-study-website.github.io/post/xiao-dao-zhan-zheng-104/">
-        </link>
-        <updated>2020-07-30T12:44:08.000Z</updated>
-        <summary type="html"><![CDATA[<p>小岛战争1.0.4正式版<br>
-//小岛战争1.0.4 正式版<br>
-/*更新：<br>
-增加了扩建小岛<br>
-增加了黑市<br>
-改变了通关攻略</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>小岛战争1.0.4正式版<br>
-//小岛战争1.0.4 正式版<br>
-/*更新：<br>
-增加了扩建小岛<br>
-增加了黑市<br>
-改变了通关攻略</p>
-]]></content>
-    </entry>
+    <rights>All rights reserved 2020, open-study</rights>
 </feed>
