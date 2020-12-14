@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://open-study-website.github.io</id>
-    <title>open-study</title>
-    <updated>2020-11-30T13:01:56.619Z</updated>
+    <id>https://jsh-jsh.github.io</id>
+    <title>JSH&apos;s BLOG</title>
+    <updated>2020-12-14T12:55:27.911Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://open-study-website.github.io"/>
-    <link rel="self" href="https://open-study-website.github.io/atom.xml"/>
-    <subtitle>open-study</subtitle>
-    <logo>https://open-study-website.github.io/images/avatar.png</logo>
-    <icon>https://open-study-website.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, open-study</rights>
+    <link rel="alternate" href="https://jsh-jsh.github.io"/>
+    <link rel="self" href="https://jsh-jsh.github.io/atom.xml"/>
+    <subtitle>hi，这是我的个人博客</subtitle>
+    <logo>https://jsh-jsh.github.io/images/avatar.png</logo>
+    <icon>https://jsh-jsh.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, JSH&apos;s BLOG</rights>
+    <entry>
+        <title type="html"><![CDATA[博客建成庆祝]]></title>
+        <id>https://jsh-jsh.github.io/post/bo-ke-jian-cheng-qing-zhu/</id>
+        <link href="https://jsh-jsh.github.io/post/bo-ke-jian-cheng-qing-zhu/">
+        </link>
+        <updated>2020-12-14T12:34:50.000Z</updated>
+    </entry>
 </feed>
