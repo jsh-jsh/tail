@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://jsh-jsh.github.io</id>
-    <title>JSH&apos;s BLOG</title>
-    <updated>2021-01-01T09:10:37.460Z</updated>
+    <title>三剑客&apos;s BLOG</title>
+    <updated>2021-01-01T12:55:15.953Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://jsh-jsh.github.io"/>
     <link rel="self" href="https://jsh-jsh.github.io/atom.xml"/>
-    <subtitle>hi，这是我的个人博客</subtitle>
+    <subtitle>hi，这个博客是JSH，MGY，LYL三个人共同所拥有的</subtitle>
     <logo>https://jsh-jsh.github.io/images/avatar.png</logo>
     <icon>https://jsh-jsh.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, JSH&apos;s BLOG</rights>
+    <rights>All rights reserved 2021, 三剑客&apos;s BLOG</rights>
     <entry>
         <title type="html"><![CDATA[圣诞节快乐]]></title>
         <id>https://jsh-jsh.github.io/post/happy/</id>
