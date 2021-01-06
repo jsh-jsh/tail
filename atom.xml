@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.sanjianke.ml</id>
     <title>三剑客&apos;s BLOG</title>
-    <updated>2021-01-05T12:32:59.475Z</updated>
+    <updated>2021-01-06T13:23:12.944Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://blog.sanjianke.ml"/>
     <link rel="self" href="https://blog.sanjianke.ml/atom.xml"/>
@@ -10,13 +10,6 @@
     <logo>https://blog.sanjianke.ml/images/avatar.png</logo>
     <icon>https://blog.sanjianke.ml/favicon.ico</icon>
     <rights>All rights reserved 2021, 三剑客&apos;s BLOG</rights>
-    <entry>
-        <title type="html"><![CDATA[生日快乐]]></title>
-        <id>https://blog.sanjianke.ml/post/sheng-ri-kuai-le/</id>
-        <link href="https://blog.sanjianke.ml/post/sheng-ri-kuai-le/">
-        </link>
-        <updated>2021-01-05T12:32:31.000Z</updated>
-    </entry>
     <entry>
         <title type="html"><![CDATA[圣诞节快乐]]></title>
         <id>https://blog.sanjianke.ml/post/happy/</id>
