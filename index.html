@@ -104,7 +104,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://blog.jinshuhang.tk/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288" class="avatar">
+            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989304498" class="avatar">
         </div>
         <div class="sitename">JSH&#39;s BLOG</div>
         <span class="describtion" data-text='["hi，这个博客是JSH的小窝"]'>&nbsp;</span>
@@ -428,7 +428,7 @@
         let talkindex = 0;
         get();
         function get() {
-            var t = JSON.parse('[{"author":"jsh","img":"","text":"博客弄好了","time":"2021.1.7"},{"author":"jsh","img":"","text":"《你的名字真好看》，看完之后后感到淡淡的寂寥，有点悲伤啊","time":"2020.1.7"}]');
+            var t = JSON.parse('[{"author":"jsh","img":"","text":"博客弄好了","time":"2021.1.7"},{"author":"jsh","img":"","text":"《你的名字》真好看，看完之后后感到淡淡的寂寥，有点悲伤啊","time":"2020.1.7"}]');
             talkindex = t.length - 1;
             for (var i = 0; i <= t.length - 1; i++) {
                 var d = {};
@@ -460,7 +460,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989304498">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -473,7 +473,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989304498">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -971,7 +971,7 @@
                         <!-- 移动端欢迎页 -->
 <div class="welcome">
     <div class="avatar-border">
-        <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288" class="avatar">
+        <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989304498" class="avatar">
     </div>
     <span class="mobiledescribtion"></span>
 </div>
