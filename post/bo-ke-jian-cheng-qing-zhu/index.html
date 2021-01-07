@@ -19,30 +19,6 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <!-- 数学公式 -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css"
-        integrity="sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"
-        integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"
-        integrity="sha384-aGfk5kvhIq5x1x5YdvCp4upKZYnA8ckafviDpmWEKp4afOZEqOli7gqSnh8I6enH" crossorigin="anonymous">
-        </script>
-    <script>
-        renderMathInElement(document.body, {
-            delimiters: [{
-                left: "$$",
-                right: "$$",
-                display: true
-            },
-            {
-                left: "$",
-                right: "$",
-                display: false
-            }
-            ]
-        });
-    </script>
-    
     <title>JSH's BLOG</title>
     
     <style>
@@ -219,15 +195,6 @@
     <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <!-- 数学公式 -->
     
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.css"
-        integrity="sha384-9tPv11A+glH/on/wEu99NVwDPwkMQESOocs/ZGXPoIiLE8MU/qkqUcZ3zzL+6DuH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/katex.min.js"
-        integrity="sha384-U8Vrjwb8fuHMt6ewaCy8uqeUXv4oitYACKdB0VziCerzt011iQ/0TqlSlv8MReCm" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/katex@0.10.0-beta/dist/contrib/auto-render.min.js"
-        integrity="sha384-aGfk5kvhIq5x1x5YdvCp4upKZYnA8ckafviDpmWEKp4afOZEqOli7gqSnh8I6enH" crossorigin="anonymous">
-        </script>
-    
     
 </head>
 <style>
@@ -295,7 +262,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://blog.jinshuhang.tk/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1609988726618" class="avatar">
+            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288" class="avatar">
         </div>
         <div class="sitename">JSH&#39;s BLOG</div>
         <span class="describtion" data-text='["hi，这个博客是JSH的小窝"]'>&nbsp;</span>
@@ -619,7 +586,7 @@
         let talkindex = 0;
         get();
         function get() {
-            var t = JSON.parse('[{"author":"jsh","img":"","text":"博客弄好了","time":"2021.1.7"}]');
+            var t = JSON.parse('[{"author":"jsh","img":"","text":"博客弄好了","time":"2021.1.7"},{"author":"jsh","img":"","text":"《你的名字真好看》，看完之后后感到淡淡的寂寥，有点悲伤啊","time":"2020.1.7"}]');
             talkindex = t.length - 1;
             for (var i = 0; i <= t.length - 1; i++) {
                 var d = {};
@@ -651,7 +618,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609988726618">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -664,7 +631,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609988726618">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1609989202288">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -1031,7 +998,7 @@
             
             <div class="postdetailimg">
                 
-                <img src="http://uploads.5068.com/allimg/1712/74-1G221161948.jpg" class="postimage">
+                <img src="https://cdn.luogu.com.cn/upload/image_hosting/tv18fzg3.png" class="postimage">
                 
             </div>
             <div class="postinfo-detail">
@@ -1108,7 +1075,7 @@
                 <div id="ppcontainer">
                     
                     
-                    <img src="http://uploads.5068.com/allimg/1712/74-1G221161948.jpg" style="width: 100%;" class="opimg">
+                    <img src="https://cdn.luogu.com.cn/upload/image_hosting/tv18fzg3.png" style="width: 100%;" class="opimg">
                     
                     
                     <h4 class="optitle">论写作业的方式</h4>
