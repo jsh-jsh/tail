@@ -219,7 +219,7 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
     
     
     <script>
-        let donateChoice = true
+        let donateChoice = false
     </script>
     
     
@@ -270,14 +270,14 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://blog.jinshuhang.tk/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180151348" class="avatar">
+            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180521126" class="avatar">
         </div>
         <div class="sitename">JSH&#39;s BLOG</div>
         <span class="describtion" data-text='["hi，这个博客是JSH的小窝"]'>&nbsp;</span>
         
         <div class="search">
             <!-- <input type="text" class="search-input" placeholder="标题搜索(●'◡'●)" /> -->
-            <input type="text" class="search-input" placeholder="文章搜索 ⚆_⚆ つ♡">
+            <input type="text" class="search-input" placeholder="标题搜索 ⚆_⚆ つ♡">
             <div class="search-results"></div>
         </div>
         
@@ -381,7 +381,7 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
             <div>
                 
             </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 萌ICP备20210414号
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
             </div>
         </div>
 
@@ -458,8 +458,8 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
         var ptitle = $("#ptitle").html();
         var rootaddr = $("#rootaddr").html();
         pl = pl.replace(rootaddr, "");
-        var appid = '';
-        var appkey = '';
+        var appid = 'AunaLyjdrDjwCthLGMOJ9ynJ-MdYXbMMI';
+        var appkey = 'xKXYjRt0R3JCAb0crcJ637GQ';
         console.log(appid, appkey)
         if (AV == undefined)
             AV.init({
@@ -594,7 +594,7 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
         let talkindex = 0;
         get();
         function get() {
-            var t = JSON.parse('[{"author":"jsh","img":"","text":"博客弄好了","time":"2021.1.7"},{"author":"jsh","img":"","text":"《你的名字》真好看，看完之后后感到淡淡的寂寥，有点悲伤啊","time":"2020.1.7"},{"author":"jsh","img":"","text":"今天太冷了，停课！！","time":"1.7"}]');
+            var t = JSON.parse('[{"author":"jsh","img":"","text":"开心","time":"1.9"}]');
             talkindex = t.length - 1;
             for (var i = 0; i <= t.length - 1; i++) {
                 var d = {};
@@ -626,7 +626,7 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180151348">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180521126">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -639,7 +639,7 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180151348">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180521126">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -1081,13 +1081,6 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
             </div>
             
             
-            <div class="donateContainer">
-                <img src="https://blog.jinshuhang.tk/media/images/donate.png" alt="" class="donateImg">
-            </div>
-            <div class="donateContainer">
-                <img src="" alt="" class="donate">
-            </div>
-            
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong>JSH</li>
@@ -1142,7 +1135,53 @@ O(1) 时间复杂度不随着规模变化而变化。⽐..." />
                     <div id="comment" class="comment" style="background: white">
                         <div class="commentcontainer">
                             
-                            <p>请到客户端“主题--自定义配置--valine”中填入ID和KEY</p>
+                            <style>
+    @media screen and (min-width: 1300px) {
+        .veditor::placeholder {
+            color: #b3b3b3;
+            font-size: 18px;
+            text-align: center;
+            line-height: 3rem;
+            font-family: kaiti;
+        }
+    }
+</style>
+
+<body>
+    <div id="vcomments">
+    </div>
+    <script src="https://blog.jinshuhang.tk/media/js/valine.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+    <script>
+        var valine = new Valine();
+        var curpath = window.location.pathname;
+        if (curpath[curpath.length - 1] != '/')
+            curpath += '/'
+        valine.init({
+            el: '#vcomments',
+            appId: 'AunaLyjdrDjwCthLGMOJ9ynJ-MdYXbMMI',
+            appKey: 'xKXYjRt0R3JCAb0crcJ637GQ',
+            notify: true,
+            verify: false,
+            avatar: 'retro',
+            pageSize: 10,
+            placeholder: '既然来了，何不畅所欲言呢？',
+            visitor: true, // 阅读量统计
+            recordIP: true,
+            path: curpath //[重点] 记得添加path路径
+        });
+    </script>
+    <script type="text/javascript">
+        var jrsc = '既然来了，何不畅所欲言呢？';
+        jinrishici.load(function (result) {
+            // 自己的处理逻辑
+            jrsc = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin
+                .dynasty + " · " + result.data.origin.author;
+        });
+    </script>
+
+</body>
+                            <div class="clear"></div>
                             
                         </div>
                     </div>

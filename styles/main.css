@@ -2346,15 +2346,11 @@ a {
 }
 
       .posttitlewithoutimg {
-        color: #ff8787;
-      }
-    
-      .sitename {
-        color: #3bc9db;
+        color: #15aabf;
       }
     
         .describtion {
-          color: #ffc9c9;
+          color: #7048e8;
         }
       
         .menubutton {
@@ -2362,10 +2358,10 @@ a {
         }
       
         .posttitle {
-          color: #e03131;
+          color: #fa5252;
         }
       
         #sitegotimeDate,#sitegotimes,#footinfo,#footinfo a{
-          color: #4dabf7;
+          color: #ff6b6b;
         }
       
