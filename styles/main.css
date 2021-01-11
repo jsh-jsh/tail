@@ -2349,6 +2349,10 @@ a {
         color: #15aabf;
       }
     
+      .sitename {
+        color: #ff8787;
+      }
+    
         .describtion {
           color: #7048e8;
         }
@@ -2362,6 +2366,10 @@ a {
         }
       
         #sitegotimeDate,#sitegotimes,#footinfo,#footinfo a{
+          color: #ff6b6b;
+        }
+      
+        .mobiledescribtion{
           color: #ff6b6b;
         }
       

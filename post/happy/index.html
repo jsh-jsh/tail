@@ -225,7 +225,7 @@
     
     
     <script>
-        let donateChoice = false
+        let donateChoice = true
     </script>
     
     
@@ -281,7 +281,7 @@
         <a onclick="showAaplayer()"><i style="font-size: 20px;"><img
                     src='https://blog.jinshuhang.tk/media/images/music.png' alt="音乐播放器" class="musicbtn"></i></a>
         <div class="avatar-border">
-            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180690382" class="avatar">
+            <img src="https://blog.jinshuhang.tk/images/avatar.png?v=1610372068253" class="avatar">
         </div>
         <div class="sitename">JSH&#39;s BLOG</div>
         <span class="describtion" data-text='["hi，这个博客是JSH的小窝"]'>&nbsp;</span>
@@ -400,7 +400,7 @@
             <div>
                 
             </div>
-            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 鄂ICP备...号
+            <div class="copyright" style="color:white;text-align: center;">Copyright © 2020  备案号: 萌ICP备20210414号
             </div>
         </div>
 
@@ -645,7 +645,7 @@
                 <img src="' + talks[i].img + '" class="talkimg"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180690382">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610372068253">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -658,7 +658,7 @@
             <div class="talk" v-for="t in talks"> \
                 <div class="ainfo">\
                     <div class="ainfo-intro">\
-                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610180690382">\
+                        <img class="intro1" src="https://blog.jinshuhang.tk/images/avatar.png?v=1610372068253">\
                         <div class="author">' + talks[i].author + '</div>·\
                         <div class="time">' + talks[i].time + '</div>\
                     </div>\
@@ -1024,18 +1024,16 @@
         <div class="postshow postpadding" style="padding-bottom: 0;">
             
             <div class="postdetailimg">
-                
-                <img src="https://cdn.luogu.com.cn/upload/image_hosting/icsbzg7d.png" class="postimage">
-                
+                <img src="https://blog.jinshuhang.tk/post-images/happy.png" class="postimage" style="cursor:auto">
             </div>
             <div class="postinfo-detail">
                 <div class="postdate"><i class="fa fa-calendar"></i>Thursday, December 24, 2020 8:08 PM</div>
-            <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
-            <div class="posttag">
-                
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 1 min read</div>
+                <div class="posttag">
+                    
+                </div>
             </div>
-        </div>
-        
+            
         <div id="articlecontent">
             <div id="texttitle" style="text-align: center">
                 <h2 id="ptitle">圣诞节快乐</h2>
@@ -1079,6 +1077,13 @@
             </div>
             
             
+            <div class="donateContainer">
+                <img src="https://blog.jinshuhang.tk/media/images/donate.png" alt="" class="donateImg">
+            </div>
+            <div class="donateContainer">
+                <img src="" alt="" class="donate">
+            </div>
+            
             <div class="postfooter">
                 <ul class="post-copyright">
                     <li><strong>文章作者：</strong>JSH</li>
@@ -1092,9 +1097,7 @@
             <a  data-pjax class="prev-post-pc" href="https://blog.jinshuhang.tk/post/shi-jian-kong-jian-fu-za-du-xue-xi-bi-ji/"  style="color: black;">
                 <div id="ppcontainer">
                     
-                    
-                    <img src="https://cdn.luogu.com.cn/upload/image_hosting/icsbzg7d.png" style="width: 100%;" class="opimg">
-                    
+                    <img src="https://blog.jinshuhang.tk/post-images/shi-jian-kong-jian-fu-za-du-xue-xi-bi-ji.jpg" style="width: 100%;" class="opimg">
                     
                     <h4 class="optitle">时间/空间复杂度学习笔记</h4>
                 </div>
@@ -1107,9 +1110,7 @@
             <a data-pjax class="next-post-pc" href="https://blog.jinshuhang.tk/post/zui-mei-gu-shi-ci/"  style="color: black;">
                 <div id="npcontainer">
                     
-                    
-                    <img src="https://cdn.luogu.com.cn/upload/image_hosting/icsbzg7d.png" style="width: 100%;" class="opimg">
-                    
+                    <img src="https://blog.jinshuhang.tk/post-images/zui-mei-gu-shi-ci.jpg" style="width: 100%;" class="opimg">
                     
                     <h4 class="optitle">最美古诗词</h4>
                 </div>
@@ -1269,10 +1270,10 @@
         
     </div>
     
-    <div id="bgchoice" style="display: none">link
+    <div id="bgchoice" style="display: none">default
     </div>
     
-    <div id="bgurl" style="display:none">https://cdn.luogu.com.cn/upload/image_hosting/r29tpimm.png</div>
+    <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
     
 </body>
 <script>
