@@ -2174,7 +2174,9 @@ p > code {
     }
     .head-top-line {
       background: #000;
-    }
+    }.pace .pace-activity {
+        background: #000 !important;
+      }
     .brand {
       background: #0000002;
     }
