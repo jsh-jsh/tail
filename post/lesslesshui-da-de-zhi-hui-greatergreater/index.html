@@ -8,7 +8,7 @@
 <meta name="keywords" content="Gridea静态个人博客">
 <meta name="description" content="">
 <meta name="theme-color" content="#000">
-<title>最美古诗词 | JSH&#39;s BLOG</title>
+<title>《回答的智慧》 | JSH&#39;s BLOG</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1612752058097">
 <link rel="stylesheet" href="/media/css/pisces.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
@@ -41,7 +41,7 @@
 
 
 
-  <meta name="description" content="最美古诗词" />
+  <meta name="description" content="《回答的智慧》" />
   <meta name="keywords" content="文艺" />
 </head>
 
@@ -206,7 +206,8 @@
       <div class="sidebar-body pisces" id="sidebar_body">
         
           
-            
+            <div class="post-side-meta" id="post_side_meta">
+              
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -273,6 +274,205 @@
   </div>
 
 </div>
+            </div>
+            <div class="post-toc sidebar-body-active" id="post_toc" style="opacity: 1;">
+              <div class="toc-box right-motion">
+  <div class="toc-wrapper auto-number auto"
+    id="toc_wrapper">
+    <ul class="markdownIt-TOC">
+<li><a href="#%E5%9C%A8%E5%9B%9E%E7%AD%94%E4%B9%8B%E5%89%8D">在回答之前</a></li>
+<li><a href="#%E5%9B%9E%E7%AD%94%E6%97%B6">回答时</a>
+<ul>
+<li><a href="#%E5%9B%9E%E7%AD%94%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%A4%BC%E4%BB%AA">回答的基本礼仪</a></li>
+<li><a href="#%E5%9B%9E%E7%AD%94%E7%9A%84%E6%80%81%E5%BA%A6">回答的态度</a></li>
+<li><a href="#%E5%9B%9E%E7%AD%94%E7%9A%84%E5%86%85%E5%AE%B9">回答的内容</a></li>
+<li><a href="#%E4%B8%8D%E8%A6%81%E9%9A%8F%E4%BE%BF%E8%86%9C%E6%8B%9C%E6%88%96%E8%80%85%E7%8E%A9%E6%A2%97">不要随便膜拜或者玩梗</a></li>
+<li><a href="#%E8%86%9C%E6%8B%9C%E5%8F%AF%E4%BB%A5%E4%BD%86%E5%A4%A7%E4%BD%AC%E4%B8%8D%E6%80%BB%E6%98%AF%E5%AF%B9%E7%9A%84">膜拜可以，但大佬不总是对的</a></li>
+</ul>
+</li>
+<li><a href="#%E5%9C%A8%E5%9B%9E%E7%AD%94%E4%B9%8B%E5%90%8E">在回答之后</a>
+<ul>
+<li><a href="#%E4%BF%9D%E6%8C%81%E5%90%88%E9%80%82%E7%9A%84%E7%A4%BC%E8%B2%8C">保持合适的礼貌</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+</div>
+
+<script>
+
+  let lastTop = 0, lList = [], hList = [], postBody, lastIndex = -1;
+  let active = 'active-show', activeClass = 'active-current';
+  let tocWrapper = document.querySelector('#toc_wrapper');
+  let tocContent = tocWrapper.children[0];
+  let autoNumber = tocWrapper && tocWrapper.classList.contains('auto-number');
+
+  function addTocNumber(elem, deep) {
+    if (!elem) {
+      return;
+    }
+    let prop = elem.__proto__;
+
+    if (prop === HTMLUListElement.prototype) {
+      for (let i = 0; i < elem.children.length; i++) {
+        addTocNumber(elem.children[i], deep + (i + 1) + '.');
+      }
+    } else if (prop === HTMLLIElement.prototype) {
+      // 保存li元素
+      if (elem.children[0] && elem.children[0].__proto__ === HTMLAnchorElement.prototype) {
+        lList.push(elem);
+      }
+      for (let i = 0; i < elem.children.length; i++) {
+        let cur = elem.children[i];
+        if (cur.__proto__ === HTMLAnchorElement.prototype) {
+          if (autoNumber) {
+            cur.text = deep + ' ' + cur.text;
+          }
+        } else if (cur.__proto__ === HTMLUListElement.prototype) {
+          addTocNumber(cur, deep);
+        }
+      }
+    }
+  }
+
+  function removeParentActiveClass() {
+    let parents = tocContent.querySelectorAll('.' + active)
+    parents.forEach(function (elem) {
+      elem.classList.remove(active);
+    });
+  }
+
+  function addActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.add(activeClass);
+    }
+  }
+
+  function removeActiveClass(index) {
+    if (index >= 0 && index < hList.length) {
+      lList[index].classList.remove(activeClass);
+    }
+  }
+
+  function addActiveLiElemment(elem, parent) {
+    if (!elem || elem === parent) {
+      return;
+    } else {
+      if (elem.__proto__ === HTMLLIElement.prototype) {
+        elem.classList.add(active);
+      }
+      addActiveLiElemment(elem.parentElement, parent);
+    }
+  }
+
+  function showToc() {
+    if (tocWrapper) {
+      postBody = document.querySelector('#post_body');
+      for (let i = 0; i < postBody.children.length; i++) {
+        if (postBody.children[i].__proto__ === HTMLHeadingElement.prototype) {
+          hList.push(postBody.children[i]);
+        }
+      }
+      if (tocWrapper.classList.contains('compress')) {
+        tocContent.classList.add('closed');
+      } else if (tocWrapper.classList.contains('no_compress')) {
+        tocContent.classList.add('expanded');
+      } else {
+        if (hList.length > 10) {
+          active = 'active-hidden'
+          tocContent.classList.add('closed');
+        } else {
+          tocContent.classList.add('expanded');
+        }
+      }
+    }
+  }
+
+  (function () {
+    // 处理不是从#一级标题开始目录
+    if (tocContent.children.length === 1 && tocContent.children[0].__proto__ === HTMLLIElement.prototype) {
+      let con = tocContent.children[0].children[0];
+      tocContent.innerHTML = con.innerHTML;
+    }
+    let markdownItTOC = document.querySelector('.markdownIt-TOC');
+    let innerHeight = window.innerHeight;
+    markdownItTOC.style = `max-height: ${innerHeight - 80 > 0 ? innerHeight - 80 : innerHeight}px`
+    addTocNumber(tocContent, '');
+  })();
+
+  document.addEventListener('scroll', function (e) {
+    if (lList.length <= 0) {
+      return;
+    }
+    let scrollTop = document.scrollingElement.scrollTop + 10;
+    let dir;
+
+    if (lastTop - scrollTop > 0) {
+      dir = 'up';
+    } else {
+      dir = 'down';
+    }
+
+    lastTop = scrollTop;
+    if (scrollTop <= 0) {
+      if (lastIndex >= 0 && lastIndex < hList.length) {
+        lList[lastIndex].classList.remove(activeClass);
+      }
+      return;
+    }
+
+    let current = 0, hasFind = false;
+    for (let i = 0; i < hList.length; i++) {
+      if (hList[i].offsetTop > scrollTop) {
+        current = i;
+        hasFind = true;
+        break;
+      }
+    }
+    if (!hasFind && scrollTop > lList[lList.length - 1].offsetTop) {
+      current = hList.length - 1;
+    } else {
+      current--;
+    }
+    if (dir === 'down') {
+      if (current > lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex)
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    } else {
+      if (current < lastIndex) {
+        addActiveClass(current);
+        removeActiveClass(lastIndex);
+        lastIndex = current;
+        removeParentActiveClass();
+        lList[current] && addActiveLiElemment(lList[current].parentElement, tocContent);
+      }
+    }
+  });
+
+
+  window.addEventListener('load', function () {
+    showToc();
+    document.querySelector('#sidebar').style = 'display: block;';
+    tocWrapper.classList.add('toc-active');
+    setTimeout(function () {
+      if ("createEvent" in document) {
+        let evt = document.createEvent("HTMLEvents");
+        evt.initEvent("scroll", false, true);
+        document.dispatchEvent(evt);
+      }
+      else {
+        document.fireEvent("scroll");
+      }
+    }, 500)
+  })
+
+</script>
+            </div>
           
         
       </div>
@@ -360,8 +560,8 @@
           <div class="section bg-color post post-page">
             <section class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="http://blog.jinshuhang.tk/post/zui-mei-gu-shi-ci/">
-      最美古诗词
+    <a class="post-title-link" href="http://blog.jinshuhang.tk/post/lesslesshui-da-de-zhi-hui-greatergreater/">
+      《回答的智慧》
     </a>
   </h1>
   <div class="post-meta">
@@ -369,7 +569,7 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2020-12-19 20:45:44">Saturday, December 19, 2020 8:45 PM</span>
+      <span class="publish-time" data-t="2021-02-08 10:36:35">Monday, February 8, 2021 10:36 AM</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
@@ -388,61 +588,45 @@
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>3<span class="language" data-lan="minute">分钟</span></span>
+      <span>4<span class="language" data-lan="minute">分钟</span></span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>713<span class="pc-show language" data-lan="words">字数</span></span>
+      <span>1059<span class="pc-show language" data-lan="words">字数</span></span>
     </span>
     
   </div>
 </section>
             <div class="post-body next-md-body" id="post_body">
-              <p><strong>众里寻他千百度，蓦然回首，那人却在灯火阑珊处</strong></p>
-<p><strong>诉不尽的前尘往事，忘不掉的浮生三千</strong></p>
-<p><strong>我笑花，花醉太红，何意笑春风？花笑我，我醉尘梦，何意笑花红？</strong></p>
-<p><strong>苟利国家生死以，岂因祸福避趋之</strong></p>
-<p><strong>红酥手，黄藤酒，满城春色宫墙柳。东风恶，欢情薄，一杯愁绪，几年离索。错！错！错！</strong></p>
-<p><strong>流光容易把人抛，红了樱桃，绿了芭蕉</strong></p>
-<p><strong>三更月。中庭恰照梨花雪。梨花雪。不胜凄断，杜鹃啼血</strong></p>
-<p><strong>墙里秋千墙外道，墙外行人墙里佳人笑</strong></p>
-<p><strong>上有无花之古树，下有伤心之春草</strong></p>
-<p><strong>门掩黄昏，无计留春住，泪眼问花花不语，乱红飞过秋千去</strong></p>
-<p><strong>嗟余只影系人间，如何同生不同死</strong></p>
-<p><strong>春风桃李花开日，秋雨梧桐叶落时</strong></p>
-<p><strong>花寒懒发鸟慵啼,信马闲行到日西</strong></p>
-<p><strong>细雨湿流光，芳草年年与恨长</strong></p>
-<p><strong>只恐双溪舴艋舟，载不动许多愁</strong></p>
-<p><strong>韶华不为少年留，恨悠悠，几时休？</strong></p>
-<p><strong>悲哉秋之气也！萧瑟兮草木摇落而变衰</strong></p>
-<p><strong>身无彩凤双飞翼，心有灵犀一点通</strong></p>
-<p><strong>天不老，情难绝。心似双丝网，中有千千结</strong></p>
-<p><strong>在天愿作比翼鸟，在地愿为连理枝</strong></p>
-<p><strong>梧桐树，三更雨，不道离情正苦。一叶叶，一声声，空阶滴到明</strong></p>
-<p><strong>滴不尽相思血泪抛红豆，开不完春柳春花满画楼</strong></p>
-<p><strong>忍把千金酬一笑？毕竟相思，不似相逢好</strong></p>
-<p><strong>不知魂已断，空有梦相随。除却天边月，没人知</strong></p>
-<p><strong>最是秋风管闲事，红他枫叶白人头</strong></p>
-<p><strong>想佳人妆楼颙望，误几回，天际识归舟</strong></p>
-<p><strong>滚滚长江东逝水，浪花淘尽英雄。是非成败转头空。青山依旧在，几度夕阳红。</strong></p>
-<p><strong>无可奈何花落去，似曾相识燕归来</strong></p>
-<p><strong>用我三生烟火，换你一世迷离</strong></p>
-<p><strong>长街长，烟花繁，你挑灯回看，短亭短，红尘辗，我把萧再叹</strong></p>
-<p><strong>苍茫大地一剑尽挽破，何处繁华笙歌落。斜倚云端千壶掩寂寞，纵使他人空笑我</strong></p>
-<p><strong>苟求性命于乱世，不求闻达于诸侯</strong></p>
-<p><strong>谁将烟焚散，散了纵横的牵绊</strong></p>
-<p><strong>此情可待成追忆，只是当时已惘然</strong></p>
-<p><strong>一梦入混沌，烟火撞星辰</strong></p>
-<p><strong>哀吾生之须臾，羡长江之无穷！</strong></p>
-<p><strong>无边落木萧萧下，不尽长江滚滚来</strong></p>
-<p><strong>此中有真意，欲辨已忘言</strong></p>
-<p><strong>长亭外，古道边，芳草碧连天</strong></p>
-<p><strong>莫道桑榆晚，为霞尚满天</strong></p>
-<p><strong>莫道不消魂，帘卷西风，人比黄花瘦</strong></p>
-<p><strong>夏夜空蝉引诗情，何须寄望流星雨</strong></p>
-<p><strong>庄周化蝶自作茧 ，躲进小记成坤乾</strong></p>
-<p><strong>五月落棠棣 ，难作春泥 ，只争枝高枝低</strong></p>
+              <p>回答的智慧</p>
+<!-- more -->
+<h1 id="在回答之前">在回答之前</h1>
+<p>​      如果你打算回答一位发问者的问题，请保证做到了以下几点：</p>
+<p>1.认真地阅读了提问者的问题</p>
+<p>2.有着充足的理论来回答问题</p>
+<p>3.确保自己想的和提问者是一个方面</p>
+<p>4.查看是否有人已经回答了你的思路</p>
+<p>5.确保自己回答的问题不是无意义</p>
+<p>​       不要以为自己说的总是对的，慎重的思考自己的每一句回答，错误地回答很有可能误导提问者。即使不是这样，那么大家也会对你的态度有所变化。如果有人回答的比你更好，那么你应该去支持Ta。当然，偶尔几句调侃是被允许的。<strong>请注意，过多的灌水会让大家对你有所反感</strong></p>
+<h1 id="回答时">回答时</h1>
+<h2 id="回答的基本礼仪">回答的基本礼仪</h2>
+<p>​       请正确地使用 Markdown 或者LaTeX。如果提问者提出了一个可笑的问题，你不应该去嘲笑Ta（有些情况下是可以的，下文会提到）,几句善意的提醒可比这好得多。 <strong>小心，千万别不合时宜地说这些</strong>。如果所有人都没发现提问者的话中有错误，那么你在回答时一定要确保自己是正确的，不然后果自负。要以谦虚的态度去回答，而不是用指教的口气。尽量不要有无意义的回答，选择你有把握的问题去回答，不要在所有问题下都去回答（除非你有那样的能力）。</p>
+<h2 id="回答的态度">回答的态度</h2>
+<p>​       如果提问者的语气和措辞是礼貌的，那么你也应当使用礼貌的语气去回答Ta。但是，如果有人发出了侮辱性的问题，那么你反手一个举报后要毫不客气的怼回去，在这时候，每没人会责怪你无礼。相反，Ta们也会来怼回去。其次，一旦有人提问了一种白痴问题。像这样的问题：c++是什么？很明显，用搜索引擎就可以得到答案，但是提问者在这里浪费时间。对于这种情况，你有两种选择：</p>
+<p>+是不用去理会他。二是去说Ta伸手党，这没有问题。当然，你也可以推荐Ta阅读《提问的智慧》</p>
+<h2 id="回答的内容">回答的内容</h2>
+<p>​      要尽量精简一些。如果涉及到了令人难以理解的知识，最好附上一份链接来说明它。如果你的回答不被认可，你需要重新看一下问题，如果你的回答的确有误，那么道个歉或者删除它。如果你的回答没问题，那就不用理会那些人，或者怼回去，维护自己的权益。</p>
+<p>​    不被认可的回答：用c++就好了。</p>
+<p>​    好回答：因为这道题卡你时间，所以你需要用c++。</p>
+<h2 id="不要随便膜拜或者玩梗">不要随便膜拜或者玩梗</h2>
+<p>不要看见一些大佬的回答就盲目的去膜拜，场合要适宜。简单的赞赏是可以的，但是无意义的膜拜就不被接受了。玩梗也要慎重，毕竟如果你不了解这个梗的用法或者含义去使用它，那会很令人反感。如果你玩的梗涉及到的人对你提出了意见，那么你应该道歉并删除你的回答。</p>
+<h2 id="膜拜可以但大佬不总是对的">膜拜可以，但大佬不总是对的</h2>
+<p>​      如果一位大家公认很强的大佬回答了这个问题，可以去赞赏Ta。但是，如果Ta回答的有错误，那么你可以选择去提出这些错误，放心，大佬不会生气的。如果Ta生气了，那么只能证明Ta不值得人们去膜拜Ta。你的语气也要正确，如果Ta因为这个生气了，这是完全可以的。</p>
+<h1 id="在回答之后">在回答之后</h1>
+<h2 id="保持合适的礼貌">保持合适的礼貌</h2>
+<p>​       你要明白的一点是，即使你做出了一个非常好的回答，那也只能证明你对这个方面有一定的了解。<strong>你不应该为此骄傲</strong>，相反，你应该谦虚的去回答更多的问题。</p>
+<p>END。</p>
 
             </div>
             
@@ -455,7 +639,7 @@
     </li>
     <li class="post-copyright-link">
       <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="http://blog.jinshuhang.tk/post/zui-mei-gu-shi-ci/" title="最美古诗词">http://blog.jinshuhang.tk/post/zui-mei-gu-shi-ci/</a>
+      <a href="http://blog.jinshuhang.tk/post/lesslesshui-da-de-zhi-hui-greatergreater/" title="《回答的智慧》">http://blog.jinshuhang.tk/post/lesslesshui-da-de-zhi-hui-greatergreater/</a>
     </li>
     <li class="post-copyright-license">
       <strong class="language" data-lan="copyright">版权声明： </strong>
@@ -470,15 +654,11 @@
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="圣诞节快乐" href="http://blog.jinshuhang.tk/post/happy/">圣诞节快乐</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="圣诞节快乐" href="http://blog.jinshuhang.tk/post/happy/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="论写作业的方式" href="http://blog.jinshuhang.tk/post/lun-xie-zuo-ye-de-fang-shi/">论写作业的方式</a>
-        <a class="nav-mobile-next" title="论写作业的方式" href="http://blog.jinshuhang.tk/post/lun-xie-zuo-ye-de-fang-shi/">下一篇</a>
+        <a class="nav-pc-next" title="时间/空间复杂度学习笔记" href="http://blog.jinshuhang.tk/post/shi-jian-kong-jian-fu-za-du-xue-xi-bi-ji/">时间/空间复杂度学习笔记</a>
+        <a class="nav-mobile-next" title="时间/空间复杂度学习笔记" href="http://blog.jinshuhang.tk/post/shi-jian-kong-jian-fu-za-du-xue-xi-bi-ji/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
