@@ -1,1910 +1,290 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 
 <head>
   <meta charset="UTF-8" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Gridea静态个人博客">
+<title>留言板 - JSH&#39;s BLOG</title>
 <meta name="description" content="绝艺如君天下少，闲人似我世间无。">
-<meta name="theme-color" content="#000">
-<title>留言板 | JSH&#39;s BLOG</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1614213796708">
-<link rel="stylesheet" href="/media/css/pisces.css">
-<link rel="stylesheet" href="/media/fonts/font-awesome.css">
-<link
-  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
-  rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link href="/media/hljs/styles/default.css"
-  rel="stylesheet">
+<link type='text/css' rel='stylesheet' href='https://blog.jinshuhang.tk/styles/main.css' media='screen' />
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css">
+<link type="text/css" rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/themes/green/pace-theme-bounce.css" rel="stylesheet" />
-
-<link rel="stylesheet" href="/styles/main.css">
-
-<script src="/media/hljs/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
-  integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
-
-
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
-  integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"
-  integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"
-  onload="renderMathInElement(document.body);"></script>
-
-
-
-
-
-  <meta name="description" content="留言板" />
-  <meta name="keywords" content="" />
+<script type="text/javascript" src='https://blog.jinshuhang.tk/media/scripts/jquery.js'></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/go.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
 </head>
 
 <body>
-  <div class="head-top-line"></div>
-  <div class="header-box">
-    
-<div class="pisces">
-  <header class="header  ">
-    <div class="blog-header box-shadow-wrapper bg-color " id="header">
-      <div class="nav-toggle" id="nav_toggle">
-        <div class="toggle-box">
-          <div class="line line-top"></div>
-          <div class="line line-center"></div>
-          <div class="line line-bottom"></div>
-        </div>
-      </div>
-      <div class="site-meta">       
-        <div class="site-title">
-          
-            <a href="/" class="brand">
-              <span>JSH&#39;s BLOG</span>
-            </a>  
-          
-        </div>
-        
-          <p class="subtitle">I AK IOI</p>
-        
-      </div>
-      <nav class="site-nav" id="site_nav">
-        <ul id="nav_ul">
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="http://blog.jinshuhang.tk/post/aboutme/" target="_self">
-                  <i class="fa fa-globe"></i> 关于我
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="http://blog.jinshuhang.tk/data/" target="_self">
-                  <i class="fa fa-globe"></i> 归档
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="http://blog.jinshuhang.tk/tags/" target="_self">
-                  <i class="fa fa-globe"></i> 标签
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="http://blog.jinshuhang.tk/" target="_self">
-                  <i class="fa fa-globe"></i> 主页
-                </a>
-              
-            </li>
-          
-            
-            
-              
-            
-            <li class="nav-item ">
-              
-              
-                <a href="http://blog.jinshuhang.tk/post/liu-yan-ban/" target="_self">
-                  <i class="fa fa-globe"></i> 留言板
-                </a>
-              
-            </li>
-          
-          
-            
-              <li class="nav-item ">
-                <a href="/friends/" target="_self">
-                  
-                    <i class="fa fa-address-book"></i> 友链
-                  
-                </a>
-              </li>
-            
-          
-          
-            <li id="fa_search" class="nav-item">
-              <a href="javascript:void(0);">
-                <i class="fa fa-search"></i> <span class="language" data-lan="search">搜索</span>
-              </a>
-            </li>
-          
-        </ul>
-      </nav>
-    </div>
-  </header>
-</div>
+  <div class="layout theme-dark">
+    <div class="layout-header">
 
-<script type="text/javascript"> 
- 
-  let showNav = true;
+	<div class="layout-header-main">
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
 
-  let navToggle = document.querySelector('#nav_toggle'),
-  siteNav = document.querySelector('#site_nav');
-  
-  function navClick() {
-    let sideBar = document.querySelector('.sidebar');
-    let navUl = document.querySelector('#nav_ul');
-    navToggle.classList.toggle('nav-toggle-active');
-    siteNav.classList.toggle('nav-menu-active');
-    if (siteNav.classList.contains('nav-menu-active')) {
-      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
-    } else {
-      siteNav.style = "";
-    }
-  }
+					<div class="navbar">
 
-  navToggle.addEventListener('click',navClick);  
-</script>
-  </div>
-  <div class="main-continer">
-    
-    <div
-      class="section-layout pisces ">
-      <div class="section-layout-wrapper">
-        
+						<div class="logo">
+							<a href="https://blog.jinshuhang.tk">
+								<img class="logo"
+									src="https://blog.jinshuhang.tk/media/images/site_avatar.png?v=1614948490884"
+									alt="">
+							</a>
+						</div>
 
-<div class="sidebar">
-  
-    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
-      
-        <div class="post-list-sidebar">
-          <div class="sidebar-title">
-            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active language" data-lan="index">文章目录</span>
-            <span id="metaSideBar" class="sidebar-title-item language" data-lan="preview">站点概览</span>
-          </div>
-        </div>
-      
-      <div class="sidebar-body pisces" id="sidebar_body">
-        
-          
-            
-<div class="sidebar-wrapper box-shadow-wrapper bg-color">
-  <div class="sidebar-item">
-    <img class="site-author-image right-motion" src="/images/avatar.png"/>
-    <p class="site-author-name">JSH</p>
-    
-    <div class="site-description right-motion">
-      
-        <p id="binft">绝艺如君天下少，闲人似我世间无。</p>
-      
-    </div>
-    
-  </div>
-  <div class="sidebar-item side-item-stat right-motion">
-    <div class="sidebar-item-box">
-      <a href="/archives/">
-        
-        <span class="site-item-stat-count">7</span>
-        <span class="site-item-stat-name language" data-lan="article">文章</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="">
-        <span class="site-item-stat-count">3</span>
-        <span class="site-item-stat-name language" data-lan="category">分类</span>
-      </a>
-    </div>
-    <div class="sidebar-item-box">
-      <a href="/tags/">
-        <span class="site-item-stat-count">3</span>
-        <span class="site-item-stat-name language" data-lan="tag">标签</span>
-      </a>
-    </div>
-  </div>
-  
-    
-      <div class="sidebar-item">
-        <span class="site-item-rss">
-            <i class="fa fa-rss"></i>
-            <a href="https://blog.jinshuhang.tk/atom.xml" target="_blank">RSS</a>
-        </span>
-      </div>
-    
-  
-  
-    <div class="sidebar-item sidebar-item-social">
-      <div class="social-item">
-        
-          
-            <a href="https://github.com/jsh-jsh">
-              <i class="fa fa-globe" title="github"></i>
-            </a>
-          
-        
-        
-      </div>
-    </div>
-  
+						<div class="menu d-md-inline-block d-none">
+							<ul class="layout-navigation-list">
+								
+								<li class="layout-navigation-item"><a title="关于我"
+										href="http://blog.jinshuhang.tk/post/aboutme">关于我</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="归档"
+										href="http://blog.jinshuhang.tk/data">归档</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="标签"
+										href="http://blog.jinshuhang.tk/tags">标签</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="主页"
+										href="http://blog.jinshuhang.tk">主页</a>
+								</li>
+								
+								<li class="layout-navigation-item"><a title="留言板"
+										href="http://blog.jinshuhang.tk/post/liu-yan-ban">留言板</a>
+								</li>
+								
+							</ul>
+						</div>
+
+						<div class="item d-md-inline-block d-none">
+							<div class="search-icon">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</div>
+						</div>
 
 
 
-  <div style="width: 100%; position: relative;">
-    <canvas id="canvasDiyBlock" style="width:100%;">当前浏览器不支持canvas，请更换浏览器后再试</canvas>
-    <script src="/media/js/magic/clock.js"></script>
-  </div>
+						<div class="d-md-inline-block d-none">
+							<div class="search-lightbox">
+								<div class="search-body">
+
+									<form id="gridea-search-form" data-update="1614948490884" action="/search/" class="search-form">
+										<input type="text" name="q" id="s" value="" class="search-field" placeholder="请输入搜索关键词" aria-label="请输入搜索关键词" required="">
+										<button type="submit" class="submit" aria-label="Submit">
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</button>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="nav d-md-none d-inline-block">
+							<div class="trigger">
+								<i class="fa fa-bars layout-btn-toggle" aria-hidden="true"></i>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+		</div>
+	</div>
 
 </div>
-          
-        
-      </div>
-    </div>
-  
+    <div class="layout-collapse d-md-none">
+	<div class="layout-collapse-main">
+		<ul class="layout-collapse-list">
+			
+			<li class="layout-collapse-item"><a title="关于我" href="http://blog.jinshuhang.tk/post/aboutme">关于我</a></li>
+			
+			<li class="layout-collapse-item"><a title="归档" href="http://blog.jinshuhang.tk/data">归档</a></li>
+			
+			<li class="layout-collapse-item"><a title="标签" href="http://blog.jinshuhang.tk/tags">标签</a></li>
+			
+			<li class="layout-collapse-item"><a title="主页" href="http://blog.jinshuhang.tk">主页</a></li>
+			
+			<li class="layout-collapse-item"><a title="留言板" href="http://blog.jinshuhang.tk/post/liu-yan-ban">留言板</a></li>
+			
+
+		</ul>
+	</div>
 </div>
+
+    <div class="layout-content">
+      <div class="layout-content-main">
+        <div class="container">
+          <div class="row justify-content-lg-center">
+            <div class="col-12 col-lg-9">
+              <div class="layout-post">
+                <div class="layout-post-body">
+                  <div class="row">
+
+                    <div class="col-12 col-lg-10">
+                      <div class="layout-post-main m-right m-md-right">
+                        <div class="layout-post-header">
+                          <h1 class="layout-post-title">留言板</h1>
+                          <div class="layout-post-meta">
+                            <div class="item">
+                              
+                            </div>
+                            <div class="item">
+                              <span>Sunday, February 14, 2021 5:38 PM</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="layout-post-content">
+                          <div class="layout-post-item">
+                            
+                            <p class="with-img"><img src="https://i.loli.net/2021/02/24/5KVcMjlsGA6anF9.jpg"
+                                class="attachment-full size-full wp-post-image" alt="留言板" /></p>
+                            
+                            <p>留言板</p>
+
+                          </div>
+                        </div>
+                        <div class="layout-post-social">
+                          <div class="item reader">
+                            <div id="/post/liu-yan-ban/" class="leancloud-visitors view"
+                              data-flag-title="留言板">
+                              <span class="post-meta-item-text">阅读 </span>
+                              <span class="leancloud-visitors-count"></span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="layout-post-navigation">
+                          <div class="navigation-list">
+                            
+                          </div>
+                        </div>
+
+                        <div class="layout-comments"></div>
+                        
+                        <script type="text/javascript" src='https://blog.jinshuhang.tk/media/scripts/zan.js'></script>
+<script type="text/javascript" src='https://blog.jinshuhang.tk/media/scripts/av-min.js'></script>
+<script type="text/javascript" src='https://blog.jinshuhang.tk/media/scripts/Valine.min.js'></script>
+
 <script>
-  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
-  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
-  const SLIDE_UP_IN = 'slide-up-in';
-
-  let sidebar = document.querySelector('#sidebar'),
-  tocSideBar = document.querySelector('#tocSideBar'),
-  metaSideBar = document.querySelector('#metaSideBar'),
-  postToc = document.querySelector('#post_toc'),
-  postSiteMeta = document.querySelector('#post_side_meta'),
-  sidebarTitle = document.querySelector('.sidebar-title'),
-  sidebarBody = document.querySelector('#sidebar_body');
-
-  tocSideBar && tocSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  metaSideBar && metaSideBar.addEventListener('click', (e) => {
-    toggleSidebar(e);
-  });
-
-  function toggleSidebar(e) {
-    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
-    if (currentTitle == e.srcElement) {
-      return ;
-    }
-    let current, showElement, hideElement;
-    if (e.srcElement == metaSideBar) {
-      showElement = postSiteMeta;
-      hideElement = postToc;
-    } else if (e.srcElement == tocSideBar){
-      showElement = postToc;
-      hideElement = postSiteMeta;
-    }
-    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
-    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
-
-    window.Velocity(hideElement, 'stop');
-    window.Velocity(hideElement, 'transition.slideUpOut', {
-      display: 'none',
-      duration: 200,
-      complete: function () {
-        window.Velocity(showElement, 'transition.slideDownIn', {
-          duration: 200
-        });
-      }
-    })
-    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
-    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
-  }
-
-  postToc && postToc.addEventListener('transitionend', function() {
-    this.classList.remove(SLIDE_UP_IN);
-  });
-
-  if (sidebarBody) {
-    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
-      let hasFix = false;
-      let scrollEl = document.querySelector('.main-continer');
-      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
-      window.addEventListener('scroll', function(e) {
-        if (document.scrollingElement.scrollTop >= limitTop) {
-          if (!hasFix) {
-            sidebar.classList.add('sidebar-fixed');
-            hasFix = true;
-          }
-        } else {
-          if (hasFix) {
-            sidebar.classList.remove('sidebar-fixed');
-            hasFix = false;
-          }
-        }
-      });
-    }
-  }
-  
-</script>
-        <div class="section-box box-shadow-wrapper">
-          <div class="section bg-color post post-page">
-            <section class="post-header">
-  <h1 class="post-title">
-    <a class="post-title-link" href="https://blog.jinshuhang.tk/post/liu-yan-ban/">
-      留言板
-    </a>
-  </h1>
-  <div class="post-meta">
-    
-    <span class="meta-item pc-show">
-      <i class="fa fa-calendar-o"></i>
-      <span class="language" data-lan="publish">发布于</span>
-      <span class="publish-time" data-t="2021-02-14 17:38:53">Sunday, February 14, 2021 5:38 PM</span>
-      <span class="post-meta-divider pc-show">|</span>
-    </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-clock-o"></i>
-      <span>1<span class="language" data-lan="minute">分钟</span></span>
-    </span>
-    <span class="meta-item">
-      <span class="post-meta-divider">|</span>
-      <i class="fa fa-file-word-o"></i>
-      <span>3<span class="pc-show language" data-lan="words">字数</span></span>
-    </span>
-    
-  </div>
-</section>
-            <div class="post-body next-md-body" id="post_body">
-              <p>留言板</p>
-
-            </div>
-            
-            
-              <div class="post-footer">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-      <strong class="language" data-lan="author">本文作者：</strong>
-      JSH
-    </li>
-    <li class="post-copyright-link">
-      <strong class="language" data-lan="link">本文链接：</strong>
-      <a href="https://blog.jinshuhang.tk/post/liu-yan-ban/" title="留言板">https://blog.jinshuhang.tk/post/liu-yan-ban/</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong class="language" data-lan="copyright">版权声明： </strong>
-      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
-    </li>
-  </ul>
-  <div class="tags">
-    
-  </div>
-  <div class="nav">
-    <div class="nav-prev">
-      
-    </div>
-    <div class="nav-next">
-      
-    </div>
-  </div>
-</div>
-            
-            
-  <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
-<div id="vcomments" style="padding: 10px 0px 0px 0px"></div>
-
-<style>
-  .v .veditor {
-    min-height: 10rem;
-    background-image: url('');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: right;
-    background-color: rgba(255, 255, 255, 0);
-    resize: none;
-  }
-
-  .v .vwrap {
-    border: 1px solid #000 !important;
-  }
-
-  .v .vbtn {
-    padding: .4rem 1.2rem !important;
-    border-color: #fff !important;
-    background-color: #49b1f5 !important;
-    color: #fff !important;
-    font-size: .7rem !important;
-  }
-
-  .v .vcards .vcard .vh .vmeta .vat {
-    padding: 0 .8rem !important;
-    border: 1px solid #00c4b6 !important;
-    border-radius: 5px !important;
-    color: #00c4b6 !important;
-  }
-</style>
-<script>
-  new Valine({
-    el: '#vcomments',
+  var valine = new Valine();
+  valine.init({
+    el: '.layout-comments',
     appId: 'AunaLyjdrDjwCthLGMOJ9ynJ-MdYXbMMI',
     appKey: 'xKXYjRt0R3JCAb0crcJ637GQ',
-    avatar: 'wavatar',
-    placeholder: '写下你的想法~',
-    pageSize: '10',
-    lang: 'zh-cn',
-    enableQQ: 'true' === 'true',
-    visitor: 'true' === 'false',
-    highlight: 'true' === 'true',
-    avatarForce: 'true' === 'false',
-  });
+    notify: false,
+    verify: false,
+    visitor: true,
+    avatar: 'mp',
+    placeholder: '加入讨论...'
+  })
 </script>
+                        
+                      </div>
+                    </div>
 
+                    <div class="col-12 col-lg-2 d-none d-lg-block">
+                      <div class="layout-post-sidebar">
+                        <div class="layout-sidebar-item">
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="footer-box">
-  <footer class="footer">
-    <div class="copyright">
-      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a
-        href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
-    </div>
-    <div class="poweredby">
-      <a href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><img src="https://travellings.now.sh/assets/logo.gif" alt="开往-友链接力" width="120"></a>
-    </div>
-  </footer>
-  
-  
-  <div class="pisces back-to-top" id="back_to_top">
-    <i class="fa fa-arrow-up"></i>
-    
-    <span class="scrollpercent">
-      <span id="back_to_top_text">0</span>%
-    </span>
-    
-  </div>
-  
-  
-  
-  <div class="bg-img">
-    <img src="https://i.loli.net/2021/02/24/qjYfzrNuIU1oaPk.jpg" />
-  </div>
-  
-  
-  
-  
-<link rel="stylesheet" href="/media/live2d/css/live2d.css" />
-<div class="box-scale">
-  <div id="landlord" style="left: 5px;bottom: px;"
-    data-key="">
-    <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
-    
 
-      <div class="message" style="opacity:0"></div>
-      <div class="live_talk_input_body">
-        <div class="live_talk_input_name_body">
-          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
-            placeholder="你的名字" />
-        </div>
-        <div class="live_talk_input_text_body">
-          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
-            placeholder="要和我聊什么呀？" />
-          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-        </div>
-      </div>
-      <input name="live_talk" id="live_talk" value="1" type="hidden" />
-      <div class="live_ico_box">
-        <div class="live_ico_item type_info" id="showInfoBtn"></div>
-        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-        
-        <div class="live_ico_item type_youdu" id="youduButton"></div>
-        <div class="live_ico_item type_quit" id="hideButton"></div>
-        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input id="duType" value="douqilai" type="hidden">
-        
-      </div>
-    
-  </div>
-</div>
-<div id="open_live2d">召唤看板娘</div>
-<script src="https://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script>
-  var message_Path = 'https://cdn.jsdelivr.net/gh/hsxyhao/live2d.github.io@master/';
-  let landlord = document.querySelector('#landlord');
-  var apiKey = landlord.dataset.key;
-</script>
-<script type="text/javascript" src="/media/live2d/js/live2d.js"></script>
-<script>
-	var home_Path = document.location.protocol + '//' + window.document.location.hostname + ":" + window.document.location.port + '/';
-	var userAgent = window.navigator.userAgent.toLowerCase();
-	var norunAI = ["android", "iphone", "ipod", "ipad", "windows phone", "mqqbrowser", "msie", "trident/7.0"];
-	var norunFlag = false;
+    <div class="layout-totop d-none"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
-	for (var i = 0; i < norunAI.length; i++) {
-		if (userAgent.indexOf(norunAI[i]) > -1) {
-			norunFlag = true;
-			break;
-		}
-	}
+    	<div class="layout-footer">
 
-	if (!window.WebGLRenderingContext) {
-		norunFlag = true;
-	}
+		<div class="container">
+			<div class="row justify-content-lg-center">
+				<div class="col-12 col-lg-9">
+					<div class="footer">
+						<div class="row">
+							<div class="col-12 col-md-9">
+								<div class="footer-copy">
+									
+									<span>© 2021.1.1 </span>
+									<a href="https://blog.jinshuhang.tk" title="JSH&#39;s BLOG">JSH&#39;s BLOG</a>
+									<span class="px-2">⋅</span>
+									
+									<a href="https://travellings.now.sh/" target="blank" title="开往-友链接力"><img src="https://travellings.now.sh/assets/logo.gif" alt="开往-友链接力" width="120"></a>
+									<div class="footer-icp d-none d-sm-inline-block">
+										<span class="px-2">⋅</span>
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-3 d-none d-md-block">
+								<div class="footer-links">
+									
+									
+									
+									
+									<span class="footer-links-item">
+										<a href="https://github.com/jsh-jsh/" target="_blank">
+											<i class="fa fa-github" aria-hidden="true"></i>
+										</a>
+									</span>
+									
+									
+									
+									
+									
+									
+									
+									
+									
+									<span class="footer-links-item">
+										<a href="819433558" target="_blank">
+											<i class="fa fa-qq" aria-hidden="true"></i>
+										</a>
+									</span>
+									
+									
+									
+									
+									
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-	if (!norunFlag) {
-		var hitFlag = false;
-		var AIFadeFlag = false;
-		var liveTlakTimer = null;
-		var sleepTimer_ = null;
-		var AITalkFlag = false;
-		var talkNum = 0;
-		(function () {
-			function renderTip(template, context) {
-				var tokenReg = /(\\)?\{([^\{\}\\]+)(\\)?\}/g;
-				return template.replace(tokenReg, function (word, slash1, token, slash2) {
-					if (slash1 || slash2) {
-						return word.replace('\\', '');
-					}
-					var variables = token.replace(/\s/g, '').split('.');
-					var currentObject = context;
-					var i, length, variable;
-					for (i = 0, length = variables.length; i < length; ++i) {
-						variable = variables[i];
-						currentObject = currentObject[variable];
-						if (currentObject === undefined || currentObject === null) return '';
-					}
-					return currentObject;
-				});
-			}
+	</div>
 
-			String.prototype.renderTip = function (context) {
-				return renderTip(this, context);
-			};
-
-			var re = /x/;
-			re.toString = function () {
-				showMessage('哈哈，你打开了控制台，是想要看看我的秘密吗？', 5000);
-				return '';
-			};
-
-			$(document).on('copy', function () {
-				showMessage('你都复制了些什么呀，转载要记得加上出处哦~~', 5000);
-			});
-
-			function initTips() {
-				$.ajax({
-					cache: true,
-					url: message_Path + 'message.json',
-					dataType: "json",
-					success: function (result) {
-						$.each(result.mouseover, function (index, tips) {
-							$(tips.selector).mouseover(function () {
-								var text = tips.text;
-								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
-								text = text.renderTip({ text: $(this).text() });
-								showMessage(text, 3000);
-								talkValTimer();
-								clearInterval(liveTlakTimer);
-								liveTlakTimer = null;
-							});
-							$(tips.selector).mouseout(function () {
-								showHitokoto();
-								if (liveTlakTimer == null) {
-									liveTlakTimer = window.setInterval(function () {
-										showHitokoto();
-									}, 15000);
-								};
-							});
-						});
-						$.each(result.click, function (index, tips) {
-							$(tips.selector).click(function () {
-								if (hitFlag) {
-									return false
-								}
-								hitFlag = true;
-								setTimeout(function () {
-									hitFlag = false;
-								}, 8000);
-								var text = tips.text;
-								if (Array.isArray(tips.text)) text = tips.text[Math.floor(Math.random() * tips.text.length + 1) - 1];
-								text = text.renderTip({ text: $(this).text() });
-								showMessage(text, 3000);
-							});
-							clearInterval(liveTlakTimer);
-							liveTlakTimer = null;
-							if (liveTlakTimer == null) {
-								liveTlakTimer = window.setInterval(function () {
-									showHitokoto();
-								}, 15000);
-							};
-						});
-					}
-				});
-			}
-			initTips();
-
-			var text;
-			if (document.referrer !== '') {
-				var referrer = document.createElement('a');
-				referrer.href = document.referrer;
-				text = '嗨！来自 <span style="color:#0099cc;">' + referrer.hostname + '</span> 的朋友！';
-				var domain = referrer.hostname.split('.')[1];
-				if (domain == 'baidu') {
-					text = '嗨！ 来自 百度搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
-				} else if (domain == 'so') {
-					text = '嗨！ 来自 360搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
-				} else if (domain == 'google') {
-					text = '嗨！ 来自 谷歌搜索 的朋友！<br>欢迎访问<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
-				}
-			} else {
-				if (window.location.href == home_Path) { //主页URL判断，需要斜杠结尾
-					var now = (new Date()).getHours();
-					if (now > 23 || now <= 5) {
-						text = '你是夜猫子呀？这么晚还不睡觉，明天起的来嘛？';
-					} else if (now > 5 && now <= 7) {
-						text = '早上好！一日之计在于晨，美好的一天就要开始了！';
-					} else if (now > 7 && now <= 11) {
-						text = '上午好！工作顺利嘛，不要久坐，多起来走动走动哦！';
-					} else if (now > 11 && now <= 14) {
-						text = '中午了，工作了一个上午，现在是午餐时间！';
-					} else if (now > 14 && now <= 17) {
-						text = '午后很容易犯困呢，今天的运动目标完成了吗？';
-					} else if (now > 17 && now <= 19) {
-						text = '傍晚了！窗外夕阳的景色很美丽呢，最美不过夕阳红~~';
-					} else if (now > 19 && now <= 21) {
-						text = '晚上好，今天过得怎么样？';
-					} else if (now > 21 && now <= 23) {
-						text = '已经这么晚了呀，早点休息吧，晚安~~';
-					} else {
-						text = '嗨~ 快来逗我玩吧！';
-					}
-				} else {
-					text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
-				}
-			}
-			showMessage(text, 12000);
-		})();
-
-		liveTlakTimer = setInterval(function () {
-			showHitokoto();
-		}, 15000);
-
-		function showHitokoto() {
-			if (sessionStorage.getItem("Sleepy") !== "1") {
-				if (!AITalkFlag) {
-					$.getJSON('https://v1.hitokoto.cn/', function (result) {
-						talkValTimer();
-						showMessage(result.hitokoto, 0);
-					});
-				}
-			} else {
-				hideMessage(0);
-				if (sleepTimer_ == null) {
-					sleepTimer_ = setInterval(function () {
-						checkSleep();
-					}, 200);
-				}
-			}
-		}
-
-		function checkSleep() {
-			var sleepStatu = sessionStorage.getItem("Sleepy");
-			if (sleepStatu !== '1') {
-				talkValTimer();
-				showMessage('你回来啦~', 0);
-				clearInterval(sleepTimer_);
-				sleepTimer_ = null;
-			}
-		}
-
-		function showMessage(text, timeout) {
-			if (Array.isArray(text)) text = text[Math.floor(Math.random() * text.length + 1) - 1];
-			$('.message').stop();
-			$('.message').html(text);
-			$('.message').fadeTo(200, 1);
-			//if (timeout === null) timeout = 5000;
-			//hideMessage(timeout);
-		}
-		function talkValTimer() {
-			$('#live_talk').val('1');
-		}
-
-		function hideMessage(timeout) {
-			//$('.message').stop().css('opacity',1);
-			if (timeout === null) timeout = 5000;
-			$('.message').delay(timeout).fadeTo(200, 0);
-		}
-
-		function initLive2d() {
-			$('#hideButton').on('click', function () {
-				if (AIFadeFlag) {
-					return false;
-				} else {
-					AIFadeFlag = true;
-					localStorage.setItem("live2dhidden", "0");
-					$('#landlord').fadeOut(200);
-					$('#open_live2d').delay(200).fadeIn(200);
-					setTimeout(function () {
-						AIFadeFlag = false;
-					}, 300);
-				}
-			});
-			$('#open_live2d').on('click', function () {
-				if (AIFadeFlag) {
-					return false;
-				} else {
-					AIFadeFlag = true;
-					localStorage.setItem("live2dhidden", "1");
-					$('#open_live2d').fadeOut(200);
-					$('#landlord').delay(200).fadeIn(200);
-					setTimeout(function () {
-						AIFadeFlag = false;
-					}, 300);
-				}
-			});
-			$('#youduButton').on('click', function () {
-				if ($('#youduButton').hasClass('doudong')) {
-					var typeIs = $('#youduButton').attr('data-type');
-					$('#youduButton').removeClass('doudong');
-					$('body').removeClass(typeIs);
-					$('#youduButton').attr('data-type', '');
-				} else {
-					var duType = $('#duType').val();
-					var duArr = duType.split(",");
-					var dataType = duArr[Math.floor(Math.random() * duArr.length)];
-
-					$('#youduButton').addClass('doudong');
-					$('#youduButton').attr('data-type', dataType);
-					$('body').addClass(dataType);
-				}
-			});
-			if (apiKey) {
-				$('#showInfoBtn').on('click', function () {
-					var live_statu = $('#live_statu_val').val();
-					if (live_statu == "0") {
-						return
-					} else {
-						$('#live_statu_val').val("0");
-						$('.live_talk_input_body').fadeOut(500);
-						AITalkFlag = false;
-						showHitokoto();
-						$('#showTalkBtn').show();
-						$('#showInfoBtn').hide();
-					}
-				});
-				$('#showTalkBtn').on('click', function () {
-					var live_statu = $('#live_statu_val').val();
-					if (live_statu == "1") {
-						return
-					} else {
-						$('#live_statu_val').val("1");
-						$('.live_talk_input_body').fadeIn(500);
-						AITalkFlag = true;
-						$('#showTalkBtn').hide();
-						$('#showInfoBtn').show();
-
-					}
-				});
-				$('#talk_send').on('click', function () {
-					var info_ = $('#AIuserText').val();
-					var userid_ = $('#AIuserName').val();
-					if (info_ == "") {
-						showMessage('写点什么吧！', 0);
-						return;
-					}
-					if (userid_ == "") {
-						showMessage('聊之前请告诉我你的名字吧！', 0);
-						return;
-					}
-					showMessage('思考中~', 0);
-					let protocol = window.location.protocol.indexOf("s") > 0 ? "https" : "http";
-					$.ajax({
-						type: "get",
-						url: `${protocol}://www.tuling123.com/openapi/api?key=${apiKey}&info=${info_}`,
-						dataType: "json",
-						success: function (res) {
-							talkValTimer();
-							showMessage(res.text, 0);
-							$('#AIuserText').val("");
-							sessionStorage.setItem("live2duser", userid_);
-						},
-						error: function (e) {
-							talkValTimer();
-							showMessage('似乎有什么错误，请和站长联系！', 0);
-						}
-					});
-				});
-			} else {
-				$('#showInfoBtn').hide();
-				$('#showTalkBtn').hide();
-			}
-			//获取音乐信息初始化
-			var bgmListInfo = $('input[name=live2dBGM]');
-			if (bgmListInfo.length == 0) {
-				$('#musicButton').hide();
-			} else {
-				var bgmPlayNow = parseInt($('#live2d_bgm').attr('data-bgm'));
-				var bgmPlayTime = 0;
-				var live2dBGM_Num = sessionStorage.getItem("live2dBGM_Num");
-				var live2dBGM_PlayTime = sessionStorage.getItem("live2dBGM_PlayTime");
-				if (live2dBGM_Num) {
-					if (live2dBGM_Num <= $('input[name=live2dBGM]').length - 1) {
-						bgmPlayNow = parseInt(live2dBGM_Num);
-					}
-				}
-				if (live2dBGM_PlayTime) {
-					bgmPlayTime = parseInt(live2dBGM_PlayTime);
-				}
-				var live2dBGMSrc = bgmListInfo.eq(bgmPlayNow).val();
-				$('#live2d_bgm').attr('data-bgm', bgmPlayNow);
-				$('#live2d_bgm').attr('src', live2dBGMSrc);
-				$('#live2d_bgm')[0].currentTime = bgmPlayTime;
-				$('#live2d_bgm')[0].volume = 0.5;
-				var live2dBGM_IsPlay = sessionStorage.getItem("live2dBGM_IsPlay");
-				var live2dBGM_WindowClose = sessionStorage.getItem("live2dBGM_WindowClose");
-				if (live2dBGM_IsPlay == '0' && live2dBGM_WindowClose == '0') {
-					$('#live2d_bgm')[0].play();
-					$('#musicButton').addClass('play');
-				}
-				sessionStorage.setItem("live2dBGM_WindowClose", '1');
-				$('#musicButton').on('click', function () {
-					if ($('#musicButton').hasClass('play')) {
-						$('#live2d_bgm')[0].pause();
-						$('#musicButton').removeClass('play');
-						sessionStorage.setItem("live2dBGM_IsPlay", '1');
-					} else {
-						$('#live2d_bgm')[0].play();
-						$('#musicButton').addClass('play');
-						sessionStorage.setItem("live2dBGM_IsPlay", '0');
-					}
-				});
-				window.onbeforeunload = function () {
-					sessionStorage.setItem("live2dBGM_WindowClose", '0');
-					if ($('#musicButton').hasClass('play')) {
-						sessionStorage.setItem("live2dBGM_IsPlay", '0');
-					}
-				}
-				document.getElementById('live2d_bgm').addEventListener("timeupdate", function () {
-					var live2dBgmPlayTimeNow = document.getElementById('live2d_bgm').currentTime;
-					sessionStorage.setItem("live2dBGM_PlayTime", live2dBgmPlayTimeNow);
-				});
-				document.getElementById('live2d_bgm').addEventListener("ended", function () {
-					var listNow = parseInt($('#live2d_bgm').attr('data-bgm'));
-					listNow++;
-					if (listNow > $('input[name=live2dBGM]').length - 1) {
-						listNow = 0;
-					}
-					var listNewSrc = $('input[name=live2dBGM]').eq(listNow).val();
-					sessionStorage.setItem("live2dBGM_Num", listNow);
-					$('#live2d_bgm').attr('src', listNewSrc);
-					$('#live2d_bgm')[0].play();
-					$('#live2d_bgm').attr('data-bgm', listNow);
-				});
-				document.getElementById('live2d_bgm').addEventListener("error", function () {
-					$('#live2d_bgm')[0].pause();
-					$('#musicButton').removeClass('play');
-					showMessage('音乐似乎加载不出来了呢！', 0);
-				});
-			}
-			//获取用户名
-			var live2dUser = sessionStorage.getItem("live2duser");
-			if (live2dUser !== null) {
-				$('#AIuserName').val(live2dUser);
-			}
-			//获取位置
-			var landL = sessionStorage.getItem("historywidth");
-			var landB = sessionStorage.getItem("historyheight");
-			if (landL == null || landB == null) {
-				landL = '5px'
-				landB = '0px'
-			}
-			$('#landlord').css('left', landL + 'px');
-			$('#landlord').css('bottom', landB + 'px');
-			//移动
-			function getEvent() {
-				return window.event || arguments.callee.caller.arguments[0];
-			}
-			var smcc = document.getElementById("landlord");
-			var moveX = 0;
-			var moveY = 0;
-			var moveBottom = 0;
-			var moveLeft = 0;
-			var moveable = false;
-			var docMouseMoveEvent = document.onmousemove;
-			var docMouseUpEvent = document.onmouseup;
-			smcc.onmousedown = function () {
-				var ent = getEvent();
-				moveable = true;
-				moveX = ent.clientX;
-				moveY = ent.clientY;
-				var obj = smcc;
-				moveBottom = parseInt(obj.style.bottom);
-				moveLeft = parseInt(obj.style.left);
-				if (isFirefox = navigator.userAgent.indexOf("Firefox") > 0) {
-					window.getSelection().removeAllRanges();
-				}
-				document.onmousemove = function () {
-					if (moveable) {
-						var ent = getEvent();
-						var x = moveLeft + ent.clientX - moveX;
-						var y = moveBottom + (moveY - ent.clientY);
-						obj.style.left = x + "px";
-						obj.style.bottom = y + "px";
-					}
-				};
-				document.onmouseup = function () {
-					if (moveable) {
-						var historywidth = obj.style.left;
-						var historyheight = obj.style.bottom;
-						historywidth = historywidth.replace('px', '');
-						historyheight = historyheight.replace('px', '');
-						sessionStorage.setItem("historywidth", historywidth);
-						sessionStorage.setItem("historyheight", historyheight);
-						document.onmousemove = docMouseMoveEvent;
-						document.onmouseup = docMouseUpEvent;
-						moveable = false;
-						moveX = 0;
-						moveY = 0;
-						moveBottom = 0;
-						moveLeft = 0;
-					}
-				};
-			};
-		}
-		$(document).ready(function () {
-			var AIimgSrc = [];
-			let chooseLive2d = 'hijiki'
-			if (chooseLive2d === 'histoire') {
-				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_00.png");
-				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_01.png");
-				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_02.png");
-				AIimgSrc.push(message_Path + "model/histoire/histoire.1024/texture_03.png");
-			} else if (chooseLive2d === 'rem') {
-				AIimgSrc.push(message_Path + "model/rem/remu2048/texture_00.png");
-			} else if (chooseLive2d === 'aoba') {
-				AIimgSrc.push(message_Path + "model/aoba/textures/texture_00.png");
-			} else if (chooseLive2d === 'hijiki') {
-				AIimgSrc.push(message_Path + "model/hijiki/moc/hijiki.2048/texture_00.png");
-			} else if (chooseLive2d === 'tororo') {
-				AIimgSrc.push(message_Path + "model/tororo/moc/tororo.2048/texture_00.png");
-			}
-			var images = [];
-			var imgLength = AIimgSrc.length;
-			var loadingNum = 0;
-			for (var i = 0; i < imgLength; i++) {
-				images[i] = new Image();
-				images[i].src = AIimgSrc[i];
-				images[i].onload = function () {
-					loadingNum++;
-					if (loadingNum === imgLength) {
-						var live2dhidden = localStorage.getItem("live2dhidden");
-						if (live2dhidden === "0") {
-							setTimeout(function () {
-								$('#open_live2d').fadeIn(200);
-							}, 1300);
-						} else {
-							setTimeout(function () {
-								$('#landlord').fadeIn(200);
-							}, 1300);
-						}
-						let model = '';
-						if (chooseLive2d === 'histoire') {
-							model = message_Path + "model/histoire/model.json";
-						} else if (chooseLive2d === 'rem') {
-							model = message_Path + "model/rem/model.json";
-						} else if (chooseLive2d === 'aoba') {
-							model = message_Path + "model/aoba/model.json";
-						} else if (chooseLive2d === 'hijiki') {
-							model = message_Path + "model/hijiki/hijiki.model.json";
-						} else if (chooseLive2d === 'tororo') {
-							model = message_Path + "model/tororo/tororo.model.json";
-						}
-						setTimeout(function () {
-							loadlive2d("live2d", model);
-						}, 1000);
-						initLive2d();
-						images = null;
-					}
-				}
-			}
-		});
-	}
-</script>
-  
-  
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <script>
-  let musics = JSON.parse('[]');
-  let mediaMusic = [];
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    mediaMusic.push({
-      name: item.musicName,
-      artist: item.author,
-      url: item.musicLink,
-      lrc: item.lrc,
-      cover: item.cover
-    });
-  }
-
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  window.addEventListener('load', function() {
-    let postBody = document.querySelector('#post_body');
-    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-    postBody && hs.forEach(h => {
-      let helems = postBody.querySelectorAll(h);
-      if (helems.length > 0) {
-        helems.forEach(elem => {
-          elem.id = encodeURI(elem.id);
-        })
-      }
-    })
-  })
-  </script>
-
-
-  
-</div>
-<script>
-
-  let sideBarOpen = 'sidebar-open';
-  let body = document.body;
-  let back2Top = document.querySelector('#back_to_top'),
-    back2TopText = document.querySelector('#back_to_top_text'),
-    drawerBox = document.querySelector('#drawer_box'),
-    rightSideBar = document.querySelector('.sidebar'),
-    viewport = document.querySelector('body');
-
-  function scrollAnimation(currentY, targetY) {
-
-    let needScrollTop = targetY - currentY
-    let _currentY = currentY
-    setTimeout(() => {
-      const dist = Math.ceil(needScrollTop / 10)
-      _currentY += dist
-      window.scrollTo(_currentY, currentY)
-      if (needScrollTop > 10 || needScrollTop < -10) {
-        scrollAnimation(_currentY, targetY)
-      } else {
-        window.scrollTo(_currentY, targetY)
-      }
-    }, 1)
-  }
-
-  back2Top.addEventListener("click", function (e) {
-    scrollAnimation(document.scrollingElement.scrollTop, 0);
-    e.stopPropagation();
-    return false;
-  });
-
-  window.addEventListener('scroll', function (e) {
-    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
-    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
-      back2Top.classList.add('back-top-active');
-    }
-    if (percent == 0) {
-      back2Top.classList.remove('back-top-active');
-    }
-    if (back2TopText) {
-      back2TopText.textContent = Math.floor(percent);
-    }
-  });
-
-
-  let hasCacu = false;
-  window.onresize = function () {
-    calcuHeight();
-  }
-
-  function calcuHeight() {
-    // 动态调整站点概览高度
-    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
-      let sideBar = document.querySelector('.sidebar');
-      let navUl = document.querySelector('#site_nav');
-      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
-      hasCacu = true;
-    }
-  }
-  calcuHeight();
-
-  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
-
-  if (drawerBox) {
-    let rightMotions = document.querySelectorAll('.right-motion');
-    let right = drawerBox.classList.contains('right');
-
-    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
-
-    let openProp, closeProp;
-    if (right) {
-      openProp = {
-        paddingRight: RIGHT_MOVE_DIS
-      };
-      closeProp = {
-        paddingRight: '0px'
-      };
-    } else {
-      openProp = {
-        paddingLeft: RIGHT_MOVE_DIS
-      };
-      closeProp = {
-        paddingLeft: '0px'
-      };
-    }
-
-    drawerBox.onclick = function () {
-      open = !open;
-      window.Velocity(rightSideBar, 'stop');
-      window.Velocity(viewport, 'stop');
-      window.Velocity(rightMotions, 'stop');
-      if (open) {
-        window.Velocity(rightSideBar, {
-          width: RIGHT_MOVE_DIS
-        }, {
-          duration: MOTION_TIME,
-          begin: function () {
-            window.Velocity(rightMotions, transitionDir, {});
-          }
-        })
-        window.Velocity(viewport, openProp, {
-          duration: MOTION_TIME
-        });
-      } else {
-        window.Velocity(rightSideBar, {
-          width: '0px'
-        }, {
-          duration: MOTION_TIME,
-          begin: function () {
-            window.Velocity(rightMotions, {
-              opacity: 0
-            });
-          }
-        })
-        window.Velocity(viewport, closeProp, {
-          duration: MOTION_TIME
-        });
-      }
-      for (let i = 0; i < drawerBox.children.length; i++) {
-        drawerBox.children[i].classList.toggle('muse-line');
-      }
-      drawerBox.classList.toggle(sideBarOpen);
-    }
-  }
-
-  // 链接跳转
-  let newWindow = 'false'
-  if (newWindow === 'true') {
-    let links = document.querySelectorAll('.post-body a')
-    links.forEach(item => {
-      if (!item.classList.contains('btn')) {
-        item.setAttribute("target", "_blank");
-      }
-    })
-  }
-
-  let faSearch = document.querySelector('#fa_search');
-  faSearch.addEventListener('click', function () {
-    document.querySelector('#search_mask').style = ''
-  })
-
-  // 代码高亮
-  hljs.initHighlightingOnLoad();
-  
-  // 离开当前页title变化
-  var leaveTitle = "hi，你去哪了？";
-  if (leaveTitle) {
-    document.addEventListener('visibilitychange', function () {
-      if (document.visibilityState == 'hidden') {
-        normal_title = document.title;
-        document.title = leaveTitle;
-      } else {
-        document.title = normal_title;
-      }
-    });
-  }
-
-</script>
-    <div class="light-box" id="light_box"></div>
-<script>
-  let imgs = document.querySelectorAll('.post-body img');
-  let lightBox = document.querySelector('#light_box');
-  lightBox.addEventListener('mousedown', (e) => {
-    e.preventDefault()
-  })
-  lightBox.addEventListener('mousewheel', (e) => {
-    e.preventDefault()
-  })
-  let width = window.innerWidth * 0.8;
-  lightBox.onclick = () => {
-    let img = lightBox.querySelector('img');
-    lightBox.style = '';
-    img && img.remove();
-  }
-  imgs.forEach(item => {
-    item.onclick = function (e) {
-      let lightImg = document.createElement('img');
-      lightImg.src = this.src;
-      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
-      lightImg.style = `width: ${width}px;border-radius: 2px;`;
-      lightImg.onclick = function () {
-        lightBox.style = '';
-        this.remove();
-      }
-      lightBox.append(lightImg);
-    }
-  })
-</script>
-    <div class="reward-mask" style="display: none;">
-  <div class="reward-relative">
-    <span class="close" aria-hidden="true">x</span>
-    <div class="reward-body">
-      <h2>感谢您的支持，我会继续努力的!</h2>
-      <div class="reward-img-box">
-        <div style="position: relative; width: 140px; height: 140px;">
-          
-          
-          
-        </div>
-      </div>
-      <p class="reward-word">扫码打赏，你说多少就多少</p>
-      <p class="reward-tip">打开微信扫一扫，即可进行扫码打赏哦</p>
-    </div>
-    <div class="bottom">
-      
-      
-    </div>
-  </div>
-</div>
-<style>
-  .reward-mask {
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #00000054;
-  }
-
-  .reward-relative {
-    position: relative;
-    width: 480px;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 5px;
-    background-color: #fff;
-    top: 50%;
-    margin-top: -205px;
-  }
-
-  .reward-relative .close {
-    position: absolute;
-    right: 10px;
-    font-weight: normal;
-    font-size: 16px;
-    color: #929292;
-  }
-
-  .reward-body {
-    padding: 40px 20px 20px;
-  }
-
-  .bottom {
-    display: flex;
-  }
-
-  .reward-btn {
-    text-align: center;
-  }
-
-  .reward-btn-text {
-    display: inline-block;
-    cursor: pointer;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    background-color: #ff9734;
-    color: #FFF;
-    margin-top: 20px;
-  }
-
-  .pay-text {
-    margin-top: 10px;
-    padding: 10px;
-    flex: 1;
-    transition: all .2s linear;
-  }
-
-  .pay-text:hover {
-    background-color: #a5a5a536;
-  }
-
-  .reward-body h2 {
-    padding-top: 10px;
-    text-align: center;
-    color: #a3a3a3;
-    font-size: 16px;
-    font-weight: normal;
-    margin: 0 0 20px;
-  }
-
-  .reward-body h2:after,
-  .reward-body h2:before {
-    font-family: Arial, Helvetica, sans-serif;
-    background: 0 0;
-    width: 0;
-    height: 0;
-    font-style: normal;
-    color: #eee;
-    font-size: 80px;
-    position: absolute;
-    top: 20px;
-  }
-
-  .reward-body h2:before {
-    content: '\201c';
-    left: 50px;
-  }
-
-  .reward-body h2:after {
-    content: '\201d';
-    right: 80px;
-  }
-
-  .reward-img-box {
-    display: inline-block;
-    padding: 10px;
-    border: 6px solid #ea5f00;
-    margin: 0 auto;
-    border-radius: 3px;
-    position: relative;
-  }
-
-  .reward-img {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height: 100%;
-  }
-
-  @media (max-width: 767px) {
-    .reward-relative {
-      height: 100%;
-      top: 0px;
-      margin-top: 0;
-      width: auto;
-    }
-
-    .reward-relative .bottom {
-      flex-direction: column;
-    }
-
-    .reward-relative .pay-text {
-      width: 80%;
-      margin: 5px auto;
-      border: 1px solid silver;
-      padding: 6px;
-      border-radius: 4px;
-    }
-
-    .reward-body h2:after {
-      right: 40px;
-    }
-
-    .reward-body h2:after,
-    .reward-body h2:before {
-      font-size: 60px;
-    }
-
-    .reward-body h2:before {
-      left: 20px;
-    }
-  }
-</style>
-<script>
-  !function () {
-    var mask = document.querySelector('.reward-mask');
-    let close = document.querySelector('.reward-relative .close');
-    let rewardBtn = document.querySelector('.reward-btn');
-
-    let zfb = document.querySelector('#zfb'),
-      wx = document.querySelector('#wx'),
-      zfbBtn = document.querySelector('#zfbBtn'),
-      wxBtn = document.querySelector('#wxBtn');
-
-    if (zfbBtn && wxBtn) {
-      zfbBtn.addEventListener('click', () => {
-        window.Velocity(zfb, 'transition.slideLeftIn', {
-          duration: 400
-        });
-        window.Velocity(wx, 'transition.slideRightOut', {
-          display: 'none',
-          duration: 400
-        });
-      });
-
-      wxBtn.addEventListener('click', () => {
-        window.Velocity(wx, 'transition.slideRightIn', {
-          duration: 400
-        });
-        window.Velocity(zfb, 'transition.slideLeftOut', {
-          display: 'none',
-          duration: 400
-        });
-      });
-    }
-
-    rewardBtn.addEventListener('click', (e) => {
-      window.Velocity(mask, 'transition.slideDownIn', {
-        duration: 400
-      })
-    });
-
-    close.addEventListener('click', (e) => {
-      e.preventDefault();
-      window.Velocity(mask, 'transition.slideUpOut', {
-        duration: 400
-      })
-    })
-  }()
-</script>
+	<script type="text/javascript" src='https://blog.jinshuhang.tk/media/scripts/main.js'></script>
+	
 
   </div>
 </body>
-
-<div class="search-mask" id="search_mask" style="display: none;">
-  <div class="search-box">
-    <div class="search-title">
-      <i class="fa fa-search"></i>
-      <div class="input-box">
-        <input id="search" type="text" class="language" data-lan="search" placeholder="搜索">
-      </div>
-      <i id="close" class="fa fa-times-circle"></i>
-    </div>
-    <div class="stat-box">
-      <span id="stat_count">0</span><span class="language" data-lan="stat">条相关条目，使用了</span><span id="stat_times">0</span><span class="language" data-lan="stat-time">毫秒</span>
-      <hr>
-    </div>
-    <div class="result" id="result">
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/liu-yan-ban/"" data-c="
-          &lt;p&gt;留言板&lt;/p&gt;
-">留言板</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/zheng-li-stl-dui-de-cao-zuo/"" data-c="
-          &lt;p&gt;STL&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;p&gt;首先，肯定是一些函数：&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;make_heap(first_pointer,end_pointer,compare_function)  建堆(默认大根堆)
-push_heap(first_pointer,end_pointer,compare_function) 添加元素到堆
-pop_heap(first_pointer,end_pointer,compare_function) 取出堆顶元素
-sort_heap() 排序堆（不推荐）
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;所有操作均为O(&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;l&lt;/mi&gt;&lt;mi&gt;o&lt;/mi&gt;&lt;msub&gt;&lt;mi&gt;g&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;log_2&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.8888799999999999em;vertical-align:-0.19444em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.01968em;&#34;&gt;l&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;o&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathdefault&#34; style=&#34;margin-right:0.03588em;&#34;&gt;g&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;(n))。&lt;br&gt;
-建堆时，可以用定义数组，亦可以用vector。&lt;/p&gt;
-">[整理]STL堆的操作</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/lesslesshui-da-de-zhi-hui-greatergreater/"" data-c="
-          &lt;p&gt;回答的智慧&lt;/p&gt;
-&lt;!-- more --&gt;
-&lt;h1 id=&#34;在回答之前&#34;&gt;在回答之前&lt;/h1&gt;
-&lt;p&gt;​      如果你打算回答一位发问者的问题，请保证做到了以下几点：&lt;/p&gt;
-&lt;p&gt;1.认真地阅读了提问者的问题&lt;/p&gt;
-&lt;p&gt;2.有着充足的理论来回答问题&lt;/p&gt;
-&lt;p&gt;3.确保自己想的和提问者是一个方面&lt;/p&gt;
-&lt;p&gt;4.查看是否有人已经回答了你的思路&lt;/p&gt;
-&lt;p&gt;5.确保自己回答的问题不是无意义&lt;/p&gt;
-&lt;p&gt;​       不要以为自己说的总是对的，慎重的思考自己的每一句回答，错误地回答很有可能误导提问者。即使不是这样，那么大家也会对你的态度有所变化。如果有人回答的比你更好，那么你应该去支持Ta。当然，偶尔几句调侃是被允许的。&lt;strong&gt;请注意，过多的灌水会让大家对你有所反感&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&#34;回答时&#34;&gt;回答时&lt;/h1&gt;
-&lt;h2 id=&#34;回答的基本礼仪&#34;&gt;回答的基本礼仪&lt;/h2&gt;
-&lt;p&gt;​       请正确地使用 Markdown 或者LaTeX。如果提问者提出了一个可笑的问题，你不应该去嘲笑Ta（有些情况下是可以的，下文会提到）,几句善意的提醒可比这好得多。 &lt;strong&gt;小心，千万别不合时宜地说这些&lt;/strong&gt;。如果所有人都没发现提问者的话中有错误，那么你在回答时一定要确保自己是正确的，不然后果自负。要以谦虚的态度去回答，而不是用指教的口气。尽量不要有无意义的回答，选择你有把握的问题去回答，不要在所有问题下都去回答（除非你有那样的能力）。&lt;/p&gt;
-&lt;h2 id=&#34;回答的态度&#34;&gt;回答的态度&lt;/h2&gt;
-&lt;p&gt;​       如果提问者的语气和措辞是礼貌的，那么你也应当使用礼貌的语气去回答Ta。但是，如果有人发出了侮辱性的问题，那么你反手一个举报后要毫不客气的怼回去，在这时候，每没人会责怪你无礼。相反，Ta们也会来怼回去。其次，一旦有人提问了一种白痴问题。像这样的问题：c++是什么？很明显，用搜索引擎就可以得到答案，但是提问者在这里浪费时间。对于这种情况，你有两种选择：&lt;/p&gt;
-&lt;p&gt;+是不用去理会他。二是去说Ta伸手党，这没有问题。当然，你也可以推荐Ta阅读《提问的智慧》&lt;/p&gt;
-&lt;h2 id=&#34;回答的内容&#34;&gt;回答的内容&lt;/h2&gt;
-&lt;p&gt;​      要尽量精简一些。如果涉及到了令人难以理解的知识，最好附上一份链接来说明它。如果你的回答不被认可，你需要重新看一下问题，如果你的回答的确有误，那么道个歉或者删除它。如果你的回答没问题，那就不用理会那些人，或者怼回去，维护自己的权益。&lt;/p&gt;
-&lt;p&gt;​    不被认可的回答：用c++就好了。&lt;/p&gt;
-&lt;p&gt;​    好回答：因为这道题卡你时间，所以你需要用c++。&lt;/p&gt;
-&lt;h2 id=&#34;不要随便膜拜或者玩梗&#34;&gt;不要随便膜拜或者玩梗&lt;/h2&gt;
-&lt;p&gt;不要看见一些大佬的回答就盲目的去膜拜，场合要适宜。简单的赞赏是可以的，但是无意义的膜拜就不被接受了。玩梗也要慎重，毕竟如果你不了解这个梗的用法或者含义去使用它，那会很令人反感。如果你玩的梗涉及到的人对你提出了意见，那么你应该道歉并删除你的回答。&lt;/p&gt;
-&lt;h2 id=&#34;膜拜可以但大佬不总是对的&#34;&gt;膜拜可以，但大佬不总是对的&lt;/h2&gt;
-&lt;p&gt;​      如果一位大家公认很强的大佬回答了这个问题，可以去赞赏Ta。但是，如果Ta回答的有错误，那么你可以选择去提出这些错误，放心，大佬不会生气的。如果Ta生气了，那么只能证明Ta不值得人们去膜拜Ta。你的语气也要正确，如果Ta因为这个生气了，这是完全可以的。&lt;/p&gt;
-&lt;h1 id=&#34;在回答之后&#34;&gt;在回答之后&lt;/h1&gt;
-&lt;h2 id=&#34;保持合适的礼貌&#34;&gt;保持合适的礼貌&lt;/h2&gt;
-&lt;p&gt;​       你要明白的一点是，即使你做出了一个非常好的回答，那也只能证明你对这个方面有一定的了解。&lt;strong&gt;你不应该为此骄傲&lt;/strong&gt;，相反，你应该谦虚的去回答更多的问题。&lt;/p&gt;
-&lt;p&gt;END。&lt;/p&gt;
-">《回答的智慧》</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/shi-jian-kong-jian-fu-za-du-xue-xi-bi-ji/"" data-c="
-          &lt;p&gt;时间：要求&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;S  空间：&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;125&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;125&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;5&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;M（或者&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;512&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;512&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;M）&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;1&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;s 控制在&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;mi&gt;e&lt;/mi&gt;&lt;mn&gt;7&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;1e7&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.64444em;vertical-align:0em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;mord mathdefault&#34;&gt;e&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;7&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;上下。 空间就是数组开的大小。&lt;/p&gt;
-&lt;p&gt;时间复杂度：描述的是数据规模与运算时间的关系。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;O(1) 时间复杂度不随着规模变化而变化。⽐如sizeof() 获取某个下标的数字&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;O(log(n)) 时间复杂度伴随着规模按照log函数变化。 ⽐如⼆分算法,倍增。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;O(n) 时间复杂度伴随着规模按照⼀次函数变化。 ⽐如 找最⼤值 枚举 桶排序 n&amp;lt;=1e7（注意桶排序中n不是数组大小，而是最大排序数字）&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;O(nlog(n)) ⽐如 快速排序 sort() 归并排序  n&amp;lt;=1e6&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;O(n&lt;sup&gt;2&lt;/sup&gt;) ⽐如 冒泡 选择 插⼊ n&amp;lt;=1e3（快速排序最坏情况）&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;空间：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;怎样算占用空间：单个数组元素字节数*数组大小&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;一般只要不爆空间就没问题&lt;/p&gt;
-">时间/空间复杂度学习笔记</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/happy/"" data-c="
-          &lt;p&gt;happy。MGY，this page only for you。&lt;br&gt;
-明天就是圣诞节了。JSH祝在座的各位圣诞节快乐。&lt;br&gt;
-这几天学校里发生了几件大事，班主任开始排练元旦节目，跳舞的样子没法说了，秀喷了。&lt;br&gt;
-中午你的饭被老师吞为己有，www，本来想抢肉的。数学学了百分率，就是计算什什么率的时候要加*100%，数学老师强调的，剩下的都太简单了。英语我被强制参加演讲了，但是演讲比赛推迟了，你应该知道吧，这几天我们组没有一个错误的，你不用担心了。对了，我们有一个计划，等你回来再说吧。&lt;/p&gt;
-">圣诞节快乐</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/zui-mei-gu-shi-ci/"" data-c="
-          &lt;p&gt;&lt;strong&gt;众里寻他千百度，蓦然回首，那人却在灯火阑珊处&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;诉不尽的前尘往事，忘不掉的浮生三千&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;我笑花，花醉太红，何意笑春风？花笑我，我醉尘梦，何意笑花红？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;苟利国家生死以，岂因祸福避趋之&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;红酥手，黄藤酒，满城春色宫墙柳。东风恶，欢情薄，一杯愁绪，几年离索。错！错！错！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;流光容易把人抛，红了樱桃，绿了芭蕉&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;三更月。中庭恰照梨花雪。梨花雪。不胜凄断，杜鹃啼血&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;墙里秋千墙外道，墙外行人墙里佳人笑&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;上有无花之古树，下有伤心之春草&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;门掩黄昏，无计留春住，泪眼问花花不语，乱红飞过秋千去&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;嗟余只影系人间，如何同生不同死&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;春风桃李花开日，秋雨梧桐叶落时&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;花寒懒发鸟慵啼,信马闲行到日西&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;细雨湿流光，芳草年年与恨长&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;只恐双溪舴艋舟，载不动许多愁&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;韶华不为少年留，恨悠悠，几时休？&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;悲哉秋之气也！萧瑟兮草木摇落而变衰&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;身无彩凤双飞翼，心有灵犀一点通&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;天不老，情难绝。心似双丝网，中有千千结&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;在天愿作比翼鸟，在地愿为连理枝&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;梧桐树，三更雨，不道离情正苦。一叶叶，一声声，空阶滴到明&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;滴不尽相思血泪抛红豆，开不完春柳春花满画楼&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;忍把千金酬一笑？毕竟相思，不似相逢好&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;不知魂已断，空有梦相随。除却天边月，没人知&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;最是秋风管闲事，红他枫叶白人头&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;想佳人妆楼颙望，误几回，天际识归舟&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;滚滚长江东逝水，浪花淘尽英雄。是非成败转头空。青山依旧在，几度夕阳红。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;无可奈何花落去，似曾相识燕归来&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;用我三生烟火，换你一世迷离&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;长街长，烟花繁，你挑灯回看，短亭短，红尘辗，我把萧再叹&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;苍茫大地一剑尽挽破，何处繁华笙歌落。斜倚云端千壶掩寂寞，纵使他人空笑我&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;苟求性命于乱世，不求闻达于诸侯&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;谁将烟焚散，散了纵横的牵绊&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此情可待成追忆，只是当时已惘然&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一梦入混沌，烟火撞星辰&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;哀吾生之须臾，羡长江之无穷！&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;无边落木萧萧下，不尽长江滚滚来&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;此中有真意，欲辨已忘言&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;长亭外，古道边，芳草碧连天&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;莫道桑榆晚，为霞尚满天&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;莫道不消魂，帘卷西风，人比黄花瘦&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;夏夜空蝉引诗情，何须寄望流星雨&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;庄周化蝶自作茧 ，躲进小记成坤乾&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;五月落棠棣 ，难作春泥 ，只争枝高枝低&lt;/strong&gt;&lt;/p&gt;
-">最美古诗词</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/lun-xie-zuo-ye-de-fang-shi/"" data-c="
-          &lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;众所周知，作业会成为学生们的一大负担，那么你所熟知的写作业方式的有哪些呢，下面就让jsh带你尝试各种方式吧&lt;/p&gt;
-&lt;h2 id=&#34;11-快笔生花&#34;&gt;1.1 快笔生花&lt;/h2&gt;
-&lt;p&gt;技能背景：速度，是对付大量作业的一大利器。但是俗话说得好：快，狠，准，要快还有准。那么如果你是学霸的话，这一招相信你已经会了。&lt;br&gt;
-适用人群：非学渣，且作业简单&lt;br&gt;
-风险：无&lt;br&gt;
-发动方法：把一大堆作业放到自己眼前，随便抓起一份，开始写，速度一定要快。&lt;br&gt;
-技能效果：当你写到一定境界时，你会发现：笔下的题似乎变得简单了。没错，快的同时无意中体现了准。（亲测有效），这说明技能发动成功了。&lt;/p&gt;
-&lt;h2 id=&#34;12-精神胜利&#34;&gt;1.2 精神胜利&lt;/h2&gt;
-&lt;p&gt;技能背景：《阿Q正传》了解一下。阿Q的精神胜利法广为流传。当然，这里我们是讨论怎样用到写作业上。适用人群：所有。&lt;br&gt;
-风险：无&lt;br&gt;
-发动方法：写作业时立一个小目标，如写完这五道填空，干完这十道判断等，想着作业就剩这么一点了。立刻就要写完了&lt;br&gt;
-技能效果：当你这么做时，你会发现你的脑力与笔速在短时间内有了提升，保质保量，十分便捷。&lt;/p&gt;
-&lt;h2 id=&#34;13狐假虎威&#34;&gt;1.3狐假虎威&lt;/h2&gt;
-&lt;p&gt;技能背景：老师是怎样批作业的？打对号或者叉号。那如果我自己打上了对号，老师会不会认为这份作业已经批过了呢？&lt;br&gt;
-适用人群：拥有红笔的学渣&lt;br&gt;
-风险：低&lt;br&gt;
-发动方法：在写完作业后，正确率无法保证（书写要好一点），此时你拿着红笔全部打上对勾，等待奇迹的发生。&lt;br&gt;
-技能效果：老师看到了之后，误以为是好学生的作业，简单扫几眼或者直接不看。逃过一劫&lt;/p&gt;
-&lt;h2 id=&#34;14移形换位&#34;&gt;1.4移形换位&lt;/h2&gt;
-&lt;p&gt;技能背景：今天好不容易写完了作业，结果老师又布置新的了、&lt;br&gt;
-适用人群：胆子大的&lt;br&gt;
-风险：中&lt;br&gt;
-发动方法：在交上去的作业中夹杂着以前写过的作业，即使被发现了也可以解释是放错了。&lt;br&gt;
-技能效果：老师一看，哎呦，作业齐了，开头几页挺认真的，后面的不看，直接下一份。&lt;/p&gt;
-&lt;h2 id=&#34;15破罐破摔&#34;&gt;1.5破罐破摔&lt;/h2&gt;
-&lt;p&gt;技能背景：天哪，我忘写作业了&lt;br&gt;
-适用人群：无&lt;br&gt;
-风险：高&lt;br&gt;
-发动方法：在老师收作业之前，向老师坦白自己没写作业。&lt;br&gt;
-技能效果：看老师脾气决定。&lt;/p&gt;
-&lt;h2 id=&#34;16虎头蛇尾&#34;&gt;1.6虎头蛇尾&lt;/h2&gt;
-&lt;p&gt;技能背景：完了，快点补作业&lt;br&gt;
-适用人群：忘写作业的&lt;br&gt;
-风险：中&lt;br&gt;
-发动方法：一大摞作业，只写开头和结尾，书写不要太认真也不要太差，最好配合狐假虎威一起使用。&lt;br&gt;
-技能效果：老师一看，哎呦有始有终，不错，下一份。&lt;/p&gt;
-&lt;h2 id=&#34;完结&#34;&gt;完结&lt;/h2&gt;
-&lt;p&gt;以后想到的方法也会长期更新的啦，还希望大家多多支持。如果你也知道好的写作业的方式，请发到819433558@qq.com&lt;/p&gt;
-">论写作业的方式</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/bo-ke-jian-cheng-qing-zhu/"" data-c="
-          &lt;p&gt;历时一个月，终于弄好了博客。还用过hexo，不过那个直接崩掉了。还是gridea好啊。&lt;br&gt;
-建成撒花😀😀😀&lt;/p&gt;
-">博客建成庆祝</a>
-      </div>
-      
-      <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://blog.jinshuhang.tk/post/aboutme/"" data-c="
-          &lt;p&gt;JSH，六年级oier&lt;br&gt;
-最喜欢的古诗词：众里寻他千百度，蓦然回首，那人却在灯火阑珊处&lt;/p&gt;
-">关于我</a>
-      </div>
-      
-    </div>
-    <div class="page">
-      <div id="page_ul"></div>
-    </div>
-  </div>
-</div>
+<!-- 更进一步的拿来主义，这段代码及一定的 CSS 样式拷贝自 Gridea 的 Next 主题：https://github.com/hsxyhao/gridea-theme-next，😺 -->
 <script>
-  !function () {
-    let searchMask = document.querySelector('#search_mask');
-    let result = document.querySelector('#result');
-    let items = document.querySelectorAll('.item');
-    let searchBox = document.querySelector('#search');
-    let statCount = document.querySelector('#stat_count');
-    let statTimes = document.querySelector('#stat_times');
-    let pageUl = document.querySelector('#page_ul');
-    let close = document.querySelector('#close');
-    
-    close.addEventListener('click', function() {
-      searchMask.style = 'display: none;'
-    })
-
-    let finds = [];
-    let contents = [];
-    let pageSize = 10;
-    items.forEach(item => {
-      let a = item.querySelector('a');
-      contents.push({
-        title: a.innerText,
-        details: a.dataset.c,
-        link: a.href
-      })
-      item.remove();
-    })
-
-    function insertStr(soure, start, count) {
-      let newStr = soure.substr(start, count);
-      return soure.slice(0, start) + '<em>' + newStr + '</em>' + soure.slice(start + count);
-    }
-
-    pageUl.addEventListener('click', function(event) {
-      let target = event.target;
-      if (target.__proto__ === HTMLSpanElement.prototype) {
-        appendResults(parseInt(target.dataset.i));
-      }
-    })
-
-    function appendResults(index) {
-      let htmlResult = '';
-      let start = index || 0;
-      let end = Math.min(start + pageSize, finds.length);
-      for (let i = start; i < end; i++) {
-        const current = finds[i];
-        let html = current.title;
-        let sum = 0;
-        let positions = current.positions;
-        positions.forEach(position => {
-          html = insertStr(html, position.start + sum, position.count);
-          sum += 9;
-        })
-        htmlResult += `<div class="item"><a class="result-title" href="${current.link}">${html}</a></div>`;
-      }
-      result.innerHTML = htmlResult;
-      pageUl.innerHTML = '';
-      let count = finds.length / pageSize;
-      let lis = '';
-      if (start !== 0) {
-        lis += `<span class="fa fa-angle-left" data-i='${start - 1}'></span>`;
-      }
-      for (let i = 0; i < count; i++) {
-        lis += `<span class='${i === start?'current':''}' data-i='${i}'>${i+1}</span>`;     
-      }
-      if (start+1 < count) {
-        lis += `<span class="fa fa-angle-right" data-i='${start+1}'></span>`;  
-      }
-      pageUl.innerHTML = lis;
-    }
-
-    function search(delay) {
-      let timer = null
-      return function () {
-        clearTimeout(timer)
-        timer = setTimeout(() => {
-          let start = Date.now();
-          let segments = searchBox.value.split(' ').filter(c => c != '');
-          if (segments.length <= 0) {
-            return;
-          }
-          finds = [];
-          let htmlResult = '';
-          contents.forEach(content => {
-            let title = content.title;
-            let positions = [];
-            let find = false;
-            segments.forEach((segment) => {
-              if (content.title.includes(segment)) {
-                find = true;
-                positions.push({
-                  start: content.title.indexOf(segment),
-                  count: segment.length
-                })
-              } else if (content.details.includes(segment)) {
-                find = true;
-              }
-            });
-            if (find) {
-              finds.push({
-                title: content.title,
-                link: content.link,
-                positions
-              });
-            }
-          })
-          appendResults(0);
-          statCount.textContent = finds.length;
-          statTimes.textContent = Date.now() - start;
-        }, delay)
-      }
-    }
-    searchBox.addEventListener('input', search(200));
-  }()
-</script>
-
-<input hidden id="copy" />
-<script>
-  !function () {
-    let times = document.querySelectorAll('.publish-time');
-    for (let i = 0; i < times.length; i++) {
-      let date = times[i].dataset.t;
-      let time = Math.floor((new Date().getTime() - new Date(date).getTime()) / 1000);
-      if (time < 60) {
-        str = time + '秒之前';
-      } else if (time < 3600) {
-        str = Math.floor(time / 60) + '分钟之前';
-      } else if (time >= 3600 && time < 86400) {
-        str = Math.floor(time / 3600) + '小时之前';
-      } else if (time >= 86400 && time < 259200) {
-        str = Math.floor(time / 86400) + '天之前';
-      } else {
-        str = times[i].textContent;
-      }
-      times[i].textContent = str;
-    }
-  }();
-</script>
-
-<script>
-  let language = '';
-  if (language !== '') {
-    let map = new Map();
-    if (language === 'en') {
-      map.set('search', 'Search');
-      map.set('category', 'Categories');
-      map.set('article', 'Articles');
-      map.set('tag', 'Tags');
-      map.set('top', 'Top');
-      map.set('publish', 'published');
-      map.set('minute', ' minutes');
-      map.set('read-more', 'Read More');
-      map.set('view', 'View');
-      map.set('words', ' words');
-      map.set('category-in', 'category in');
-      map.set('preview', 'Meta');
-      map.set('index', 'Toc');
-      map.set('no-archives', "You haven't created yet");
-      map.set('archives', " articles in total");
-      map.set('cloud-tags', " tags in total");
-      map.set('copyright', "Copyright: ");
-      map.set('author', "Author: ");
-      map.set('link', "Link: ");
-      map.set('leave-message', "Leave a message");
-      map.set('format', "Links Format");
-      map.set('site-name', "Name: ");
-      map.set('site-link', "Link: ");
-      map.set('site-desc', "Desc: ");
-      map.set('stat', " related results, taking ");
-      map.set('stat-time', " ms");
-      map.set('site-img', "Image: ");
-    }
-
-    if (map.size > 0) {
-      let lanElems = document.querySelectorAll('.language');
-      lanElems.forEach(elem => {
-        let lan = elem.dataset.lan, text = map.get(lan);
-        if (elem.__proto__ === HTMLInputElement.prototype) {
-          elem.placeholder = text
-        } else {
-          if (elem.dataset.count) {
-            text = elem.dataset.count + text;
-          }
-          elem.textContent = text;
-        }
-      })
-    }
-  }
-  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  // 拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
   window.Clipboard = (function (window, document, navigator) {
     var textArea,
       copy;
@@ -1913,7 +293,7 @@ sort_heap() 排序堆（不推荐）
     function isOS() {
       return navigator.userAgent.match(/ipad|iphone/i);
     }
-    //创建文本元素
+    // 创建文本元素
     function createTextArea(text) {
       textArea = document.createElement('textArea');
       textArea.value = text;
@@ -1923,7 +303,7 @@ sort_heap() 排序堆（不推荐）
       textArea.clientWidth = 0;
       document.body.appendChild(textArea);
     }
-    //选择内容
+    // 选择内容
     function selectText() {
       var range,
         selection;
@@ -1940,7 +320,7 @@ sort_heap() 排序堆（不推荐）
       }
     }
 
-    //复制到剪贴板
+    // 复制到剪贴板
     function copyToClipboard() {
       try {
         document.execCommand("Copy")
@@ -1966,6 +346,7 @@ sort_heap() 排序堆（不推荐）
       let code = e.currentTarget.querySelector('code');
       var text = code.innerText;
       if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
         return;
       }
       e.srcElement.textContent = '复制成功';
@@ -1989,29 +370,6 @@ sort_heap() 排序堆（不推荐）
     pre.appendChild(copyElem);
     pre.onclick = copyCode
   })
-
 </script>
-<script src="/media/js/motion.js"></script>
-
-
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
-<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-<script type="text/javascript" src="/media/js/mouse/fireworks.js"></script>
-
-
-<script src="/media/js/cool.js"></script>
-
-
-
-  <div class="snow-container"></div>
-  <script src="/media/js/bg/canvas-nest.js"></script>
-  <script>
-  const config = {
-    color: '255,0,0',
-    count: 88,
-  };
-  // Using config rendering effect at 'element'.
-  const cn = new CanvasNest(document.querySelector('.snow-container'), config);
-  </script>
 
 </html>
